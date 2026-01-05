@@ -6,7 +6,7 @@ from pathlib import Path
 
 import streamlit as st
 
-PASSWORD = st.secrets.get("APP_PASSWORD", "")
+PASSWORD = st.secrets.get("APP_PASSWORD") if "APP_PASSWORD" in st.secrets else ""
 
 if PASSWORD:
     entered = st.text_input("Password", type="password")
