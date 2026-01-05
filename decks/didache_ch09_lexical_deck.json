@@ -1,0 +1,156 @@
+[
+  {
+    "id": "DID-09-L-001",
+    "koine": "εὐχαριστέω",
+    "english": "give thanks",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-002",
+    "koine": "γνωρίζω",
+    "english": "make known",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-003",
+    "koine": "ἀμπελος",
+    "english": "vine",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-09-L-004",
+    "koine": "ζωή",
+    "english": "life",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-09-L-005",
+    "koine": "γνῶσις",
+    "english": "knowledge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-09-L-006",
+    "koine": "γίνομαι",
+    "english": "become",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-007",
+    "koine": "συνάγω",
+    "english": "gather",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-008",
+    "koine": "ἐκκλησία",
+    "english": "assembly, church",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-09-L-009",
+    "koine": "βασιλεία",
+    "english": "kingdom",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-09-L-010",
+    "koine": "ἐσθίω",
+    "english": "eat",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-011",
+    "koine": "πίνω",
+    "english": "drink",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-012",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-013",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-09-L-014",
+    "koine": "λέγω",
+    "english": "say",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 9,
+      "pos": "ῥῆμα"
+    }
+  }
+]

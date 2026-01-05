@@ -1,0 +1,332 @@
+[
+  {
+    "id": "DID-04-L-001",
+    "koine": "τέκνον",
+    "english": "child",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-04-L-002",
+    "koine": "λαλέω",
+    "english": "speak",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-003",
+    "koine": "μιμνῄσκω",
+    "english": "remember",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-004",
+    "koine": "τιμάω",
+    "english": "honor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-005",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-006",
+    "koine": "κυριότης",
+    "english": "lordship, authority",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-04-L-007",
+    "koine": "ἐκζητέω",
+    "english": "seek out",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-008",
+    "koine": "ἐπαναπαύω",
+    "english": "refresh, rest upon",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-009",
+    "koine": "ποθέω",
+    "english": "desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-010",
+    "koine": "εἰρηνεύω",
+    "english": "make peace",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-011",
+    "koine": "κρίνω",
+    "english": "judge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-012",
+    "koine": "λαμβάνω",
+    "english": "take",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-013",
+    "koine": "διψυχέω",
+    "english": "be double-minded",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-014",
+    "koine": "γίνομαι",
+    "english": "become",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-015",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-016",
+    "koine": "γινώσκω",
+    "english": "know",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-017",
+    "koine": "λέγω",
+    "english": "say",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-018",
+    "koine": "διδάσκω",
+    "english": "teach",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-019",
+    "koine": "ἐπιτάσσω",
+    "english": "command",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-020",
+    "koine": "φοβέομαι",
+    "english": "fear",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-021",
+    "koine": "ἔρχομαι",
+    "english": "come",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-022",
+    "koine": "ἑτοιμάζω",
+    "english": "prepare",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-023",
+    "koine": "ὑποτάσσω",
+    "english": "submit",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-024",
+    "koine": "μισέω",
+    "english": "hate",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-025",
+    "koine": "ἐγκαταλείπω",
+    "english": "abandon",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-026",
+    "koine": "φυλάσσω",
+    "english": "keep, guard",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-027",
+    "koine": "ἐξομολογέομαι",
+    "english": "confess",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-028",
+    "koine": "προσέρχομαι",
+    "english": "approach",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-04-L-029",
+    "koine": "ὁδός",
+    "english": "way, path",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-04-L-030",
+    "koine": "ζωή",
+    "english": "life",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 4,
+      "pos": "ὄνομα"
+    }
+  }
+]

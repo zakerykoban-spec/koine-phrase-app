@@ -1,0 +1,299 @@
+[
+  {
+    "id": "DID-07-L-001",
+    "koine": "βαπτίζω",
+    "english": "baptize",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-002",
+    "koine": "βάπτισμα",
+    "english": "baptism",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-003",
+    "koine": "οὕτως",
+    "english": "thus, in this way",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-07-L-004",
+    "koine": "προλέγω",
+    "english": "say beforehand",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-005",
+    "koine": "ὄνομα",
+    "english": "name",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-006",
+    "koine": "πατήρ",
+    "english": "father",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-007",
+    "koine": "υἱός",
+    "english": "son",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-008",
+    "koine": "ἅγιος",
+    "english": "holy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-07-L-009",
+    "koine": "πνεῦμα",
+    "english": "spirit",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-010",
+    "koine": "ἐάν",
+    "english": "if",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "σύνδεσμος"
+    }
+  },
+  {
+    "id": "DID-07-L-011",
+    "koine": "ἔχω",
+    "english": "have, hold",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-012",
+    "koine": "ὕδωρ",
+    "english": "water",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-013",
+    "koine": "ζάω",
+    "english": "live",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-014",
+    "koine": "ἄλλος",
+    "english": "other",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-07-L-015",
+    "koine": "δύναμαι",
+    "english": "be able",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-016",
+    "koine": "ψυχρός",
+    "english": "cold",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-07-L-017",
+    "koine": "θερμός",
+    "english": "warm",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-07-L-018",
+    "koine": "ἀμφότεροι",
+    "english": "both",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίθετον/ἀντωνυμία"
+    }
+  },
+  {
+    "id": "DID-07-L-019",
+    "koine": "ἐκχέω",
+    "english": "pour out",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-020",
+    "koine": "κεφαλή",
+    "english": "head",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-07-L-021",
+    "koine": "τρίς",
+    "english": "three times",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-07-L-022",
+    "koine": "πρό",
+    "english": "before",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "πρόθεσις"
+    }
+  },
+  {
+    "id": "DID-07-L-023",
+    "koine": "προνηστεύω",
+    "english": "fast beforehand",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-024",
+    "koine": "νηστεύω",
+    "english": "fast",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-025",
+    "koine": "κελεύω",
+    "english": "command, order",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-07-L-026",
+    "koine": "εἷς",
+    "english": "one",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἀριθμητικόν"
+    }
+  },
+  {
+    "id": "DID-07-L-027",
+    "koine": "δύο",
+    "english": "two",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 7,
+      "pos": "ἀριθμητικόν"
+    }
+  }
+]

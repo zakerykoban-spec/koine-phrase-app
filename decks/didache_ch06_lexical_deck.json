@@ -1,0 +1,255 @@
+[
+  {
+    "id": "DID-06-L-001",
+    "koine": "ὁράω",
+    "english": "see, watch, beware",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-002",
+    "koine": "πλανάω",
+    "english": "lead astray, deceive",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-003",
+    "koine": "ὁδός",
+    "english": "way, path",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-004",
+    "koine": "διδαχή",
+    "english": "teaching",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-005",
+    "koine": "ἐπεί",
+    "english": "since, because",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "σύνδεσμος"
+    }
+  },
+  {
+    "id": "DID-06-L-006",
+    "koine": "παρεκτός",
+    "english": "apart from, except",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "πρόθεσις/ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-06-L-007",
+    "koine": "Θεός",
+    "english": "God, god",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-008",
+    "koine": "διδάσκω",
+    "english": "teach",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-009",
+    "koine": "δύναμαι",
+    "english": "be able",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-010",
+    "koine": "βαστάζω",
+    "english": "bear, carry",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-011",
+    "koine": "ὅλος",
+    "english": "whole",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-06-L-012",
+    "koine": "ζυγός",
+    "english": "yoke",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-013",
+    "koine": "Κύριος",
+    "english": "Lord",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-014",
+    "koine": "τέλειος",
+    "english": "complete, mature",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-06-L-015",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-016",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-017",
+    "koine": "περί",
+    "english": "concerning, about",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "πρόθεσις"
+    }
+  },
+  {
+    "id": "DID-06-L-018",
+    "koine": "βρῶσις",
+    "english": "food, eating",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-019",
+    "koine": "εἰδωλόθυτον",
+    "english": "food offered to idols",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-020",
+    "koine": "λίαν",
+    "english": "very",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-06-L-021",
+    "koine": "προσέχω",
+    "english": "pay attention, beware",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-06-L-022",
+    "koine": "λατρεία",
+    "english": "service, worship",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-06-L-023",
+    "koine": "νεκρός",
+    "english": "dead",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 6,
+      "pos": "ἐπίθετον"
+    }
+  }
+]

@@ -1,0 +1,728 @@
+[
+  {
+    "id": "DID-01-001",
+    "koine": "ὁδός",
+    "english": "way, road",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-002",
+    "koine": "ζωή",
+    "english": "life",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-003",
+    "koine": "θάνατος",
+    "english": "death",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-004",
+    "koine": "διαφορά",
+    "english": "difference",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-005",
+    "koine": "πολύς",
+    "english": "much, great",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-006",
+    "koine": "μεταξύ",
+    "english": "between",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "prep/adv"
+    }
+  },
+  {
+    "id": "DID-01-007",
+    "koine": "πρῶτος",
+    "english": "first",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj/adv"
+    }
+  },
+  {
+    "id": "DID-01-008",
+    "koine": "δεύτερος",
+    "english": "second",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj/adv"
+    }
+  },
+  {
+    "id": "DID-01-009",
+    "koine": "ἀγαπάω",
+    "english": "love",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-010",
+    "koine": "Θεός",
+    "english": "God",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-011",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-012",
+    "koine": "πλησίον",
+    "english": "neighbor",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adv/subst"
+    }
+  },
+  {
+    "id": "DID-01-013",
+    "koine": "σεαυτός",
+    "english": "yourself",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "pron"
+    }
+  },
+  {
+    "id": "DID-01-014",
+    "koine": "θέλω",
+    "english": "want, will",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-015",
+    "koine": "γίνομαι",
+    "english": "become, happen",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-016",
+    "koine": "λόγος",
+    "english": "word, saying",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-017",
+    "koine": "διδαχή",
+    "english": "teaching",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-018",
+    "koine": "εὐλογέω",
+    "english": "bless",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-019",
+    "koine": "καταράομαι",
+    "english": "curse",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-020",
+    "koine": "προσεύχομαι",
+    "english": "pray",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-021",
+    "koine": "ἐχθρός",
+    "english": "enemy, hostile",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun/adj"
+    }
+  },
+  {
+    "id": "DID-01-022",
+    "koine": "νηστεύω",
+    "english": "fast",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-023",
+    "koine": "διώκω",
+    "english": "pursue, persecute",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-024",
+    "koine": "χάρις",
+    "english": "grace, favor",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-025",
+    "koine": "ἔθνος",
+    "english": "nation, Gentiles",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-026",
+    "koine": "μισέω",
+    "english": "hate",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-027",
+    "koine": "ἀπέχω",
+    "english": "keep away, abstain",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-028",
+    "koine": "σαρκικός",
+    "english": "fleshly",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-029",
+    "koine": "κοσμικός",
+    "english": "worldly",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-030",
+    "koine": "ἐπιθυμία",
+    "english": "desire, lust",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-031",
+    "koine": "ῥάπισμα",
+    "english": "slap, blow",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-032",
+    "koine": "δεξιός",
+    "english": "right",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-033",
+    "koine": "σιαγών",
+    "english": "jaw, cheek",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-034",
+    "koine": "στρέφω",
+    "english": "turn",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-035",
+    "koine": "ἄλλος",
+    "english": "other",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj/pron"
+    }
+  },
+  {
+    "id": "DID-01-036",
+    "koine": "τέλειος",
+    "english": "perfect, complete",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-037",
+    "koine": "ἀγγαρεύω",
+    "english": "compel to go, press into service",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-038",
+    "koine": "μίλιον",
+    "english": "mile",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-039",
+    "koine": "ὑπάγω",
+    "english": "go",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-040",
+    "koine": "αἴρω",
+    "english": "take, carry away",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-041",
+    "koine": "ἱμάτιον",
+    "english": "cloak, outer garment",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-042",
+    "koine": "χιτών",
+    "english": "tunic",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-043",
+    "koine": "λαμβάνω",
+    "english": "take, receive",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-044",
+    "koine": "ἀπαιτέω",
+    "english": "demand back",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-045",
+    "koine": "δύναμαι",
+    "english": "be able",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-046",
+    "koine": "αἰτέω",
+    "english": "ask",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-047",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-048",
+    "koine": "πατήρ",
+    "english": "father",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-049",
+    "koine": "ἴδιος",
+    "english": "one's own",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-050",
+    "koine": "χάρισμα",
+    "english": "gift, grace-gift",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-051",
+    "koine": "μακάριος",
+    "english": "blessed",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-052",
+    "koine": "ἐντολή",
+    "english": "commandment",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-053",
+    "koine": "ἀθῷος",
+    "english": "innocent",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-054",
+    "koine": "οὐαί",
+    "english": "woe",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "interj"
+    }
+  },
+  {
+    "id": "DID-01-055",
+    "koine": "χρεία",
+    "english": "need",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-056",
+    "koine": "δίκη",
+    "english": "justice, penalty",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-057",
+    "koine": "συνοχή",
+    "english": "confinement, custody",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-058",
+    "koine": "ἐξετάζω",
+    "english": "examine",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-059",
+    "koine": "πράσσω",
+    "english": "do, practice",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-060",
+    "koine": "ἐξέρχομαι",
+    "english": "go out, come out",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-061",
+    "koine": "ἔσχατος",
+    "english": "last",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "adj"
+    }
+  },
+  {
+    "id": "DID-01-062",
+    "koine": "κοδράντης",
+    "english": "quadrans (coin)",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-063",
+    "koine": "ἱδρόω",
+    "english": "sweat",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  },
+  {
+    "id": "DID-01-064",
+    "koine": "ἐλεημοσύνη",
+    "english": "almsgiving, mercy",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-065",
+    "koine": "χείρ",
+    "english": "hand",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "noun"
+    }
+  },
+  {
+    "id": "DID-01-066",
+    "koine": "γινώσκω",
+    "english": "know",
+    "meta": {
+      "type": "vocab",
+      "work": "Didache",
+      "chapter": 1,
+      "pos": "verb"
+    }
+  }
+]

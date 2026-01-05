@@ -1,0 +1,3187 @@
+[
+  {
+    "id": "001",
+    "koine": "ἀγαθός",
+    "english_raw": "good, virtuous",
+    "freq": 104,
+    "forms": "ἀγαθή, ἀγαθόν",
+    "english": "good, virtuous"
+  },
+  {
+    "id": "002",
+    "koine": "ἀγάπη, ἡ",
+    "english_raw": "love",
+    "freq": 116,
+    "genitive": "γν ἀγάπης",
+    "tag": "noun",
+    "english": "love"
+  },
+  {
+    "id": "003",
+    "koine": "ἀγαπῶ",
+    "english_raw": "love",
+    "freq": 141,
+    "forms": "ἀγαπᾶν cont/παρατατική",
+    "tag": "verb",
+    "english": "love"
+  },
+  {
+    "id": "004",
+    "koine": "ἀγαπητός",
+    "english_raw": "loved, dear",
+    "freq": 61,
+    "forms": "ἀγαπητή, ἀγαπητόν",
+    "english": "loved, dear"
+  },
+  {
+    "id": "005",
+    "koine": "ἄγγελος, ὁ",
+    "english_raw": "angel, messenger",
+    "freq": 175,
+    "genitive": "ἀγγέλου",
+    "tag": "noun",
+    "english": "angel, messenger"
+  },
+  {
+    "id": "006",
+    "koine": "ἅγιος",
+    "english_raw": "holy, sacred, dedicated",
+    "freq": 233,
+    "forms": "ἁγία ἅγιον",
+    "english": "holy, sacred, dedicated"
+  },
+  {
+    "id": "007",
+    "koine": "ἀγρός, ὁ",
+    "english_raw": "field",
+    "freq": 35,
+    "genitive": "ἀγροῦ",
+    "tag": "noun",
+    "english": "field"
+  },
+  {
+    "id": "008",
+    "koine": "ἄγω",
+    "english_raw": "lead, bring, take along, arrest",
+    "freq": 66,
+    "tag": "verb",
+    "english": "lead, bring, take along, arrest"
+  },
+  {
+    "id": "009",
+    "koine": "ἀδελφός, ὁ",
+    "english_raw": "brother",
+    "freq": 343,
+    "genitive": "ἀδελφοῦ",
+    "tag": "noun",
+    "english": "brother"
+  },
+  {
+    "id": "010",
+    "koine": "αἷμα, τό",
+    "english_raw": "blood",
+    "freq": 97,
+    "forms": "αἵματος",
+    "english": "blood"
+  },
+  {
+    "id": "011",
+    "koine": "αἴρω",
+    "english_raw": "lift up, take up, take away",
+    "freq": 101,
+    "tag": "verb",
+    "english": "lift up, take up, take away"
+  },
+  {
+    "id": "012",
+    "koine": "αἰτῶ",
+    "english_raw": "ask, demand,",
+    "freq": 70,
+    "forms": "αἰτεῖν cont/παρατατική",
+    "tag": "verb",
+    "english": "ask, demand,"
+  },
+  {
+    "id": "013",
+    "koine": "αἰών, ὁ",
+    "english_raw": "age, world",
+    "freq": 123,
+    "genitive": "αἰῶνος",
+    "tag": "noun",
+    "english": "age, world"
+  },
+  {
+    "id": "014",
+    "koine": "αἰώνιος",
+    "english_raw": "eternal m-f",
+    "freq": 70,
+    "forms": "αἰώνιος, n αἰώνιον",
+    "english": "eternal m-f"
+  },
+  {
+    "id": "015",
+    "koine": "ἀκολουθῶ",
+    "english_raw": "follow +",
+    "freq": 90,
+    "forms": "δο, ἀκολουθεῖν cont",
+    "tag": "verb",
+    "english": "follow +"
+  },
+  {
+    "id": "016",
+    "koine": "ἀκούω",
+    "english_raw": "hear, listen +",
+    "freq": 427,
+    "forms": "γν (especially for the person) or + αι (especially the words or details)",
+    "tag": "verb",
+    "english": "hear, listen +"
+  },
+  {
+    "id": "017",
+    "koine": "ἀλήθεια, ἡ",
+    "english_raw": "truth",
+    "freq": 109,
+    "genitive": "ἀληθείας",
+    "tag": "noun",
+    "english": "truth"
+  },
+  {
+    "id": "018",
+    "koine": "ἀλλά",
+    "english_raw": "but, yet, nevertheless",
+    "freq": 635,
+    "english": "but, yet, nevertheless"
+  },
+  {
+    "id": "019",
+    "koine": "ἀλλήλων",
+    "english_raw": "one another",
+    "freq": 100,
+    "english": "one another"
+  },
+  {
+    "id": "020",
+    "koine": "ἄλλος",
+    "english_raw": "other, another",
+    "freq": 155,
+    "forms": "ἄλλη, ἄλλον",
+    "english": "other, another"
+  },
+  {
+    "id": "021",
+    "koine": "ἁμαρτάνω",
+    "english_raw": "sin",
+    "freq": 42,
+    "tag": "verb",
+    "english": "sin"
+  },
+  {
+    "id": "022",
+    "koine": "ἁμαρτία",
+    "english_raw": "sin",
+    "freq": 173,
+    "forms": "ἁμαρτίας",
+    "english": "sin"
+  },
+  {
+    "id": "023",
+    "koine": "ἁμαρτωλός, -ον",
+    "english_raw": "sinful, sinner",
+    "freq": 47,
+    "english": "sinful, sinner"
+  },
+  {
+    "id": "024",
+    "koine": "ἀμήν",
+    "english_raw": "so let it be, yes, amen",
+    "freq": 126,
+    "english": "so let it be, yes, amen"
+  },
+  {
+    "id": "025",
+    "koine": "ἄν",
+    "english_raw": "(particle of potentiality)",
+    "freq": 166,
+    "english": "(particle of potentiality)"
+  },
+  {
+    "id": "026",
+    "koine": "ἀναβαίνω",
+    "english_raw": "go up, ascend",
+    "freq": 81,
+    "tag": "verb",
+    "english": "go up, ascend"
+  },
+  {
+    "id": "027",
+    "koine": "ἀνάστησις, ἡ",
+    "english_raw": "rising up, resurrection",
+    "freq": 42,
+    "genitive": "ἀναστήσεως",
+    "tag": "noun",
+    "english": "rising up, resurrection"
+  },
+  {
+    "id": "028",
+    "koine": "ἀνήρ, ὁ",
+    "english_raw": "man",
+    "freq": 216,
+    "genitive": "ἀνδρός",
+    "tag": "noun",
+    "english": "man"
+  },
+  {
+    "id": "029",
+    "koine": "ἄνθρωπος, ὁ",
+    "english_raw": "human being, man",
+    "freq": 548,
+    "tag": "noun",
+    "english": "human being, man"
+  },
+  {
+    "id": "030",
+    "koine": "ἀνίστημι",
+    "english_raw": "raise something up",
+    "freq": 107,
+    "forms": "ἀνιστάναι",
+    "tag": "verb",
+    "english": "raise something up"
+  },
+  {
+    "id": "031",
+    "koine": "ἀνίσταμαι",
+    "english_raw": "rise, stand up",
+    "freq": 107,
+    "forms": "ἀνίστασθαι",
+    "tag": "verb",
+    "english": "rise, stand up"
+  },
+  {
+    "id": "032",
+    "koine": "ἀνοίγω",
+    "english_raw": "open",
+    "freq": 78,
+    "tag": "verb",
+    "english": "open"
+  },
+  {
+    "id": "033",
+    "koine": "ἄξιος",
+    "english_raw": "worthy, proper",
+    "freq": 41,
+    "forms": "ἄξια, ἄξιον",
+    "english": "worthy, proper"
+  },
+  {
+    "id": "034",
+    "koine": "ἀπαγγέλλω",
+    "english_raw": "announce, inform",
+    "freq": 46,
+    "tag": "verb",
+    "english": "announce, inform"
+  },
+  {
+    "id": "035",
+    "koine": "ἀπέρχομαι",
+    "english_raw": "go away, depart",
+    "freq": 116,
+    "tag": "verb",
+    "english": "go away, depart"
+  },
+  {
+    "id": "036",
+    "koine": "ἀπό",
+    "english_raw": "from",
+    "freq": 645,
+    "english": "from"
+  },
+  {
+    "id": "037",
+    "koine": "ἀποδίδωμι",
+    "english_raw": "pay reward",
+    "freq": 47,
+    "forms": "ἀποδιδόναι cont",
+    "tag": "verb",
+    "english": "pay reward"
+  },
+  {
+    "id": "038",
+    "koine": "ἀποθνῄσκω",
+    "english_raw": "die",
+    "freq": 113,
+    "tag": "verb",
+    "english": "die"
+  },
+  {
+    "id": "039",
+    "koine": "ἀποκρίνομαι",
+    "english_raw": "answer",
+    "freq": 231,
+    "tag": "verb",
+    "english": "answer"
+  },
+  {
+    "id": "040",
+    "koine": "ἀποκτείνω",
+    "english_raw": "kill",
+    "freq": 74,
+    "forms": "ἀποκτείνειν cont",
+    "tag": "verb",
+    "english": "kill"
+  },
+  {
+    "id": "041",
+    "koine": "ἀπόλλυμι",
+    "english_raw": "ruin, destroy, loose; cont:",
+    "freq": 90,
+    "forms": "ἀπολλύναι/ἀπολλύειν",
+    "tag": "verb",
+    "english": "ruin, destroy, loose; cont:"
+  },
+  {
+    "id": "042",
+    "koine": "ἀπόλλυμαι",
+    "english_raw": "μέση mid: perish,die",
+    "forms": "ἀπόλλυσθαι",
+    "tag": "verb",
+    "english": "μέση mid: perish,die"
+  },
+  {
+    "id": "043",
+    "koine": "ἀπολύω",
+    "english_raw": "release; dismiss, send away",
+    "freq": 65,
+    "tag": "verb",
+    "english": "release; dismiss, send away"
+  },
+  {
+    "id": "044",
+    "koine": "ἀποστέλλω",
+    "english_raw": "send away",
+    "freq": 131,
+    "tag": "verb",
+    "english": "send away"
+  },
+  {
+    "id": "045",
+    "koine": "ἀπόστολος, ὁ",
+    "english_raw": "apostle, messenger",
+    "freq": 79,
+    "tag": "noun",
+    "english": "apostle, messenger"
+  },
+  {
+    "id": "046",
+    "koine": "ἄπτω",
+    "english_raw": "('39') light",
+    "tag": "verb",
+    "english": "('39') light"
+  },
+  {
+    "id": "047",
+    "koine": "ἄπτομαι",
+    "english_raw": "(---) (μέση) touch +γν",
+    "tag": "verb",
+    "english": "(---) (μέση) touch +γν"
+  },
+  {
+    "id": "048",
+    "koine": "ἄρα",
+    "english_raw": "so then, therefore",
+    "freq": 49,
+    "english": "so then, therefore"
+  },
+  {
+    "id": "049",
+    "koine": "ἄρτι",
+    "english_raw": "now, just now",
+    "freq": 36,
+    "english": "now, just now"
+  },
+  {
+    "id": "050",
+    "koine": "ἄρτος, ὁ",
+    "english_raw": "bread",
+    "freq": 97,
+    "tag": "noun",
+    "english": "bread"
+  },
+  {
+    "id": "051",
+    "koine": "ἀρχή, ἡ",
+    "english_raw": "beginning, ruler; authority",
+    "freq": 55,
+    "tag": "noun",
+    "english": "beginning, ruler; authority"
+  },
+  {
+    "id": "052",
+    "koine": "ἄρχω",
+    "english_raw": "rule, be at the head",
+    "freq": 85,
+    "forms": "ἄρχειν +γν",
+    "tag": "verb",
+    "english": "rule, be at the head"
+  },
+  {
+    "id": "053",
+    "koine": "ἄρχομαι",
+    "english_raw": "μέσηmid: begin",
+    "forms": "ἄρχεσθαι",
+    "tag": "verb",
+    "english": "μέσηmid: begin"
+  },
+  {
+    "id": "054",
+    "koine": "ἄρχων, ὁ",
+    "english_raw": "ruler",
+    "freq": 37,
+    "tag": "noun",
+    "english": "ruler"
+  },
+  {
+    "id": "055",
+    "koine": "ἀρχιερεύς, ὁ",
+    "english_raw": "high priest",
+    "freq": 122,
+    "tag": "noun",
+    "english": "high priest"
+  },
+  {
+    "id": "056",
+    "koine": "ἀσπάζομαι",
+    "english_raw": "greet",
+    "freq": 59,
+    "forms": "ἀσπάζεσθαι",
+    "tag": "verb",
+    "english": "greet"
+  },
+  {
+    "id": "057",
+    "koine": "αὐτός",
+    "english_raw": "he; self;",
+    "freq": 5534,
+    "forms": "ὁ αὐτός same",
+    "english": "he; self;"
+  },
+  {
+    "id": "058",
+    "koine": "ἀφίημι",
+    "english_raw": "let go, send away, pardon;",
+    "freq": 142,
+    "tag": "verb",
+    "english": "let go, send away, pardon;"
+  },
+  {
+    "id": "059",
+    "koine": "ἄχρι",
+    "english_raw": "until",
+    "freq": 48,
+    "english": "until"
+  },
+  {
+    "id": "060",
+    "koine": "βάλλω",
+    "english_raw": "throw; put, place, bring",
+    "freq": 122,
+    "tag": "verb",
+    "english": "throw; put, place, bring"
+  },
+  {
+    "id": "061",
+    "koine": "βαπτίζω",
+    "english_raw": "baptize",
+    "freq": 77,
+    "tag": "verb",
+    "english": "baptize"
+  },
+  {
+    "id": "062",
+    "koine": "βασιλεία, ἡ",
+    "english_raw": "kingdom",
+    "freq": 162,
+    "genitive": "βασιλείας",
+    "tag": "noun",
+    "english": "kingdom"
+  },
+  {
+    "id": "063",
+    "koine": "βασιλεύς, ὁ",
+    "english_raw": "king",
+    "freq": 115,
+    "genitive": "βασιλέως",
+    "tag": "noun",
+    "english": "king"
+  },
+  {
+    "id": "064",
+    "koine": "βλέπω",
+    "english_raw": "see",
+    "freq": 132,
+    "tag": "verb",
+    "english": "see"
+  },
+  {
+    "id": "065",
+    "koine": "βούλομαι",
+    "english_raw": "want, wish",
+    "freq": 37,
+    "forms": "βούλεσθαι",
+    "tag": "verb",
+    "english": "want, wish"
+  },
+  {
+    "id": "066",
+    "koine": "γάρ",
+    "english_raw": "for; certainly, so, then",
+    "freq": 1036,
+    "english": "for; certainly, so, then"
+  },
+  {
+    "id": "067",
+    "koine": "γενεά, ἡ",
+    "english_raw": "generation",
+    "freq": 43,
+    "genitive": "γενεᾶς",
+    "tag": "noun",
+    "english": "generation"
+  },
+  {
+    "id": "068",
+    "koine": "γεννῶ",
+    "english_raw": "beget; bear, produce",
+    "freq": 97,
+    "forms": "γεννᾶν,",
+    "tag": "verb",
+    "english": "beget; bear, produce"
+  },
+  {
+    "id": "069",
+    "koine": "γῆ, ἡ",
+    "english_raw": "earth, ground, land",
+    "freq": 248,
+    "genitive": "γῆς",
+    "tag": "noun",
+    "english": "earth, ground, land"
+  },
+  {
+    "id": "070",
+    "koine": "γίνομαι",
+    "english_raw": "become, come to be, happen",
+    "freq": 667,
+    "forms": "γίνεσθαι",
+    "tag": "verb",
+    "english": "become, come to be, happen"
+  },
+  {
+    "id": "071",
+    "koine": "γινώσκω",
+    "english_raw": "know, learn",
+    "freq": 221,
+    "tag": "verb",
+    "english": "know, learn"
+  },
+  {
+    "id": "072",
+    "koine": "γλῶσσα, ἡ",
+    "english_raw": "tongue, language",
+    "freq": 50,
+    "genitive": "γλώσσης",
+    "tag": "noun",
+    "english": "tongue, language"
+  },
+  {
+    "id": "073",
+    "koine": "γραμματεύς, ὁ",
+    "english_raw": "scribe, lawyer",
+    "freq": 62,
+    "genitive": "γραμματέως",
+    "tag": "noun",
+    "english": "scribe, lawyer"
+  },
+  {
+    "id": "074",
+    "koine": "γραφή, ἡ",
+    "english_raw": "writing; Scripture",
+    "freq": 50,
+    "tag": "noun",
+    "english": "writing; Scripture"
+  },
+  {
+    "id": "075",
+    "koine": "γράφω",
+    "english_raw": "write",
+    "freq": 190,
+    "tag": "verb",
+    "english": "write"
+  },
+  {
+    "id": "076",
+    "koine": "γυνή, ἡ",
+    "english_raw": "woman, wife",
+    "freq": 209,
+    "tag": "noun",
+    "english": "woman, wife"
+  },
+  {
+    "id": "077",
+    "koine": "δαιμόνιον, τό",
+    "english_raw": "divinity; demon",
+    "freq": 63,
+    "english": "divinity; demon"
+  },
+  {
+    "id": "078",
+    "koine": "δέ",
+    "english_raw": "but, and",
+    "freq": 2271,
+    "english": "but, and"
+  },
+  {
+    "id": "079",
+    "koine": "δεῖ",
+    "english_raw": "it is necessary",
+    "freq": 102,
+    "english": "it is necessary"
+  },
+  {
+    "id": "080",
+    "koine": "δεύτερος",
+    "english_raw": "second",
+    "english": "second"
+  },
+  {
+    "id": "081",
+    "koine": "δέω",
+    "english_raw": "bind; (Heb= forbid)",
+    "tag": "verb",
+    "english": "bind; (Heb= forbid)"
+  },
+  {
+    "id": "082",
+    "koine": "δεξιός",
+    "english_raw": "right",
+    "freq": 54,
+    "english": "right"
+  },
+  {
+    "id": "083",
+    "koine": "δέχομαι",
+    "english_raw": "receive, take",
+    "freq": 56,
+    "tag": "verb",
+    "english": "receive, take"
+  },
+  {
+    "id": "084",
+    "koine": "διά",
+    "english_raw": "γν: through;",
+    "freq": 666,
+    "english": "γν: through;"
+  },
+  {
+    "id": "085",
+    "koine": "διάβολος, ὁ",
+    "english_raw": "devil, slanderer",
+    "freq": 37,
+    "tag": "noun",
+    "english": "devil, slanderer"
+  },
+  {
+    "id": "086",
+    "koine": "διακονέω",
+    "english_raw": "serve, wait upon",
+    "tag": "verb",
+    "english": "serve, wait upon"
+  },
+  {
+    "id": "087",
+    "koine": "διδάσκαλος, ὁ",
+    "english_raw": "teacher",
+    "freq": 59,
+    "tag": "noun",
+    "english": "teacher"
+  },
+  {
+    "id": "088",
+    "koine": "διδάσκω",
+    "english_raw": "teach",
+    "freq": 95,
+    "tag": "verb",
+    "english": "teach"
+  },
+  {
+    "id": "089",
+    "koine": "δίδωμι",
+    "english_raw": "give",
+    "freq": 416,
+    "forms": "διδόναι",
+    "tag": "verb",
+    "english": "give"
+  },
+  {
+    "id": "090",
+    "koine": "διέρχομαι",
+    "english_raw": "go through",
+    "freq": 42,
+    "tag": "verb",
+    "english": "go through"
+  },
+  {
+    "id": "091",
+    "koine": "δίκαιος",
+    "english_raw": "just, righteous",
+    "freq": 79,
+    "english": "just, righteous"
+  },
+  {
+    "id": "092",
+    "koine": "δικαιοσύνη, ἡ",
+    "english_raw": "righteousness, justice",
+    "freq": 91,
+    "tag": "noun",
+    "english": "righteousness, justice"
+  },
+  {
+    "id": "093",
+    "koine": "δικαιῶ",
+    "english_raw": "justify, make right",
+    "freq": 39,
+    "forms": "δικαιοῦν",
+    "tag": "verb",
+    "english": "justify, make right"
+  },
+  {
+    "id": "094",
+    "koine": "διό",
+    "english_raw": "therefore",
+    "freq": 53,
+    "english": "therefore"
+  },
+  {
+    "id": "095",
+    "koine": "διώκω",
+    "english_raw": "pursue, persecute",
+    "freq": 44,
+    "tag": "verb",
+    "english": "pursue, persecute"
+  },
+  {
+    "id": "096",
+    "koine": "δοκῶ",
+    "english_raw": "think, believe; seem",
+    "freq": 62,
+    "forms": "δοκεῖν",
+    "tag": "verb",
+    "english": "think, believe; seem"
+  },
+  {
+    "id": "097",
+    "koine": "δόξα, ἡ",
+    "english_raw": "glory, splendor, fame",
+    "freq": 165,
+    "tag": "noun",
+    "english": "glory, splendor, fame"
+  },
+  {
+    "id": "098",
+    "koine": "δοξάζω",
+    "english_raw": "glorify, praise",
+    "freq": 61,
+    "tag": "verb",
+    "english": "glorify, praise"
+  },
+  {
+    "id": "099",
+    "koine": "δοῦλος, ὁ",
+    "english_raw": "slave",
+    "freq": 124,
+    "tag": "noun",
+    "english": "slave"
+  },
+  {
+    "id": "100",
+    "koine": "δύναμαι",
+    "english_raw": "be able",
+    "freq": 209,
+    "tag": "verb",
+    "english": "be able"
+  },
+  {
+    "id": "101",
+    "koine": "δύναμις, ἡ",
+    "english_raw": "power, ability, miracle",
+    "freq": 118,
+    "tag": "noun",
+    "english": "power, ability, miracle"
+  },
+  {
+    "id": "102",
+    "koine": "δύο",
+    "english_raw": "two",
+    "freq": 136,
+    "english": "two"
+  },
+  {
+    "id": "103",
+    "koine": "δώδεκα",
+    "english_raw": "twelve",
+    "freq": 75,
+    "english": "twelve"
+  },
+  {
+    "id": "104",
+    "koine": "ἐάν",
+    "english_raw": "if (+ὑποτακτική)",
+    "freq": 343,
+    "english": "if (+ὑποτακτική)"
+  },
+  {
+    "id": "105",
+    "koine": "ἑαυτοῦ",
+    "english_raw": "oneself",
+    "freq": 320,
+    "english": "oneself"
+  },
+  {
+    "id": "106",
+    "koine": "ἐγγίζω",
+    "english_raw": "to approach, come near",
+    "freq": 42,
+    "tag": "verb",
+    "english": "to approach, come near"
+  },
+  {
+    "id": "107",
+    "koine": "ἐγείρω",
+    "english_raw": "raise, wake",
+    "freq": 143,
+    "forms": "ἐγείρειν",
+    "tag": "verb",
+    "english": "raise, wake"
+  },
+  {
+    "id": "108",
+    "koine": "ἐγώ",
+    "english_raw": "I",
+    "freq": 1713,
+    "english": "I"
+  },
+  {
+    "id": "109",
+    "koine": "ἔθνος, τό",
+    "english_raw": "nation; pl. Gentiles",
+    "freq": 162,
+    "english": "nation; pl. Gentiles"
+  },
+  {
+    "id": "110",
+    "koine": "εἰ",
+    "english_raw": "if",
+    "freq": 513,
+    "english": "if"
+  },
+  {
+    "id": "111",
+    "koine": "εἶδον",
+    "english_raw": "aor: saw, perceived. cont:",
+    "freq": 336,
+    "forms": "βλέπειν",
+    "english": "aor: saw, perceived. cont:"
+  },
+  {
+    "id": "112",
+    "koine": "εἰμί",
+    "english_raw": "be",
+    "freq": 2450,
+    "english": "be"
+  },
+  {
+    "id": "113",
+    "koine": "εἶπον",
+    "english_raw": "aor: said. cont:",
+    "freq": 925,
+    "forms": "λέγειν",
+    "english": "aor: said. cont:"
+  },
+  {
+    "id": "114",
+    "koine": "εἰρήνη, ἡ",
+    "english_raw": "peace",
+    "freq": 91,
+    "tag": "noun",
+    "english": "peace"
+  },
+  {
+    "id": "115",
+    "koine": "εἰς",
+    "english_raw": "into, toward",
+    "freq": 1753,
+    "english": "into, toward"
+  },
+  {
+    "id": "116",
+    "koine": "εἶς, μία, ἕν",
+    "english_raw": "one",
+    "freq": 337,
+    "english": "one"
+  },
+  {
+    "id": "117",
+    "koine": "εἰσέρχομαι",
+    "english_raw": "come in, go in",
+    "freq": 192,
+    "tag": "verb",
+    "english": "come in, go in"
+  },
+  {
+    "id": "118",
+    "koine": "εἴτε",
+    "english_raw": "if…if, whether…or",
+    "freq": 65,
+    "english": "if…if, whether…or"
+  },
+  {
+    "id": "119",
+    "koine": "ἐκ, ἐξ",
+    "english_raw": "from, out of, away from",
+    "freq": 915,
+    "english": "from, out of, away from"
+  },
+  {
+    "id": "120",
+    "koine": "ἕκαστος",
+    "english_raw": "each",
+    "freq": 81,
+    "english": "each"
+  },
+  {
+    "id": "121",
+    "koine": "ἐκβάλλω",
+    "english_raw": "cast out, send out, remove",
+    "freq": 81,
+    "tag": "verb",
+    "english": "cast out, send out, remove"
+  },
+  {
+    "id": "122",
+    "koine": "ἐκεῖ",
+    "english_raw": "there",
+    "freq": 95,
+    "english": "there"
+  },
+  {
+    "id": "123",
+    "koine": "ἐκεῖνος",
+    "english_raw": "that",
+    "freq": 243,
+    "english": "that"
+  },
+  {
+    "id": "124",
+    "koine": "ἐκεῖθεν",
+    "english_raw": "from there",
+    "english": "from there"
+  },
+  {
+    "id": "125",
+    "koine": "ἐκκλησία, ἡ",
+    "english_raw": "church, assembly",
+    "freq": 114,
+    "tag": "noun",
+    "english": "church, assembly"
+  },
+  {
+    "id": "126",
+    "koine": "ἐλπίς, ἡ",
+    "english_raw": "hope",
+    "freq": 53,
+    "tag": "noun",
+    "english": "hope"
+  },
+  {
+    "id": "127",
+    "koine": "ἐμαυτοῦ, -ῆς",
+    "english_raw": "myself",
+    "freq": 37,
+    "english": "myself"
+  },
+  {
+    "id": "128",
+    "koine": "ἐμός",
+    "english_raw": "my",
+    "freq": 76,
+    "english": "my"
+  },
+  {
+    "id": "129",
+    "koine": "ἔμπροσθεν",
+    "english_raw": "in front of",
+    "freq": 48,
+    "english": "in front of"
+  },
+  {
+    "id": "130",
+    "koine": "ἐν",
+    "english_raw": "in",
+    "freq": 2713,
+    "english": "in"
+  },
+  {
+    "id": "131",
+    "koine": "ἐντολή, ἡ",
+    "english_raw": "commandment",
+    "freq": 68,
+    "tag": "noun",
+    "english": "commandment"
+  },
+  {
+    "id": "132",
+    "koine": "ἐνώπιον",
+    "english_raw": "before, in the presence of",
+    "freq": 93,
+    "english": "before, in the presence of"
+  },
+  {
+    "id": "133",
+    "koine": "ἐξέρχομαι",
+    "english_raw": "go out, come out",
+    "freq": 216,
+    "tag": "verb",
+    "english": "go out, come out"
+  },
+  {
+    "id": "134",
+    "koine": "ἐξουσία, ἡ",
+    "english_raw": "authority, ability, right",
+    "freq": 102,
+    "tag": "noun",
+    "english": "authority, ability, right"
+  },
+  {
+    "id": "135",
+    "koine": "ἔξω",
+    "english_raw": "outside, outer",
+    "freq": 62,
+    "tag": "verb",
+    "english": "outside, outer"
+  },
+  {
+    "id": "136",
+    "koine": "ἐπαγγελία, ἡ",
+    "english_raw": "promise, pledge",
+    "freq": 52,
+    "tag": "noun",
+    "english": "promise, pledge"
+  },
+  {
+    "id": "137",
+    "koine": "ἐπερωτῶ",
+    "english_raw": "ask",
+    "freq": 56,
+    "forms": "ἐπερωτᾶν,",
+    "tag": "verb",
+    "english": "ask"
+  },
+  {
+    "id": "138",
+    "koine": "ἐπί",
+    "english_raw": "γν: upon, near, before, over,",
+    "freq": 878,
+    "english": "γν: upon, near, before, over,"
+  },
+  {
+    "id": "139",
+    "koine": "ἐπιγινώσκω",
+    "english_raw": "recognize, know about",
+    "freq": 44,
+    "tag": "verb",
+    "english": "recognize, know about"
+  },
+  {
+    "id": "140",
+    "koine": "ἐπιθυμία, ἡ",
+    "english_raw": "desire, lust",
+    "freq": 38,
+    "tag": "noun",
+    "english": "desire, lust"
+  },
+  {
+    "id": "141",
+    "koine": "ἐπιστρέφω",
+    "english_raw": "return, turn around",
+    "freq": 36,
+    "tag": "verb",
+    "english": "return, turn around"
+  },
+  {
+    "id": "142",
+    "koine": "ἐπιτίθημι",
+    "english_raw": "lay on, put on",
+    "freq": 40,
+    "forms": "ἐπιτιθέναι,",
+    "tag": "verb",
+    "english": "lay on, put on"
+  },
+  {
+    "id": "143",
+    "koine": "ἑπτά",
+    "english_raw": "seven",
+    "freq": 87,
+    "english": "seven"
+  },
+  {
+    "id": "144",
+    "koine": "ἐργάζομαι",
+    "english_raw": "work, do",
+    "freq": 41,
+    "tag": "verb",
+    "english": "work, do"
+  },
+  {
+    "id": "145",
+    "koine": "ἔργον, τό",
+    "english_raw": "deed, work",
+    "freq": 169,
+    "english": "deed, work"
+  },
+  {
+    "id": "146",
+    "koine": "ἔρημος, ον",
+    "english_raw": "uninhabited, wilderness",
+    "freq": 47,
+    "english": "uninhabited, wilderness"
+  },
+  {
+    "id": "147",
+    "koine": "ἐρῶ",
+    "english_raw": "say, fut of",
+    "freq": 96,
+    "forms": "λέγω",
+    "tag": "verb",
+    "english": "say, fut of"
+  },
+  {
+    "id": "149",
+    "koine": "ἔρχομαι",
+    "english_raw": "go, come",
+    "freq": 631,
+    "forms": "ἔρχεσθαι,",
+    "tag": "verb",
+    "english": "go, come"
+  },
+  {
+    "id": "150",
+    "koine": "ἐρωτῶ",
+    "english_raw": "ask",
+    "freq": 62,
+    "forms": "ἐρωτᾶν",
+    "tag": "verb",
+    "english": "ask"
+  },
+  {
+    "id": "151",
+    "koine": "ἐσθίω",
+    "english_raw": "eat",
+    "freq": 65,
+    "tag": "verb",
+    "english": "eat"
+  },
+  {
+    "id": "152",
+    "koine": "ἔσχατος",
+    "english_raw": "last",
+    "freq": 52,
+    "english": "last"
+  },
+  {
+    "id": "153",
+    "koine": "ἕτερος",
+    "english_raw": "other, different",
+    "freq": 98,
+    "english": "other, different"
+  },
+  {
+    "id": "154",
+    "koine": "ἔτι",
+    "english_raw": "still, yet",
+    "freq": 92,
+    "english": "still, yet"
+  },
+  {
+    "id": "155",
+    "koine": "ἑτοιμάζω",
+    "english_raw": "prepare",
+    "freq": 41,
+    "tag": "verb",
+    "english": "prepare"
+  },
+  {
+    "id": "156",
+    "koine": "ἔτος, τό",
+    "english_raw": "year",
+    "freq": 49,
+    "english": "year"
+  },
+  {
+    "id": "157",
+    "koine": "εὐαγγελίζω",
+    "english_raw": "proclaim, preach,",
+    "freq": 54,
+    "tag": "verb",
+    "english": "proclaim, preach,"
+  },
+  {
+    "id": "158",
+    "koine": "εὐαγγέλιον, τό",
+    "english_raw": "good news, gospel",
+    "freq": 76,
+    "english": "good news, gospel"
+  },
+  {
+    "id": "159",
+    "koine": "εὐθέως",
+    "english_raw": "(33*) immediately",
+    "english": "(33*) immediately"
+  },
+  {
+    "id": "160",
+    "koine": "εὐθύς",
+    "english_raw": "immediately, at once",
+    "freq": 54,
+    "english": "immediately, at once"
+  },
+  {
+    "id": "161",
+    "koine": "εὐλογῶ",
+    "english_raw": "bless, praise",
+    "freq": 42,
+    "forms": "εὐλογεῖν,",
+    "tag": "verb",
+    "english": "bless, praise"
+  },
+  {
+    "id": "162",
+    "koine": "εὐρίσκω",
+    "english_raw": "find",
+    "freq": 176,
+    "tag": "verb",
+    "english": "find"
+  },
+  {
+    "id": "163",
+    "koine": "εὐχαριστῶ",
+    "english_raw": "thank",
+    "freq": 38,
+    "forms": "εὐχαριστεῖν,",
+    "tag": "verb",
+    "english": "thank"
+  },
+  {
+    "id": "164",
+    "koine": "ἔχω",
+    "english_raw": "have",
+    "freq": 705,
+    "tag": "verb",
+    "english": "have"
+  },
+  {
+    "id": "165",
+    "koine": "ἕως",
+    "english_raw": "till, until",
+    "freq": 145,
+    "english": "till, until"
+  },
+  {
+    "id": "166",
+    "koine": "ζῶ",
+    "english_raw": "live",
+    "freq": 140,
+    "forms": "ζῆν,",
+    "tag": "verb",
+    "english": "live"
+  },
+  {
+    "id": "167",
+    "koine": "ζητῶ",
+    "english_raw": "seek",
+    "freq": 117,
+    "forms": "ζητεῖν,",
+    "tag": "verb",
+    "english": "seek"
+  },
+  {
+    "id": "168",
+    "koine": "ζωή, ἡ",
+    "english_raw": "life",
+    "freq": 135,
+    "tag": "noun",
+    "english": "life"
+  },
+  {
+    "id": "169",
+    "koine": "ἤ",
+    "english_raw": "or, than",
+    "freq": 342,
+    "english": "or, than"
+  },
+  {
+    "id": "170",
+    "koine": "ἤδη",
+    "english_raw": "already",
+    "freq": 60,
+    "english": "already"
+  },
+  {
+    "id": "171",
+    "koine": "ἡμεῖς",
+    "english_raw": "we",
+    "freq": 856,
+    "english": "we"
+  },
+  {
+    "id": "172",
+    "koine": "ἡμέρα, ἡ",
+    "english_raw": "day",
+    "freq": 388,
+    "tag": "noun",
+    "english": "day"
+  },
+  {
+    "id": "173",
+    "koine": "θάλασσα, ἡ",
+    "english_raw": "sea",
+    "freq": 91,
+    "tag": "noun",
+    "english": "sea"
+  },
+  {
+    "id": "174",
+    "koine": "θάνατος, ὁ",
+    "english_raw": "death",
+    "freq": 120,
+    "tag": "noun",
+    "english": "death"
+  },
+  {
+    "id": "175",
+    "koine": "θαυμάζω",
+    "english_raw": "wonder, be astonished",
+    "freq": 42,
+    "tag": "verb",
+    "english": "wonder, be astonished"
+  },
+  {
+    "id": "176",
+    "koine": "θέλω",
+    "english_raw": "will, wish",
+    "freq": 207,
+    "tag": "verb",
+    "english": "will, wish"
+  },
+  {
+    "id": "177",
+    "koine": "θέλημα, τό",
+    "english_raw": "will",
+    "freq": 62,
+    "english": "will"
+  },
+  {
+    "id": "178",
+    "koine": "θεός, ὁ",
+    "english_raw": "God, god",
+    "freq": 1314,
+    "tag": "noun",
+    "english": "God, god"
+  },
+  {
+    "id": "179",
+    "koine": "θεραπεύω",
+    "english_raw": "heal",
+    "freq": 43,
+    "tag": "verb",
+    "english": "heal"
+  },
+  {
+    "id": "180",
+    "koine": "θεωρῶ",
+    "english_raw": "behold, see",
+    "freq": 58,
+    "forms": "θεωρεῖν",
+    "tag": "verb",
+    "english": "behold, see"
+  },
+  {
+    "id": "181",
+    "koine": "θηρίον, τό",
+    "english_raw": "animal",
+    "freq": 45,
+    "english": "animal"
+  },
+  {
+    "id": "182",
+    "koine": "θλίψις, ἡ",
+    "english_raw": "trouble, pressure",
+    "freq": 45,
+    "tag": "noun",
+    "english": "trouble, pressure"
+  },
+  {
+    "id": "183",
+    "koine": "θρόνος, ὁ",
+    "english_raw": "throne",
+    "freq": 62,
+    "tag": "noun",
+    "english": "throne"
+  },
+  {
+    "id": "184",
+    "koine": "θύρα, ἡ",
+    "english_raw": "door",
+    "freq": 39,
+    "tag": "noun",
+    "english": "door"
+  },
+  {
+    "id": "185",
+    "koine": "ἴδιος",
+    "english_raw": "one’s own",
+    "freq": 113,
+    "english": "one’s own"
+  },
+  {
+    "id": "186",
+    "koine": "ἰδού",
+    "english_raw": "look, behold",
+    "freq": 200,
+    "english": "look, behold"
+  },
+  {
+    "id": "187",
+    "koine": "ἱερόν, τό",
+    "english_raw": "temple",
+    "freq": 70,
+    "english": "temple"
+  },
+  {
+    "id": "188",
+    "koine": "ἱκανός",
+    "english_raw": "enough, adequate",
+    "freq": 40,
+    "english": "enough, adequate"
+  },
+  {
+    "id": "189",
+    "koine": "ἱμάτιον, τό",
+    "english_raw": "garment",
+    "freq": 60,
+    "english": "garment"
+  },
+  {
+    "id": "190",
+    "koine": "ἵνα",
+    "english_raw": "in order that (+sbjnctv)",
+    "freq": 673,
+    "english": "in order that (+sbjnctv)"
+  },
+  {
+    "id": "191",
+    "koine": "ἵστημι",
+    "english_raw": "place, set, make stand",
+    "forms": "ἱστάναι cont",
+    "tag": "verb",
+    "english": "place, set, make stand"
+  },
+  {
+    "id": "192",
+    "koine": "ἕστηκα (ἵστημι)",
+    "english_raw": "stand, stop intransitive",
+    "freq": 152,
+    "forms": "ἑστάναι ≈cont",
+    "english": "stand, stop intransitive"
+  },
+  {
+    "id": "193",
+    "koine": "κἀγώ",
+    "english_raw": "and I, I also",
+    "freq": 84,
+    "english": "and I, I also"
+  },
+  {
+    "id": "194",
+    "koine": "κάθημαι",
+    "english_raw": "sit",
+    "freq": 91,
+    "tag": "verb",
+    "english": "sit"
+  },
+  {
+    "id": "195",
+    "koine": "καθίζω",
+    "english_raw": "sit",
+    "freq": 45,
+    "tag": "verb",
+    "english": "sit"
+  },
+  {
+    "id": "196",
+    "koine": "καθώς",
+    "english_raw": "just as",
+    "freq": 178,
+    "english": "just as"
+  },
+  {
+    "id": "197",
+    "koine": "καί",
+    "english_raw": "and, also, even",
+    "freq": 8947,
+    "english": "and, also, even"
+  },
+  {
+    "id": "198",
+    "koine": "καινός",
+    "english_raw": "new",
+    "freq": 42,
+    "english": "new"
+  },
+  {
+    "id": "199",
+    "koine": "καιρός, ὁ",
+    "english_raw": "time",
+    "freq": 85,
+    "tag": "noun",
+    "english": "time"
+  },
+  {
+    "id": "200",
+    "koine": "κακός",
+    "english_raw": "bad",
+    "freq": 50,
+    "english": "bad"
+  },
+  {
+    "id": "201",
+    "koine": "καλῶ",
+    "english_raw": "call",
+    "freq": 148,
+    "forms": "καλεῖν",
+    "tag": "verb",
+    "english": "call"
+  },
+  {
+    "id": "202",
+    "koine": "καλός",
+    "english_raw": "good, nice, pretty",
+    "freq": 99,
+    "english": "good, nice, pretty"
+  },
+  {
+    "id": "203",
+    "koine": "καλῶς",
+    "english_raw": "well, good",
+    "freq": 37,
+    "english": "well, good"
+  },
+  {
+    "id": "204",
+    "koine": "καρδία, ἡ",
+    "english_raw": "heart",
+    "freq": 156,
+    "tag": "noun",
+    "english": "heart"
+  },
+  {
+    "id": "205",
+    "koine": "καρπός, ὁ",
+    "english_raw": "fruit",
+    "freq": 66,
+    "tag": "noun",
+    "english": "fruit"
+  },
+  {
+    "id": "206",
+    "koine": "κατά",
+    "english_raw": "γν: down, against;",
+    "freq": 471,
+    "english": "γν: down, against;"
+  },
+  {
+    "id": "207",
+    "koine": "καταβαίνω",
+    "english_raw": "go down, come down",
+    "freq": 81,
+    "tag": "verb",
+    "english": "go down, come down"
+  },
+  {
+    "id": "208",
+    "koine": "κατοικῶ",
+    "english_raw": "inhabit, dwell",
+    "freq": 44,
+    "forms": "κατοικεῖν",
+    "tag": "verb",
+    "english": "inhabit, dwell"
+  },
+  {
+    "id": "209",
+    "koine": "καυχῶμαι",
+    "english_raw": "boast",
+    "freq": 37,
+    "forms": "καυχᾶσθαι",
+    "tag": "verb",
+    "english": "boast"
+  },
+  {
+    "id": "210",
+    "koine": "κεφαλή, ἡ",
+    "english_raw": "head",
+    "freq": 75,
+    "tag": "noun",
+    "english": "head"
+  },
+  {
+    "id": "211",
+    "koine": "κηρύσσω",
+    "english_raw": "announce, proclaim, preach",
+    "freq": 61,
+    "tag": "verb",
+    "english": "announce, proclaim, preach"
+  },
+  {
+    "id": "212",
+    "koine": "κλαίω",
+    "english_raw": "weep, cry tears",
+    "freq": 38,
+    "tag": "verb",
+    "english": "weep, cry tears"
+  },
+  {
+    "id": "213",
+    "koine": "κόσμος, ὁ",
+    "english_raw": "world, adornment",
+    "freq": 185,
+    "tag": "noun",
+    "english": "world, adornment"
+  },
+  {
+    "id": "214",
+    "koine": "κράζω",
+    "english_raw": "cry out, scream",
+    "freq": 55,
+    "tag": "verb",
+    "english": "cry out, scream"
+  },
+  {
+    "id": "215",
+    "koine": "κρατῶ",
+    "english_raw": "hold, grasp",
+    "freq": 47,
+    "forms": "κρατεῖν",
+    "tag": "verb",
+    "english": "hold, grasp"
+  },
+  {
+    "id": "216",
+    "koine": "κρίνω",
+    "english_raw": "judge",
+    "freq": 114,
+    "tag": "verb",
+    "english": "judge"
+  },
+  {
+    "id": "217",
+    "koine": "κρίσις, ἡ",
+    "english_raw": "judgment",
+    "freq": 47,
+    "tag": "noun",
+    "english": "judgment"
+  },
+  {
+    "id": "218",
+    "koine": "κύριος, ὁ",
+    "english_raw": "lord, master",
+    "freq": 718,
+    "tag": "noun",
+    "english": "lord, master"
+  },
+  {
+    "id": "219",
+    "koine": "λαλῶ",
+    "english_raw": "speak, utter",
+    "freq": 298,
+    "forms": "λαλεῖν",
+    "tag": "verb",
+    "english": "speak, utter"
+  },
+  {
+    "id": "220",
+    "koine": "λαμβάνω",
+    "english_raw": "take, receive",
+    "freq": 258,
+    "tag": "verb",
+    "english": "take, receive"
+  },
+  {
+    "id": "221",
+    "koine": "λαός, ὁ",
+    "english_raw": "people",
+    "freq": 141,
+    "tag": "noun",
+    "english": "people"
+  },
+  {
+    "id": "222",
+    "koine": "λέγω",
+    "english_raw": "say, speak",
+    "freq": 1318,
+    "tag": "verb",
+    "english": "say, speak"
+  },
+  {
+    "id": "223",
+    "koine": "λίθος, ὁ",
+    "english_raw": "stone",
+    "freq": 58,
+    "tag": "noun",
+    "english": "stone"
+  },
+  {
+    "id": "224",
+    "koine": "λογίζομαι",
+    "english_raw": "consider, calculate",
+    "freq": 40,
+    "tag": "verb",
+    "english": "consider, calculate"
+  },
+  {
+    "id": "225",
+    "koine": "λόγος, ὁ",
+    "english_raw": "word, speech, matter,",
+    "freq": 331,
+    "tag": "noun",
+    "english": "word, speech, matter,"
+  },
+  {
+    "id": "226",
+    "koine": "λοιπός",
+    "english_raw": "remaining, left, rest;",
+    "freq": 55,
+    "english": "remaining, left, rest;"
+  },
+  {
+    "id": "227",
+    "koine": "λύω",
+    "english_raw": "loose, untie, solve [Heb=permit]",
+    "freq": 42,
+    "tag": "verb",
+    "english": "loose, untie, solve [Heb=permit]"
+  },
+  {
+    "id": "228",
+    "koine": "μαθητής, ὁ",
+    "english_raw": "disciple, pupil",
+    "freq": 262,
+    "tag": "noun",
+    "english": "disciple, pupil"
+  },
+  {
+    "id": "229",
+    "koine": "μακάριος",
+    "english_raw": "blessed, fortunate, happy",
+    "freq": 50,
+    "english": "blessed, fortunate, happy"
+  },
+  {
+    "id": "230",
+    "koine": "μᾶλλον",
+    "english_raw": "more, rather",
+    "freq": 80,
+    "english": "more, rather"
+  },
+  {
+    "id": "231",
+    "koine": "μαρτυρῶ",
+    "english_raw": "testify, witness",
+    "freq": 76,
+    "forms": "μαρτυρεῖν",
+    "tag": "verb",
+    "english": "testify, witness"
+  },
+  {
+    "id": "232",
+    "koine": "μαρτυρία, ἡ",
+    "english_raw": "testimony",
+    "freq": 37,
+    "tag": "noun",
+    "english": "testimony"
+  },
+  {
+    "id": "233",
+    "koine": "μάρτυς, ὁ",
+    "english_raw": "witness",
+    "freq": 35,
+    "tag": "noun",
+    "english": "witness"
+  },
+  {
+    "id": "234",
+    "koine": "μέγας",
+    "english_raw": "large, great",
+    "freq": 194,
+    "english": "large, great"
+  },
+  {
+    "id": "235",
+    "koine": "μέλλω",
+    "english_raw": "be about to, be on the point of",
+    "freq": 110,
+    "tag": "verb",
+    "english": "be about to, be on the point of"
+  },
+  {
+    "id": "236",
+    "koine": "μέν",
+    "english_raw": "on the one hand, but",
+    "freq": 181,
+    "english": "on the one hand, but"
+  },
+  {
+    "id": "237",
+    "koine": "μένω",
+    "english_raw": "remain, abide",
+    "freq": 118,
+    "tag": "verb",
+    "english": "remain, abide"
+  },
+  {
+    "id": "238",
+    "koine": "μέρος, τό",
+    "english_raw": "part; region",
+    "freq": 42,
+    "english": "part; region"
+  },
+  {
+    "id": "239",
+    "koine": "μέσος",
+    "english_raw": "middle, in the middle",
+    "freq": 56,
+    "english": "middle, in the middle"
+  },
+  {
+    "id": "240",
+    "koine": "μετά",
+    "english_raw": "γν: with;",
+    "freq": 467,
+    "forms": "αι: after, behind",
+    "english": "γν: with;"
+  },
+  {
+    "id": "241",
+    "koine": "μή",
+    "english_raw": "not, w other moods than ind.",
+    "freq": 1055,
+    "english": "not, w other moods than ind."
+  },
+  {
+    "id": "242",
+    "koine": "μηδέ",
+    "english_raw": "and not, but not; not even",
+    "freq": 57,
+    "english": "and not, but not; not even"
+  },
+  {
+    "id": "243",
+    "koine": "μηδείς",
+    "english_raw": "no one",
+    "freq": 85,
+    "english": "no one"
+  },
+  {
+    "id": "244",
+    "koine": "μήτηρ, ἡ",
+    "english_raw": "mother",
+    "freq": 84,
+    "tag": "noun",
+    "english": "mother"
+  },
+  {
+    "id": "245",
+    "koine": "μικρός",
+    "english_raw": "little, small",
+    "freq": 46,
+    "english": "little, small"
+  },
+  {
+    "id": "246",
+    "koine": "μισῶ",
+    "english_raw": "hate",
+    "freq": 39,
+    "forms": "μισεῖν,",
+    "tag": "verb",
+    "english": "hate"
+  },
+  {
+    "id": "247",
+    "koine": "μνημεῖον, τό",
+    "english_raw": "grave, monument",
+    "freq": 37,
+    "english": "grave, monument"
+  },
+  {
+    "id": "248",
+    "koine": "μόνον",
+    "english_raw": "only (adv.)",
+    "freq": 66,
+    "english": "only (adv.)"
+  },
+  {
+    "id": "249",
+    "koine": "μόνος,",
+    "english_raw": "only, alone",
+    "freq": 46,
+    "english": "only, alone"
+  },
+  {
+    "id": "250",
+    "koine": "ναός, ὁ",
+    "english_raw": "temple",
+    "freq": 45,
+    "tag": "noun",
+    "english": "temple"
+  },
+  {
+    "id": "251",
+    "koine": "νεκρός",
+    "english_raw": "dead",
+    "freq": 128,
+    "english": "dead"
+  },
+  {
+    "id": "252",
+    "koine": "νόμος, ὁ",
+    "english_raw": "law",
+    "freq": 191,
+    "tag": "noun",
+    "english": "law"
+  },
+  {
+    "id": "253",
+    "koine": "νῦν",
+    "english_raw": "now",
+    "freq": 148,
+    "english": "now"
+  },
+  {
+    "id": "254",
+    "koine": "νύξ",
+    "english_raw": "night",
+    "freq": 61,
+    "english": "night"
+  },
+  {
+    "id": "255",
+    "koine": "ὁ, ἡ, τό",
+    "english_raw": "the",
+    "freq": 19734,
+    "tag": "noun",
+    "english": "the"
+  },
+  {
+    "id": "256",
+    "koine": "ὁδός, ἡ",
+    "english_raw": "way",
+    "freq": 101,
+    "tag": "noun",
+    "english": "way"
+  },
+  {
+    "id": "257",
+    "koine": "οἶδα",
+    "english_raw": "know (perf. as pres.)",
+    "freq": 321,
+    "english": "know (perf. as pres.)"
+  },
+  {
+    "id": "258",
+    "koine": "οἰκία, ἡ",
+    "english_raw": "house, household",
+    "freq": 94,
+    "tag": "noun",
+    "english": "house, household"
+  },
+  {
+    "id": "259",
+    "koine": "οἰκοδομῶ",
+    "english_raw": "build",
+    "freq": 40,
+    "forms": "οἰκοδομεῖν",
+    "tag": "verb",
+    "english": "build"
+  },
+  {
+    "id": "260",
+    "koine": "οἶκος, ὁ",
+    "english_raw": "house, household",
+    "freq": 112,
+    "tag": "noun",
+    "english": "house, household"
+  },
+  {
+    "id": "261",
+    "koine": "ὀλίγος",
+    "english_raw": "few, slight",
+    "freq": 40,
+    "english": "few, slight"
+  },
+  {
+    "id": "262",
+    "koine": "ὅλος",
+    "english_raw": "whole, entire; complete",
+    "freq": 108,
+    "english": "whole, entire; complete"
+  },
+  {
+    "id": "263",
+    "koine": "ὄνομα, τό",
+    "english_raw": "name",
+    "freq": 228,
+    "english": "name"
+  },
+  {
+    "id": "264",
+    "koine": "ὅμοιος",
+    "english_raw": "similar",
+    "freq": 45,
+    "english": "similar"
+  },
+  {
+    "id": "265",
+    "koine": "ὀπίσω",
+    "english_raw": "behind, after",
+    "freq": 35,
+    "tag": "verb",
+    "english": "behind, after"
+  },
+  {
+    "id": "266",
+    "koine": "ὅπου",
+    "english_raw": "where",
+    "freq": 82,
+    "english": "where"
+  },
+  {
+    "id": "267",
+    "koine": "ὅπως",
+    "english_raw": "in order that;",
+    "freq": 53,
+    "english": "in order that;"
+  },
+  {
+    "id": "268",
+    "koine": "ὁρῶ",
+    "english_raw": "see",
+    "freq": 114,
+    "forms": "ὁρᾶν",
+    "tag": "verb",
+    "english": "see"
+  },
+  {
+    "id": "269",
+    "koine": "ὀργή, ἡ",
+    "english_raw": "anger, punishment",
+    "freq": 36,
+    "tag": "noun",
+    "english": "anger, punishment"
+  },
+  {
+    "id": "270",
+    "koine": "ὄρος, τό",
+    "english_raw": "mountain",
+    "freq": 62,
+    "english": "mountain"
+  },
+  {
+    "id": "271",
+    "koine": "ὅς, ἥ, ὅ",
+    "english_raw": "rel: who, which, what, that",
+    "freq": 1369,
+    "english": "rel: who, which, what, that"
+  },
+  {
+    "id": "272",
+    "koine": "ὅσος",
+    "english_raw": "as great, how great; as far,",
+    "freq": 110,
+    "english": "as great, how great; as far,"
+  },
+  {
+    "id": "273",
+    "koine": "ὅστις, ἥτις, ὅτι",
+    "english_raw": "whoever; such a one; who",
+    "freq": 154,
+    "english": "whoever; such a one; who"
+  },
+  {
+    "id": "274",
+    "koine": "ὅταν",
+    "english_raw": "whenever, when (+sbjnctv)",
+    "freq": 123,
+    "english": "whenever, when (+sbjnctv)"
+  },
+  {
+    "id": "275",
+    "koine": "ὅτε",
+    "english_raw": "when, while, as long as",
+    "freq": 102,
+    "english": "when, while, as long as"
+  },
+  {
+    "id": "276",
+    "koine": "ὅτι",
+    "english_raw": "because, that",
+    "freq": 1285,
+    "english": "because, that"
+  },
+  {
+    "id": "277",
+    "koine": "οὐ, οὐκ, οὐχ",
+    "english_raw": "not",
+    "freq": 1619,
+    "english": "not"
+  },
+  {
+    "id": "278",
+    "koine": "οὐαί",
+    "english_raw": "woe! horrible! no way!",
+    "freq": 45,
+    "english": "woe! horrible! no way!"
+  },
+  {
+    "id": "279",
+    "koine": "οὐδέ",
+    "english_raw": "and not, but not; not even",
+    "freq": 139,
+    "english": "and not, but not; not even"
+  },
+  {
+    "id": "280",
+    "koine": "οὐδείς, -μία, -έν",
+    "english_raw": "no one",
+    "freq": 226,
+    "english": "no one"
+  },
+  {
+    "id": "281",
+    "koine": "οὐκέτι",
+    "english_raw": "no longer",
+    "freq": 48,
+    "english": "no longer"
+  },
+  {
+    "id": "282",
+    "koine": "οὖν",
+    "english_raw": "therefore, then",
+    "freq": 493,
+    "english": "therefore, then"
+  },
+  {
+    "id": "283",
+    "koine": "οὐρανος, ὁ",
+    "english_raw": "heaven",
+    "freq": 272,
+    "tag": "noun",
+    "english": "heaven"
+  },
+  {
+    "id": "284",
+    "koine": "οὔς, τό",
+    "english_raw": "ear",
+    "freq": 36,
+    "english": "ear"
+  },
+  {
+    "id": "285",
+    "koine": "οὔτε",
+    "english_raw": "neither – nor",
+    "freq": 91,
+    "english": "neither – nor"
+  },
+  {
+    "id": "286",
+    "koine": "οὗτος",
+    "english_raw": "this",
+    "freq": 1388,
+    "english": "this"
+  },
+  {
+    "id": "287",
+    "koine": "οὕτως",
+    "english_raw": "thus, so",
+    "freq": 208,
+    "english": "thus, so"
+  },
+  {
+    "id": "288",
+    "koine": "οὐχί",
+    "english_raw": "not, no",
+    "freq": 53,
+    "english": "not, no"
+  },
+  {
+    "id": "289",
+    "koine": "ὀφείλω",
+    "english_raw": "owe, have a debt",
+    "freq": 35,
+    "tag": "verb",
+    "english": "owe, have a debt"
+  },
+  {
+    "id": "290",
+    "koine": "ὀφθαλμός, ὁ",
+    "english_raw": "eye",
+    "freq": 100,
+    "tag": "noun",
+    "english": "eye"
+  },
+  {
+    "id": "291",
+    "koine": "ὄχλος, ὁ",
+    "english_raw": "crowd",
+    "freq": 174,
+    "tag": "noun",
+    "english": "crowd"
+  },
+  {
+    "id": "292",
+    "koine": "παιδίον, τό",
+    "english_raw": "infant, child",
+    "freq": 52,
+    "english": "infant, child"
+  },
+  {
+    "id": "293",
+    "koine": "πάλιν",
+    "english_raw": "again",
+    "freq": 139,
+    "english": "again"
+  },
+  {
+    "id": "294",
+    "koine": "πάντοτε",
+    "english_raw": "always",
+    "freq": 41,
+    "english": "always"
+  },
+  {
+    "id": "295",
+    "koine": "παρά",
+    "english_raw": "γν: from;",
+    "freq": 191,
+    "english": "γν: from;"
+  },
+  {
+    "id": "296",
+    "koine": "παραβολή, ἡ",
+    "english_raw": "parable",
+    "freq": 50,
+    "tag": "noun",
+    "english": "parable"
+  },
+  {
+    "id": "297",
+    "koine": "παραγίνομαι",
+    "english_raw": "be present",
+    "freq": 36,
+    "tag": "verb",
+    "english": "be present"
+  },
+  {
+    "id": "298",
+    "koine": "παραδίδωμι",
+    "english_raw": "deliver, entrust, commit, pass on",
+    "freq": 120,
+    "forms": "παραδιδόναι",
+    "tag": "verb",
+    "english": "deliver, entrust, commit, pass on"
+  },
+  {
+    "id": "300",
+    "koine": "παρακαλῶ",
+    "english_raw": "summon, request, entreat",
+    "freq": 109,
+    "forms": "παρακαλεῖν",
+    "tag": "verb",
+    "english": "summon, request, entreat"
+  },
+  {
+    "id": "301",
+    "koine": "παραλαμβάνω",
+    "english_raw": "receive, accept",
+    "freq": 49,
+    "tag": "verb",
+    "english": "receive, accept"
+  },
+  {
+    "id": "302",
+    "koine": "παρίστημι",
+    "english_raw": "place beside, present something",
+    "freq": 41,
+    "forms": "παριστάναι",
+    "tag": "verb",
+    "english": "place beside, present something"
+  },
+  {
+    "id": "303",
+    "koine": "παρίσταμαι/παρέστηκα",
+    "english_raw": "be present, stand by, arrive",
+    "forms": "παρίστασθαι/παρεστάναι",
+    "english": "be present, stand by, arrive"
+  },
+  {
+    "id": "304",
+    "koine": "πᾶς, πᾶσα, πᾶν",
+    "english_raw": "all, every",
+    "freq": 1226,
+    "english": "all, every"
+  },
+  {
+    "id": "305",
+    "koine": "πάσχω",
+    "english_raw": "suffer",
+    "freq": 40,
+    "tag": "verb",
+    "english": "suffer"
+  },
+  {
+    "id": "306",
+    "koine": "πατήρ, ὁ",
+    "english_raw": "father",
+    "freq": 415,
+    "tag": "noun",
+    "english": "father"
+  },
+  {
+    "id": "307",
+    "koine": "πείθω",
+    "english_raw": "convince, persuade; depend on, trust in.",
+    "freq": 52,
+    "tag": "verb",
+    "english": "convince, persuade; depend on, trust in."
+  },
+  {
+    "id": "308",
+    "koine": "πειράζω",
+    "english_raw": "tempt, test",
+    "freq": 38,
+    "tag": "verb",
+    "english": "tempt, test"
+  },
+  {
+    "id": "309",
+    "koine": "πέμπω",
+    "english_raw": "send",
+    "freq": 79,
+    "tag": "verb",
+    "english": "send"
+  },
+  {
+    "id": "310",
+    "koine": "πέντε",
+    "english_raw": "five",
+    "freq": 38,
+    "english": "five"
+  },
+  {
+    "id": "311",
+    "koine": "περί",
+    "english_raw": "γν: about, concerning;",
+    "freq": 331,
+    "english": "γν: about, concerning;"
+  },
+  {
+    "id": "312",
+    "koine": "περιπατῶ",
+    "english_raw": "walk",
+    "freq": 95,
+    "forms": "περιπατεῖν",
+    "tag": "verb",
+    "english": "walk"
+  },
+  {
+    "id": "313",
+    "koine": "περισσεύω",
+    "english_raw": "abound, become alot",
+    "freq": 39,
+    "tag": "verb",
+    "english": "abound, become alot"
+  },
+  {
+    "id": "314",
+    "koine": "περιτομή, ἡ",
+    "english_raw": "circumcision",
+    "freq": 35,
+    "tag": "noun",
+    "english": "circumcision"
+  },
+  {
+    "id": "315",
+    "koine": "πίνω",
+    "english_raw": "drink",
+    "freq": 73,
+    "tag": "verb",
+    "english": "drink"
+  },
+  {
+    "id": "316",
+    "koine": "πίπτω",
+    "english_raw": "fall",
+    "freq": 90,
+    "tag": "verb",
+    "english": "fall"
+  },
+  {
+    "id": "317",
+    "koine": "πιστεύω",
+    "english_raw": "believe, entrust",
+    "freq": 241,
+    "tag": "verb",
+    "english": "believe, entrust"
+  },
+  {
+    "id": "318",
+    "koine": "πίστις, ἡ",
+    "english_raw": "faith",
+    "freq": 243,
+    "tag": "noun",
+    "english": "faith"
+  },
+  {
+    "id": "319",
+    "koine": "πιστός",
+    "english_raw": "faithful, believing",
+    "freq": 67,
+    "english": "faithful, believing"
+  },
+  {
+    "id": "320",
+    "koine": "πλανάω",
+    "english_raw": "mislead, deceive",
+    "freq": 39,
+    "forms": "πλανᾶν",
+    "tag": "verb",
+    "english": "mislead, deceive"
+  },
+  {
+    "id": "321",
+    "koine": "πλείων, πλεῖον",
+    "english_raw": "more",
+    "freq": 55,
+    "english": "more"
+  },
+  {
+    "id": "322",
+    "koine": "πληρόω",
+    "english_raw": "fulfill, fill",
+    "freq": 86,
+    "forms": "πληροῦν",
+    "tag": "verb",
+    "english": "fulfill, fill"
+  },
+  {
+    "id": "323",
+    "koine": "πλοῖον, τό",
+    "english_raw": "boat",
+    "freq": 66,
+    "english": "boat"
+  },
+  {
+    "id": "324",
+    "koine": "πνεῦμα, τό",
+    "english_raw": "spirit, wind",
+    "freq": 379,
+    "english": "spirit, wind"
+  },
+  {
+    "id": "325",
+    "koine": "ποιῶ",
+    "english_raw": "do, make",
+    "freq": 565,
+    "forms": "ποιεῖν,",
+    "tag": "verb",
+    "english": "do, make"
+  },
+  {
+    "id": "326",
+    "koine": "πόλις, ἡ",
+    "english_raw": "city",
+    "freq": 161,
+    "tag": "noun",
+    "english": "city"
+  },
+  {
+    "id": "327",
+    "koine": "πολύς",
+    "english_raw": "many, much",
+    "freq": 353,
+    "english": "many, much"
+  },
+  {
+    "id": "328",
+    "koine": "ποτίζω",
+    "english_raw": "water, give a drink",
+    "tag": "verb",
+    "english": "water, give a drink"
+  },
+  {
+    "id": "329",
+    "koine": "πονηρός",
+    "english_raw": "evil, wicked",
+    "freq": 78,
+    "forms": "πονηρά πονηρόν",
+    "english": "evil, wicked"
+  },
+  {
+    "id": "330",
+    "koine": "ποῦ",
+    "english_raw": "where?",
+    "freq": 47,
+    "english": "where?"
+  },
+  {
+    "id": "331",
+    "koine": "πορεύομαι",
+    "english_raw": "go, come",
+    "freq": 150,
+    "tag": "verb",
+    "english": "go, come"
+  },
+  {
+    "id": "332",
+    "koine": "πούς, ὁ",
+    "english_raw": "foot",
+    "freq": 93,
+    "genitive": "ποδός",
+    "tag": "noun",
+    "english": "foot"
+  },
+  {
+    "id": "333",
+    "koine": "πράσσω",
+    "english_raw": "accomplish, do",
+    "freq": 39,
+    "tag": "verb",
+    "english": "accomplish, do"
+  },
+  {
+    "id": "334",
+    "koine": "πρεσβύτερος",
+    "english_raw": "older, elder",
+    "freq": 65,
+    "english": "older, elder"
+  },
+  {
+    "id": "335",
+    "koine": "πρό",
+    "english_raw": "before, in front of (+gn)",
+    "freq": 47,
+    "english": "before, in front of (+gn)"
+  },
+  {
+    "id": "336",
+    "koine": "πρόβατον, τό",
+    "english_raw": "sheep",
+    "freq": 37,
+    "english": "sheep"
+  },
+  {
+    "id": "337",
+    "koine": "πρός",
+    "english_raw": "γν: to the advantage of;",
+    "freq": 696,
+    "english": "γν: to the advantage of;"
+  },
+  {
+    "id": "338",
+    "koine": "προσέρχομαι",
+    "english_raw": "come or go to, approach",
+    "freq": 87,
+    "tag": "verb",
+    "english": "come or go to, approach"
+  },
+  {
+    "id": "339",
+    "koine": "προσευχή, ἡ",
+    "english_raw": "prayer",
+    "freq": 36,
+    "tag": "noun",
+    "english": "prayer"
+  },
+  {
+    "id": "340",
+    "koine": "προσεύχομαι",
+    "english_raw": "pray",
+    "freq": 86,
+    "tag": "verb",
+    "english": "pray"
+  },
+  {
+    "id": "341",
+    "koine": "προσκυνῶ",
+    "english_raw": "worship, prostrate oneself before",
+    "freq": 59,
+    "forms": "προσκυνεῖν,",
+    "tag": "verb",
+    "english": "worship, prostrate oneself before"
+  },
+  {
+    "id": "342",
+    "koine": "πρόσωπον, τό",
+    "english_raw": "face",
+    "freq": 74,
+    "english": "face"
+  },
+  {
+    "id": "343",
+    "koine": "προσφέρω",
+    "english_raw": "bring, offer",
+    "freq": 47,
+    "tag": "verb",
+    "english": "bring, offer"
+  },
+  {
+    "id": "344",
+    "koine": "προφήτης, ὁ",
+    "english_raw": "prophet",
+    "freq": 144,
+    "tag": "noun",
+    "english": "prophet"
+  },
+  {
+    "id": "345",
+    "koine": "πρῶτον",
+    "english_raw": "first, adv.",
+    "freq": 60,
+    "english": "first, adv."
+  },
+  {
+    "id": "346",
+    "koine": "πρῶτος",
+    "english_raw": "first, adj.",
+    "freq": 92,
+    "english": "first, adj."
+  },
+  {
+    "id": "347",
+    "koine": "πύρ, τό",
+    "english_raw": "fire",
+    "freq": 71,
+    "english": "fire"
+  },
+  {
+    "id": "348",
+    "koine": "πῶς",
+    "english_raw": "how? in what way?",
+    "freq": 104,
+    "english": "how? in what way?"
+  },
+  {
+    "id": "349",
+    "koine": "ῥῆμα, τό",
+    "english_raw": "word; thing, object",
+    "freq": 68,
+    "english": "word; thing, object"
+  },
+  {
+    "id": "350",
+    "koine": "σάββατον, τό",
+    "english_raw": "Sabbath",
+    "freq": 68,
+    "english": "Sabbath"
+  },
+  {
+    "id": "351",
+    "koine": "σάρξ, ἡ",
+    "english_raw": "flesh",
+    "freq": 147,
+    "tag": "noun",
+    "english": "flesh"
+  },
+  {
+    "id": "352",
+    "koine": "σεαυτοῦ, -ῆς",
+    "english_raw": "yourself",
+    "freq": 43,
+    "english": "yourself"
+  },
+  {
+    "id": "353",
+    "koine": "σημεῖον, τό",
+    "english_raw": "sign, miracle",
+    "freq": 77,
+    "english": "sign, miracle"
+  },
+  {
+    "id": "354",
+    "koine": "σήμερον",
+    "english_raw": "today",
+    "freq": 41,
+    "english": "today"
+  },
+  {
+    "id": "355",
+    "koine": "σοφία, ἡ",
+    "english_raw": "wisdom",
+    "freq": 51,
+    "tag": "noun",
+    "english": "wisdom"
+  },
+  {
+    "id": "356",
+    "koine": "σπείρω",
+    "english_raw": "sow",
+    "freq": 52,
+    "tag": "verb",
+    "english": "sow"
+  },
+  {
+    "id": "357",
+    "koine": "σπέρμα, τό",
+    "english_raw": "seed",
+    "freq": 44,
+    "english": "seed"
+  },
+  {
+    "id": "358",
+    "koine": "σταυρῶ",
+    "english_raw": "crucify",
+    "freq": 46,
+    "forms": "σταυροῦν",
+    "tag": "verb",
+    "english": "crucify"
+  },
+  {
+    "id": "359",
+    "koine": "στόμα, τό",
+    "english_raw": "mouth",
+    "freq": 78,
+    "english": "mouth"
+  },
+  {
+    "id": "360",
+    "koine": "σύ",
+    "english_raw": "you (sing.)",
+    "freq": 1057,
+    "english": "you (sing.)"
+  },
+  {
+    "id": "361",
+    "koine": "σύν",
+    "english_raw": "with",
+    "freq": 127,
+    "english": "with"
+  },
+  {
+    "id": "362",
+    "koine": "συνάγω",
+    "english_raw": "gather",
+    "freq": 59,
+    "tag": "verb",
+    "english": "gather"
+  },
+  {
+    "id": "363",
+    "koine": "συναγωγή, ἡ",
+    "english_raw": "place of assembly, synagogue",
+    "freq": 56,
+    "tag": "noun",
+    "english": "place of assembly, synagogue"
+  },
+  {
+    "id": "364",
+    "koine": "σῴζω",
+    "english_raw": "save",
+    "freq": 106,
+    "tag": "verb",
+    "english": "save"
+  },
+  {
+    "id": "365",
+    "koine": "σῶμα, τό",
+    "english_raw": "body",
+    "freq": 142,
+    "english": "body"
+  },
+  {
+    "id": "366",
+    "koine": "σωτηρία, ἡ",
+    "english_raw": "salvation, rescue",
+    "freq": 45,
+    "tag": "noun",
+    "english": "salvation, rescue"
+  },
+  {
+    "id": "367",
+    "koine": "τέ",
+    "english_raw": "and,",
+    "freq": 201,
+    "english": "and,"
+  },
+  {
+    "id": "368",
+    "koine": "τέκνον, τό",
+    "english_raw": "child",
+    "freq": 99,
+    "english": "child"
+  },
+  {
+    "id": "369",
+    "koine": "τέλος, τό",
+    "english_raw": "end, purpose",
+    "freq": 41,
+    "english": "end, purpose"
+  },
+  {
+    "id": "370",
+    "koine": "τέσσαρες",
+    "english_raw": "four",
+    "freq": 41,
+    "english": "four"
+  },
+  {
+    "id": "371",
+    "koine": "τηρῶ",
+    "english_raw": "keep, watch",
+    "freq": 70,
+    "forms": "τηρεῖν",
+    "tag": "verb",
+    "english": "keep, watch"
+  },
+  {
+    "id": "372",
+    "koine": "τίθημι",
+    "english_raw": "put, place; make",
+    "freq": 101,
+    "forms": "τιθέναι",
+    "tag": "verb",
+    "english": "put, place; make"
+  },
+  {
+    "id": "373",
+    "koine": "τιμή, ἡ",
+    "english_raw": "honor, value, price",
+    "freq": 41,
+    "tag": "noun",
+    "english": "honor, value, price"
+  },
+  {
+    "id": "374",
+    "koine": "τις, τι",
+    "english_raw": "someone, anyone",
+    "freq": 518,
+    "english": "someone, anyone"
+  },
+  {
+    "id": "375",
+    "koine": "τίς, τί",
+    "english_raw": "who? what?",
+    "freq": 552,
+    "english": "who? what?"
+  },
+  {
+    "id": "376",
+    "koine": "τοιοῦτος",
+    "english_raw": "such a kind, such as this",
+    "freq": 56,
+    "english": "such a kind, such as this"
+  },
+  {
+    "id": "377",
+    "koine": "τόπος, ὁ",
+    "english_raw": "place",
+    "freq": 95,
+    "tag": "noun",
+    "english": "place"
+  },
+  {
+    "id": "378",
+    "koine": "τότε",
+    "english_raw": "then",
+    "freq": 159,
+    "english": "then"
+  },
+  {
+    "id": "379",
+    "koine": "τρεῖς, τρία",
+    "english_raw": "three",
+    "freq": 67,
+    "english": "three"
+  },
+  {
+    "id": "380",
+    "koine": "τρίτος",
+    "english_raw": "third",
+    "freq": 48,
+    "english": "third"
+  },
+  {
+    "id": "381",
+    "koine": "τυφλός",
+    "english_raw": "blind",
+    "freq": 50,
+    "english": "blind"
+  },
+  {
+    "id": "382",
+    "koine": "ὕδωρ, τό",
+    "english_raw": "water",
+    "freq": 76,
+    "english": "water"
+  },
+  {
+    "id": "383",
+    "koine": "υἱός, ὁ",
+    "english_raw": "son",
+    "freq": 375,
+    "tag": "noun",
+    "english": "son"
+  },
+  {
+    "id": "384",
+    "koine": "ὑμεῖς",
+    "english_raw": "you (pl.)",
+    "freq": 1830,
+    "english": "you (pl.)"
+  },
+  {
+    "id": "385",
+    "koine": "ὑπάγω",
+    "english_raw": "go away, withdraw",
+    "freq": 79,
+    "forms": "ὑπάγειν",
+    "tag": "verb",
+    "english": "go away, withdraw"
+  },
+  {
+    "id": "386",
+    "koine": "ὑπάρχω",
+    "english_raw": "exist, be present;",
+    "freq": 60,
+    "tag": "verb",
+    "english": "exist, be present;"
+  },
+  {
+    "id": "387",
+    "koine": "τὰ",
+    "english_raw": "ὑπάρχοντα (---) property, possessions",
+    "english": "ὑπάρχοντα (---) property, possessions"
+  },
+  {
+    "id": "388",
+    "koine": "ὑπέρ",
+    "english_raw": "γν: for, in behalf of,",
+    "freq": 149,
+    "english": "γν: for, in behalf of,"
+  },
+  {
+    "id": "389",
+    "koine": "ὑπό",
+    "english_raw": "γν: by;",
+    "freq": 217,
+    "english": "γν: by;"
+  },
+  {
+    "id": "390",
+    "koine": "ὑποστρέφω",
+    "english_raw": "return",
+    "freq": 35,
+    "tag": "verb",
+    "english": "return"
+  },
+  {
+    "id": "391",
+    "koine": "ὑποτάσσω",
+    "english_raw": "subordinate, put under authority",
+    "freq": 38,
+    "tag": "verb",
+    "english": "subordinate, put under authority"
+  },
+  {
+    "id": "392",
+    "koine": "ἔφαγον",
+    "english_raw": "aor of",
+    "freq": 94,
+    "forms": "ἐσθίω eat",
+    "english": "aor of"
+  },
+  {
+    "id": "393",
+    "koine": "φανερῶ",
+    "english_raw": "reveal, make known",
+    "freq": 49,
+    "forms": "φανεροῦν,",
+    "tag": "verb",
+    "english": "reveal, make known"
+  },
+  {
+    "id": "394",
+    "koine": "φημί",
+    "english_raw": "say, affirm",
+    "freq": 66,
+    "english": "say, affirm"
+  },
+  {
+    "id": "395",
+    "koine": "φέρω",
+    "english_raw": "bear, bring, carry",
+    "freq": 68,
+    "tag": "verb",
+    "english": "bear, bring, carry"
+  },
+  {
+    "id": "396",
+    "koine": "φοβοῦμαι",
+    "english_raw": "fear",
+    "freq": 95,
+    "forms": "φοβεῖσθαι,",
+    "tag": "verb",
+    "english": "fear"
+  },
+  {
+    "id": "397",
+    "koine": "φόβος",
+    "english_raw": "fear",
+    "freq": 47,
+    "english": "fear"
+  },
+  {
+    "id": "398",
+    "koine": "φυλακή, ἡ",
+    "english_raw": "prison, guard post",
+    "freq": 46,
+    "tag": "noun",
+    "english": "prison, guard post"
+  },
+  {
+    "id": "399",
+    "koine": "φωνῶ",
+    "english_raw": "call",
+    "freq": 42,
+    "forms": "φωνεῖν,",
+    "tag": "verb",
+    "english": "call"
+  },
+  {
+    "id": "400",
+    "koine": "φωνή, ἡ",
+    "english_raw": "voice, sound",
+    "freq": 137,
+    "tag": "noun",
+    "english": "voice, sound"
+  },
+  {
+    "id": "401",
+    "koine": "φῶς, τό",
+    "english_raw": "light",
+    "freq": 73,
+    "english": "light"
+  },
+  {
+    "id": "402",
+    "koine": "χαίρω",
+    "english_raw": "rejoice",
+    "freq": 74,
+    "tag": "verb",
+    "english": "rejoice"
+  },
+  {
+    "id": "403",
+    "koine": "χαρά, ἡ",
+    "english_raw": "joy",
+    "freq": 59,
+    "tag": "noun",
+    "english": "joy"
+  },
+  {
+    "id": "404",
+    "koine": "χάρις, ἡ",
+    "english_raw": "grace, favor",
+    "freq": 155,
+    "tag": "noun",
+    "english": "grace, favor"
+  },
+  {
+    "id": "405",
+    "koine": "χείρ, ἡ",
+    "english_raw": "hand",
+    "freq": 176,
+    "tag": "noun",
+    "english": "hand"
+  },
+  {
+    "id": "406",
+    "koine": "χρεία, ἡ",
+    "english_raw": "need, what is needed",
+    "freq": 49,
+    "tag": "noun",
+    "english": "need, what is needed"
+  },
+  {
+    "id": "407",
+    "koine": "χρόνος, ὁ",
+    "english_raw": "time",
+    "freq": 54,
+    "tag": "noun",
+    "english": "time"
+  },
+  {
+    "id": "408",
+    "koine": "χωρίς",
+    "english_raw": "without (+γν)",
+    "freq": 41,
+    "english": "without (+γν)"
+  },
+  {
+    "id": "409",
+    "koine": "ψυχή, ἡ",
+    "english_raw": "soul, life",
+    "freq": 101,
+    "tag": "noun",
+    "english": "soul, life"
+  },
+  {
+    "id": "410",
+    "koine": "ὧδε",
+    "english_raw": "here",
+    "freq": 61,
+    "english": "here"
+  },
+  {
+    "id": "411",
+    "koine": "ὥρα, ἡ",
+    "english_raw": "hour, time",
+    "freq": 106,
+    "tag": "noun",
+    "english": "hour, time"
+  },
+  {
+    "id": "412",
+    "koine": "ὡς",
+    "english_raw": "as, when, after, while, about",
+    "freq": 505,
+    "english": "as, when, after, while, about"
+  },
+  {
+    "id": "413",
+    "koine": "ὥσπερ",
+    "english_raw": "just as",
+    "freq": 36,
+    "english": "just as"
+  },
+  {
+    "id": "414",
+    "koine": "ὥστε",
+    "english_raw": "therefore, so that",
+    "freq": 84,
+    "english": "therefore, so that"
+  }
+]

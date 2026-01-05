@@ -1,0 +1,310 @@
+[
+  {
+    "id": "DID-15-L-001",
+    "koine": "χειροτονέω",
+    "english": "appoint, ordain",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-002",
+    "koine": "ἐπίσκοπος",
+    "english": "overseer, bishop",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-003",
+    "koine": "διάκονος",
+    "english": "deacon, servant",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-004",
+    "koine": "ἄξιος",
+    "english": "worthy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-15-L-005",
+    "koine": "πραΰς",
+    "english": "gentle, meek",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-15-L-006",
+    "koine": "ἀφιλάργυρος",
+    "english": "not loving money",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-15-L-007",
+    "koine": "ἀληθής",
+    "english": "true, truthful",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-15-L-008",
+    "koine": "δοκιμάζω",
+    "english": "test, approve",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-009",
+    "koine": "λειτουργέω",
+    "english": "serve, minister",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-010",
+    "koine": "λειτουργία",
+    "english": "service, ministry",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-011",
+    "koine": "προφήτης",
+    "english": "prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-012",
+    "koine": "διδάσκαλος",
+    "english": "teacher",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-013",
+    "koine": "ὑπεροράω",
+    "english": "disregard, look down on",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-014",
+    "koine": "τιμάω",
+    "english": "honor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-015",
+    "koine": "ἐλέγχω",
+    "english": "rebuke, correct",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-016",
+    "koine": "ἀλλήλων",
+    "english": "one another",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ἀντωνυμία"
+    }
+  },
+  {
+    "id": "DID-15-L-017",
+    "koine": "ὀργή",
+    "english": "anger",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-018",
+    "koine": "εἰρήνη",
+    "english": "peace",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-019",
+    "koine": "ἔχω",
+    "english": "have, hold",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-020",
+    "koine": "εὐαγγέλιον",
+    "english": "gospel, good news",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-021",
+    "koine": "ἀστοχέω",
+    "english": "miss the mark, do wrong",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-022",
+    "koine": "λαλέω",
+    "english": "speak, talk",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-023",
+    "koine": "ἀκούω",
+    "english": "hear, listen",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-024",
+    "koine": "μετανοέω",
+    "english": "repent",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-15-L-025",
+    "koine": "εὐχή",
+    "english": "prayer, vow",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-026",
+    "koine": "ἐλεημοσύνη",
+    "english": "alms, charity",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-027",
+    "koine": "πρᾶξις",
+    "english": "deed, action",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-15-L-028",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 15,
+      "pos": "ῥῆμα"
+    }
+  }
+]

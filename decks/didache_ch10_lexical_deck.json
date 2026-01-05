@@ -1,0 +1,497 @@
+[
+  {
+    "id": "DID-10-L-001",
+    "koine": "ἐμπίπλημι",
+    "english": "fill, satisfy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-002",
+    "koine": "εὐχαριστέω",
+    "english": "give thanks",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-003",
+    "koine": "πατήρ",
+    "english": "father",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-004",
+    "koine": "ἅγιος",
+    "english": "holy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-10-L-005",
+    "koine": "ὄνομα",
+    "english": "name",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-006",
+    "koine": "κατασκηνόω",
+    "english": "cause to dwell, tabernacle",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-007",
+    "koine": "καρδία",
+    "english": "heart",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-008",
+    "koine": "γνῶσις",
+    "english": "knowledge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-009",
+    "koine": "πίστις",
+    "english": "faith",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-010",
+    "koine": "ἀθανασία",
+    "english": "immortality",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-011",
+    "koine": "γνωρίζω",
+    "english": "make known",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-012",
+    "koine": "δόξα",
+    "english": "glory",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-013",
+    "koine": "αἰών",
+    "english": "age",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-014",
+    "koine": "κτίζω",
+    "english": "create",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-015",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-016",
+    "koine": "ἄνθρωπος",
+    "english": "human, person",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-017",
+    "koine": "ἀπόλαυσις",
+    "english": "enjoyment",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-018",
+    "koine": "χαρίζομαι",
+    "english": "grant, give freely",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-019",
+    "koine": "πνευματικός",
+    "english": "spiritual",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-10-L-020",
+    "koine": "τροφή",
+    "english": "food",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-021",
+    "koine": "ποτόν",
+    "english": "drink",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-022",
+    "koine": "ζωή",
+    "english": "life",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-023",
+    "koine": "αἰώνιος",
+    "english": "eternal",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-10-L-024",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-025",
+    "koine": "μιμνῄσκομαι",
+    "english": "remember",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-026",
+    "koine": "ἐκκλησία",
+    "english": "assembly, church",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-027",
+    "koine": "ῥύομαι",
+    "english": "rescue, deliver",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-028",
+    "koine": "τελειόω",
+    "english": "perfect, complete",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-029",
+    "koine": "ἀγάπη",
+    "english": "love",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-030",
+    "koine": "συνάγω",
+    "english": "gather",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-031",
+    "koine": "τέσσαρες",
+    "english": "four",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἀριθμητικόν"
+    }
+  },
+  {
+    "id": "DID-10-L-032",
+    "koine": "ἄνεμος",
+    "english": "wind",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-033",
+    "koine": "ἑτοιμάζω",
+    "english": "prepare",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-034",
+    "koine": "δύναμις",
+    "english": "power",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-035",
+    "koine": "χάρις",
+    "english": "grace",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-036",
+    "koine": "παρέρχομαι",
+    "english": "pass away",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-037",
+    "koine": "κόσμος",
+    "english": "world",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-038",
+    "koine": "ὡσαννά",
+    "english": "hosanna",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπιφώνημα"
+    }
+  },
+  {
+    "id": "DID-10-L-039",
+    "koine": "ἔρχομαι",
+    "english": "come, go",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-040",
+    "koine": "μετανοέω",
+    "english": "repent",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-041",
+    "koine": "μαραναθά",
+    "english": "maranatha",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπιφώνημα"
+    }
+  },
+  {
+    "id": "DID-10-L-042",
+    "koine": "ἀμήν",
+    "english": "amen",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ἐπιφώνημα"
+    }
+  },
+  {
+    "id": "DID-10-L-043",
+    "koine": "προφήτης",
+    "english": "prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-10-L-044",
+    "koine": "ἐπιτρέπω",
+    "english": "allow, permit",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-10-L-045",
+    "koine": "θέλω",
+    "english": "want, desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 10,
+      "pos": "ῥῆμα"
+    }
+  }
+]

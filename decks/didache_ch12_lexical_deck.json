@@ -1,0 +1,310 @@
+[
+  {
+    "id": "DID-12-L-001",
+    "koine": "δέχομαι",
+    "english": "receive, welcome",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-002",
+    "koine": "δοκιμάζω",
+    "english": "test, examine",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-003",
+    "koine": "γινώσκω",
+    "english": "know, recognize",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-004",
+    "koine": "ἔχω",
+    "english": "have",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-005",
+    "koine": "σύνεσις",
+    "english": "understanding, discernment",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-006",
+    "koine": "δεξιός",
+    "english": "right",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-12-L-007",
+    "koine": "ἀριστερός",
+    "english": "left",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-12-L-008",
+    "koine": "παρόδιος",
+    "english": "passing through, traveler",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-12-L-009",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-010",
+    "koine": "βοηθέω",
+    "english": "help",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-011",
+    "koine": "δύναμαι",
+    "english": "be able, can",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-012",
+    "koine": "μένω",
+    "english": "remain, stay",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-013",
+    "koine": "ἡμέρα",
+    "english": "day",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-014",
+    "koine": "ἀνάγκη",
+    "english": "necessity, need",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-015",
+    "koine": "θέλω",
+    "english": "want, desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-016",
+    "koine": "κάθημαι",
+    "english": "sit, stay",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-017",
+    "koine": "τεχνίτης",
+    "english": "craftsman, tradesman",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-018",
+    "koine": "ἐργάζομαι",
+    "english": "work",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-019",
+    "koine": "ἐσθίω",
+    "english": "eat",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-020",
+    "koine": "τέχνη",
+    "english": "craft, trade, skill",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-021",
+    "koine": "προνοέω",
+    "english": "provide, take care",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-022",
+    "koine": "ἀργός",
+    "english": "idle, lazy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-12-L-023",
+    "koine": "ζάω",
+    "english": "live",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-024",
+    "koine": "χριστιανός",
+    "english": "Christian",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-025",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-026",
+    "koine": "χριστέμπορος",
+    "english": "Christ-peddler, profiteer",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-12-L-027",
+    "koine": "προσέχω",
+    "english": "pay attention, beware",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-12-L-028",
+    "koine": "τοιοῦτος",
+    "english": "such",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 12,
+      "pos": "ἀντωνυμία/ἐπίθετον"
+    }
+  }
+]

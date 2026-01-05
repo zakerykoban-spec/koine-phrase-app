@@ -1,0 +1,1247 @@
+[
+  {
+    "id": "001",
+    "koine": "χάρις σοι καὶ εἰρήνη",
+    "english": "Grace to you and peace"
+  },
+  {
+    "id": "002",
+    "koine": "χάρις ὑμῖν καὶ εἰρήνη",
+    "english": "Grace to you and peace"
+  },
+  {
+    "id": "003",
+    "koine": "χαίρετε",
+    "english": "Hello (especially in the morning)"
+  },
+  {
+    "id": "004",
+    "koine": "χαῖρε",
+    "english": "Hello (especially in the morning)"
+  },
+  {
+    "id": "005",
+    "koine": "καλόν μοι ἀκούειν τὴν φωνήν σου",
+    "english": "It is good to hear from you"
+  },
+  {
+    "id": "006",
+    "koine": "πληροῖς με εὐφροσύνης μετὰ τοῦ προσώπου σου",
+    "english": "It is nice to meet you"
+  },
+  {
+    "id": "007",
+    "koine": "οἴμμοι",
+    "english": "Alas!"
+  },
+  {
+    "id": "008",
+    "koine": "εὕρηκα",
+    "english": "Eureka! (I have found it!)"
+  },
+  {
+    "id": "009",
+    "koine": "ἰδοὺ πῦρ",
+    "english": "Fire!"
+  },
+  {
+    "id": "010",
+    "koine": "ὦ καλῆς ἡμέρας",
+    "english": "Good day!"
+  },
+  {
+    "id": "011",
+    "koine": "ἰοῦ ἰοῦ",
+    "english": "Hooray! Hooray!"
+  },
+  {
+    "id": "012",
+    "koine": "ἀρίστου ὥρα ἐστίν",
+    "english": "It is mealtime"
+  },
+  {
+    "id": "013",
+    "koine": "πόλλ’ ἀγαθὰ γένοιτό σοι",
+    "english": "Many blessings to you"
+  },
+  {
+    "id": "014",
+    "koine": "ἰοὺ ἰού",
+    "english": "Oh no!"
+  },
+  {
+    "id": "015",
+    "koine": "κακὰ πράγματα",
+    "english": "Terrible circumstances!"
+  },
+  {
+    "id": "016",
+    "koine": "φαῦλα πράγματα",
+    "english": "Terrible circumstances!"
+  },
+  {
+    "id": "017",
+    "koine": "αἰβοῖ",
+    "english": "Ugh!"
+  },
+  {
+    "id": "018",
+    "koine": "εὖ γε",
+    "english": "Well done! / Congratulations!"
+  },
+  {
+    "id": "019",
+    "koine": "χάλαζα μεγάλη ἔρχεται",
+    "english": "A big hailstorm is coming"
+  },
+  {
+    "id": "020",
+    "koine": "ἡμέρα τῆς χιόνος ἐστίν",
+    "english": "It is a snowy day"
+  },
+  {
+    "id": "021",
+    "koine": "σήμερον χειμών ἐστιν",
+    "english": "It is bad weather today"
+  },
+  {
+    "id": "022",
+    "koine": "ψυχρός ἐστίν",
+    "english": "It is cold"
+  },
+  {
+    "id": "023",
+    "koine": "ὄμβρος ἔρχεται",
+    "english": "It is going to rain"
+  },
+  {
+    "id": "024",
+    "koine": "καύσων ἐστιν",
+    "english": "It is hot"
+  },
+  {
+    "id": "025",
+    "koine": "γίνεται ὄμβρος",
+    "english": "It is raining"
+  },
+  {
+    "id": "026",
+    "koine": "γίνεται ἀνέμος",
+    "english": "It is windy"
+  },
+  {
+    "id": "027",
+    "koine": "ὁ οὐρανὸς τῇ καθαριότητι ἐστίν",
+    "english": "The sky is clear"
+  },
+  {
+    "id": "028",
+    "koine": "εὐδία ἐστίν",
+    "english": "The weather is nice"
+  },
+  {
+    "id": "029",
+    "koine": "γίνονται ἀστραπαὶ καὶ βρονταί",
+    "english": "There is lightning and thunder"
+  },
+  {
+    "id": "030",
+    "koine": "πεινῇς;",
+    "english": "Are you hungry?"
+  },
+  {
+    "id": "031",
+    "koine": "γαμεῖς;",
+    "english": "Are you married?"
+  },
+  {
+    "id": "032",
+    "koine": "διψᾷς;",
+    "english": "Are you thirsty?"
+  },
+  {
+    "id": "033",
+    "koine": "Ἑλληνιστὶ γινώσκεις;",
+    "english": "Do you know/speak Greek?"
+  },
+  {
+    "id": "034",
+    "koine": "πῶς ἔχεις;",
+    "english": "How are you?"
+  },
+  {
+    "id": "035",
+    "koine": "πῶς ἔχετε;",
+    "english": "How are you?"
+  },
+  {
+    "id": "036",
+    "koine": "πυνθάνομαι τὶ παρὰ σοῦ;",
+    "english": "May I ask you something?"
+  },
+  {
+    "id": "037",
+    "koine": "εἰ ἔξεστίν μοι εἰπεῖν τι πρὸς σέ;",
+    "english": "May I say something to you?"
+  },
+  {
+    "id": "038",
+    "koine": "οἶδα / οἴδαμεν",
+    "english": "I / we know (that)"
+  },
+  {
+    "id": "039",
+    "koine": "δοκῶ",
+    "english": "I think (that)"
+  },
+  {
+    "id": "040",
+    "koine": "οὐ δύναται",
+    "english": "It is not possible"
+  },
+  {
+    "id": "041",
+    "koine": "μοι δοκεῖ",
+    "english": "It seems to me"
+  },
+  {
+    "id": "042",
+    "koine": "σπανίως",
+    "english": "Rarely / Seldom"
+  },
+  {
+    "id": "043",
+    "koine": "ἀληθῶς",
+    "english": "Surely / Truly"
+  },
+  {
+    "id": "044",
+    "koine": "ἄχρι τοῦ νῦν",
+    "english": "Until now / up to this point"
+  },
+  {
+    "id": "045",
+    "koine": "οὐκ ὀρθῶς σὺ ποιεῖς",
+    "english": "What you are doing is wrong"
+  },
+  {
+    "id": "046",
+    "koine": "τὸ λοιπόν",
+    "english": "What’s remaining"
+  },
+  {
+    "id": "047",
+    "koine": "πάλιν τε αὖ",
+    "english": "And once again"
+  },
+  {
+    "id": "048",
+    "koine": "καὶ τὰ λοιπά",
+    "english": "Etcetera"
+  },
+  {
+    "id": "049",
+    "koine": "ὡς ἔπος εἰπεῖν",
+    "english": "So to speak"
+  },
+  {
+    "id": "050",
+    "koine": "εἰ μή",
+    "english": "Unless"
+  },
+  {
+    "id": "051",
+    "koine": "καὶ σύ;",
+    "english": "And you?"
+  },
+  {
+    "id": "052",
+    "koine": "σὺ μόνος;",
+    "english": "Are you (traveling) alone?"
+  },
+  {
+    "id": "053",
+    "koine": "ἐμοὶ οὐ λαλεῖς;",
+    "english": "Are you not talking to me?"
+  },
+  {
+    "id": "054",
+    "koine": "πηνίκα ἐστὶν ὥρα τῆς ἡμέρας;",
+    "english": "At what time exactly?"
+  },
+  {
+    "id": "055",
+    "koine": "ἀκούεις;",
+    "english": "Can you hear? / Are you listening?"
+  },
+  {
+    "id": "056",
+    "koine": "ἀκούετε;",
+    "english": "Can you hear? / Are you listening?"
+  },
+  {
+    "id": "057",
+    "koine": "πάλιν;",
+    "english": "Come again?"
+  },
+  {
+    "id": "058",
+    "koine": "ἔχεις ἀδελφὸν ἢ ἀδελφήν;",
+    "english": "Do you have a brother or sister?"
+  },
+  {
+    "id": "059",
+    "koine": "τέκνα ἔχεις;",
+    "english": "Do you have children?"
+  },
+  {
+    "id": "060",
+    "koine": "τί γινώσκεις περὶ … ;",
+    "english": "Do you know about … ?"
+  },
+  {
+    "id": "061",
+    "koine": "δεῖξον ἡμῖν τὴν εἴσοδον τῆς πόλεως",
+    "english": "Show us the way to the city"
+  },
+  {
+    "id": "062",
+    "koine": "ἀνάγγειλόν μοι τὸ ὄνομά σου",
+    "english": "Tell me your name"
+  },
+  {
+    "id": "063",
+    "koine": "τί ἀναγινώσκεις;",
+    "english": "What are you reading?"
+  },
+  {
+    "id": "064",
+    "koine": "τί σπουδάζεις;",
+    "english": "What are you studying?"
+  },
+  {
+    "id": "065",
+    "koine": "τί ποιήσω σοι;",
+    "english": "What can I do for you?"
+  },
+  {
+    "id": "066",
+    "koine": "τί γινώσκεις;",
+    "english": "What do you know?"
+  },
+  {
+    "id": "067",
+    "koine": "τίς σου ἡ ἐργασία ἐστίν;",
+    "english": "What is your job?"
+  },
+  {
+    "id": "068",
+    "koine": "τί ὄνομά σοι;",
+    "english": "What is your name?"
+  },
+  {
+    "id": "069",
+    "koine": "ποῦ ὁ ἀφεδρών ἐστιν;",
+    "english": "Where is the bathroom?"
+  },
+  {
+    "id": "070",
+    "koine": "ὀλίγου",
+    "english": "A little while"
+  },
+  {
+    "id": "071",
+    "koine": "ὡς μικρόν",
+    "english": "A little while"
+  },
+  {
+    "id": "072",
+    "koine": "ἐν μέσῳ",
+    "english": "In the middle"
+  },
+  {
+    "id": "073",
+    "koine": "τῆς ὥρας γίνεται ὀψέ",
+    "english": "It is getting late"
+  },
+  {
+    "id": "074",
+    "koine": "ἐγγὺς τοῦ",
+    "english": "Near the / Next to the"
+  },
+  {
+    "id": "075",
+    "koine": "νῦν",
+    "english": "Now"
+  },
+  {
+    "id": "076",
+    "koine": "ὁ νῦν καιρός",
+    "english": "Now (emphatic)"
+  },
+  {
+    "id": "077",
+    "koine": "κατὰ ἀνατολάς",
+    "english": "To the east"
+  },
+  {
+    "id": "078",
+    "koine": "εἰς ἀριστερόν",
+    "english": "To the left"
+  },
+  {
+    "id": "079",
+    "koine": "κατὰ βορρᾶν",
+    "english": "To the north"
+  },
+  {
+    "id": "080",
+    "koine": "εἰς δεξιόν",
+    "english": "To the right"
+  },
+  {
+    "id": "081",
+    "koine": "κατὰ λίβα",
+    "english": "To the south"
+  },
+  {
+    "id": "082",
+    "koine": "κατὰ δυσμάς",
+    "english": "To the west"
+  },
+  {
+    "id": "083",
+    "koine": "εἰς τὴν αὔριον",
+    "english": "Tomorrow"
+  },
+  {
+    "id": "084",
+    "koine": "μετὰ ταῦτα",
+    "english": "After these things"
+  },
+  {
+    "id": "085",
+    "koine": "μετὰ τοῦτο",
+    "english": "After this"
+  },
+  {
+    "id": "086",
+    "koine": "διὰ τοῦτο",
+    "english": "Because of this"
+  },
+  {
+    "id": "087",
+    "koine": "περὶ δὲ",
+    "english": "Now concerning"
+  },
+  {
+    "id": "088",
+    "koine": "γινώσκεις αὐτόν / αὐτό;",
+    "english": "Do you know him / it?"
+  },
+  {
+    "id": "089",
+    "koine": "γινώσκεις;",
+    "english": "Do you understand?"
+  },
+  {
+    "id": "090",
+    "koine": "γινώσκετε;",
+    "english": "Do you understand?"
+  },
+  {
+    "id": "091",
+    "koine": "θέλεις … ;",
+    "english": "Do you want to … ?"
+  },
+  {
+    "id": "092",
+    "koine": "ἵνα τί;",
+    "english": "For what reason? / Why?"
+  },
+  {
+    "id": "093",
+    "koine": "κατὰ τί γνώσομαι τοῦτο;",
+    "english": "How can I be sure of this?"
+  },
+  {
+    "id": "094",
+    "koine": "πῶς ἦλθες;",
+    "english": "How did you get here?"
+  },
+  {
+    "id": "095",
+    "koine": "ποίᾳ ὁδῷ πορεύσομαι;",
+    "english": "How do I get there?"
+  },
+  {
+    "id": "096",
+    "koine": "πόθεν με γινώσκεις;",
+    "english": "How do you know me?"
+  },
+  {
+    "id": "097",
+    "koine": "πῶς λέγεις … ;",
+    "english": "How do you say … ?"
+  },
+  {
+    "id": "098",
+    "koine": "πῶς ὑμεῖς βλέπετε αὐτόν;",
+    "english": "How does it look to you all?"
+  },
+  {
+    "id": "099",
+    "koine": "πόσος;",
+    "english": "How far?"
+  },
+  {
+    "id": "100",
+    "koine": "ἕως πότε;",
+    "english": "How long?"
+  },
+  {
+    "id": "101",
+    "koine": "ποσάκις;",
+    "english": "How many times?"
+  },
+  {
+    "id": "102",
+    "koine": "πόσοι;",
+    "english": "How many?"
+  },
+  {
+    "id": "103",
+    "koine": "πόσον ὀφείλω;",
+    "english": "How much do I owe?"
+  },
+  {
+    "id": "104",
+    "koine": "πόσα ἔτη ἡμερῶν τῆς ζωῆς σου;",
+    "english": "How old are you?"
+  },
+  {
+    "id": "105",
+    "koine": "πῶς;",
+    "english": "How?"
+  },
+  {
+    "id": "106",
+    "koine": "κἀμέ",
+    "english": "Me too"
+  },
+  {
+    "id": "107",
+    "koine": "ἀληθές;",
+    "english": "Really?"
+  },
+  {
+    "id": "108",
+    "koine": "φῄς … ;",
+    "english": "So you’re saying … ?"
+  },
+  {
+    "id": "109",
+    "koine": "τί ἐρῶ;",
+    "english": "What can / should I say?"
+  },
+  {
+    "id": "110",
+    "koine": "τί εἶπας;",
+    "english": "What did you say?"
+  },
+  {
+    "id": "111",
+    "koine": "τί ἔχεις;",
+    "english": "What do you have?"
+  },
+  {
+    "id": "112",
+    "koine": "τί σὺ ὁρᾷς;",
+    "english": "What do you see?"
+  },
+  {
+    "id": "113",
+    "koine": "τί δοκεῖς;",
+    "english": "What do you think?"
+  },
+  {
+    "id": "114",
+    "koine": "τί;",
+    "english": "What?"
+  },
+  {
+    "id": "115",
+    "koine": "τί θέλεις;",
+    "english": "What do you want?"
+  },
+  {
+    "id": "116",
+    "koine": "τί θέλει τοῦτο εἶναι;",
+    "english": "What does this mean?"
+  },
+  {
+    "id": "117",
+    "koine": "τί δύναται … ;",
+    "english": "What does … mean?"
+  },
+  {
+    "id": "118",
+    "koine": "τί ἄλλο … ;",
+    "english": "What else … ?"
+  },
+  {
+    "id": "119",
+    "koine": "τί τοῦτο ἐποίησας;",
+    "english": "What have you done?"
+  },
+  {
+    "id": "120",
+    "koine": "τί ἐστιν;",
+    "english": "What is it?"
+  },
+  {
+    "id": "121",
+    "koine": "τί ἐστιν τοῦτο;",
+    "english": "What is this?"
+  },
+  {
+    "id": "122",
+    "koine": "πῶς ἀναγινώσκεις;",
+    "english": "What is your interpretation?"
+  },
+  {
+    "id": "123",
+    "koine": "ποταπός … ;",
+    "english": "What kind / What sort of … ?"
+  },
+  {
+    "id": "124",
+    "koine": "πηνίκα μάλιστα;",
+    "english": "What time is it?"
+  },
+  {
+    "id": "125",
+    "koine": "τί πάσχεις;",
+    "english": "What’s the matter / What’s wrong with you?"
+  },
+  {
+    "id": "126",
+    "koine": "τί ἡ χρῆσις τοῦ ἀέρος ἐστίν;",
+    "english": "What’s the temperature?"
+  },
+  {
+    "id": "127",
+    "koine": "τί ποιεῖς;",
+    "english": "What’s up?"
+  },
+  {
+    "id": "128",
+    "koine": "πότε … ;",
+    "english": "When … ?"
+  },
+  {
+    "id": "129",
+    "koine": "ποῦ ἡμεῖς ἀναβαίνομεν;",
+    "english": "Where are we going?"
+  },
+  {
+    "id": "130",
+    "koine": "πόθεν ἔρχῃ;",
+    "english": "Where are you coming from?"
+  },
+  {
+    "id": "131",
+    "koine": "πόθεν εἶ σύ;",
+    "english": "Where are you from?"
+  },
+  {
+    "id": "132",
+    "koine": "ποῦ ὑπάγεις;",
+    "english": "Where are you going?"
+  },
+  {
+    "id": "133",
+    "koine": "ἀπὸ τοῦ προσώπου σου ποῦ φύγω;",
+    "english": "Where can I go to get away from you?"
+  },
+  {
+    "id": "134",
+    "koine": "ποῦ … ;",
+    "english": "Where … ?"
+  },
+  {
+    "id": "135",
+    "koine": "πότερον … ἢ … ;",
+    "english": "Whether … or … ?"
+  },
+  {
+    "id": "136",
+    "koine": "σὺ τίς εἶ;",
+    "english": "Who are you?"
+  },
+  {
+    "id": "137",
+    "koine": "τίς ἐστιν ὁ ἄνθρωπος ἐκεῖνος;",
+    "english": "Who is that person?"
+  },
+  {
+    "id": "138",
+    "koine": "τίς σοι εἶπεν ὅτι … ;",
+    "english": "Who told you … ?"
+  },
+  {
+    "id": "139",
+    "koine": "τίς;",
+    "english": "Who?"
+  },
+  {
+    "id": "140",
+    "koine": "τίνος … ;",
+    "english": "Whose … ?"
+  },
+  {
+    "id": "141",
+    "koine": "διὰ τί;",
+    "english": "Why?"
+  },
+  {
+    "id": "142",
+    "koine": "οὐκ ἔστιν ὧδε",
+    "english": "He / she is not here"
+  },
+  {
+    "id": "143",
+    "koine": "εἰκότως γε",
+    "english": "Most likely"
+  },
+  {
+    "id": "144",
+    "koine": "οὐχί",
+    "english": "No"
+  },
+  {
+    "id": "145",
+    "koine": "μὴ γένοιτο",
+    "english": "No way!"
+  },
+  {
+    "id": "146",
+    "koine": "κάλλιστ᾽, ἐπαινῶ",
+    "english": "No, thank you"
+  },
+  {
+    "id": "147",
+    "koine": "τί γὰρ λυποῦμαι;",
+    "english": "Why are you sad?"
+  },
+  {
+    "id": "148",
+    "koine": "δός μοι ἀπόκρισιν",
+    "english": "Answer me!"
+  },
+  {
+    "id": "149",
+    "koine": "σιωπήσατε",
+    "english": "Be quiet!"
+  },
+  {
+    "id": "150",
+    "koine": "σιώπησον",
+    "english": "Be quiet!"
+  },
+  {
+    "id": "151",
+    "koine": "ἐπίστρεψον",
+    "english": "Come back!"
+  },
+  {
+    "id": "152",
+    "koine": "ἐπιστρέψατε",
+    "english": "Come back!"
+  },
+  {
+    "id": "153",
+    "koine": "δεῦτε ἀριστήσατε",
+    "english": "Come have a meal"
+  },
+  {
+    "id": "154",
+    "koine": "ἔλθε ἐνθάδε",
+    "english": "Come here!"
+  },
+  {
+    "id": "155",
+    "koine": "εἴσελθε μετ᾽ ἐμοῦ καὶ ἄριστησον",
+    "english": "Come, share a meal with me"
+  },
+  {
+    "id": "156",
+    "koine": "διατέλει",
+    "english": "Continue! / Keep doing it!"
+  },
+  {
+    "id": "157",
+    "koine": "διατελεῖτε",
+    "english": "Continue! / Keep doing it!"
+  },
+  {
+    "id": "158",
+    "koine": "μὴ φοβοῦ",
+    "english": "Don’t be afraid!"
+  },
+  {
+    "id": "159",
+    "koine": "συγγνώμην ἔχε",
+    "english": "Forgive me (please)"
+  },
+  {
+    "id": "160",
+    "koine": "χαρίσασθέ μοι τὴν ἀδικίαν ταύτην",
+    "english": "Forgive me for this wrong"
+  },
+  {
+    "id": "161",
+    "koine": "ἀπόστα",
+    "english": "Get out!"
+  },
+  {
+    "id": "162",
+    "koine": "ἀνάπαυσον",
+    "english": "Get some rest!"
+  },
+  {
+    "id": "163",
+    "koine": "ἀναπαύσασθε",
+    "english": "Get some rest!"
+  },
+  {
+    "id": "164",
+    "koine": "ἀνάστηθι",
+    "english": "Get up!"
+  },
+  {
+    "id": "165",
+    "koine": "ἀνάστητε",
+    "english": "Get up!"
+  },
+  {
+    "id": "166",
+    "koine": "δός μοι πιεῖν",
+    "english": "Give me a drink"
+  },
+  {
+    "id": "167",
+    "koine": "ἀπόστηθι",
+    "english": "Go away!"
+  },
+  {
+    "id": "168",
+    "koine": "ἀπόστητε",
+    "english": "Go away!"
+  },
+  {
+    "id": "169",
+    "koine": "ἄγε",
+    "english": "Go on! / Come on!"
+  },
+  {
+    "id": "170",
+    "koine": "πορεύεσθε",
+    "english": "Go!"
+  },
+  {
+    "id": "171",
+    "koine": "πορεύου",
+    "english": "Go!"
+  },
+  {
+    "id": "172",
+    "koine": "νῦν … ἄκουσόν μου",
+    "english": "Listen to me now!"
+  },
+  {
+    "id": "173",
+    "koine": "ἀκούσατε",
+    "english": "Listen!"
+  },
+  {
+    "id": "174",
+    "koine": "ἄκουσον",
+    "english": "Listen!"
+  },
+  {
+    "id": "175",
+    "koine": "ἰδού",
+    "english": "Look!"
+  },
+  {
+    "id": "176",
+    "koine": "ἔχε με παρητημένον",
+    "english": "Please excuse me"
+  },
+  {
+    "id": "177",
+    "koine": "εὐλογητὸς ὁ θεός",
+    "english": "Praise God!"
+  },
+  {
+    "id": "178",
+    "koine": "εὐλογητὸς κύριος",
+    "english": "Praise the Lord!"
+  },
+  {
+    "id": "179",
+    "koine": "σῶσόν με",
+    "english": "Save me!"
+  },
+  {
+    "id": "180",
+    "koine": "κάθισον",
+    "english": "Sit down!"
+  },
+  {
+    "id": "181",
+    "koine": "καθίσατε",
+    "english": "Sit down!"
+  },
+  {
+    "id": "182",
+    "koine": "εἰπέ μοι",
+    "english": "So tell me …"
+  },
+  {
+    "id": "183",
+    "koine": "λέγε μοι",
+    "english": "So tell me …"
+  },
+  {
+    "id": "184",
+    "koine": "παῦσαι",
+    "english": "Stop (yourself)!"
+  },
+  {
+    "id": "185",
+    "koine": "παύσασθε",
+    "english": "Stop (yourselves)!"
+  },
+  {
+    "id": "186",
+    "koine": "παύσατε",
+    "english": "Stop!"
+  },
+  {
+    "id": "187",
+    "koine": "παῦσον",
+    "english": "Stop!"
+  },
+  {
+    "id": "188",
+    "koine": "ἀμήν",
+    "english": "Amen"
+  },
+  {
+    "id": "189",
+    "koine": "ὀρθῶς",
+    "english": "Correct / Straight"
+  },
+  {
+    "id": "190",
+    "koine": "θαυμαστόν",
+    "english": "Excellent!"
+  },
+  {
+    "id": "191",
+    "koine": "μέγεθος ἰδεῶν",
+    "english": "Great idea!"
+  },
+  {
+    "id": "192",
+    "koine": "βοήθησον ἡμῖν",
+    "english": "Help us!"
+  },
+  {
+    "id": "193",
+    "koine": "κακῶς",
+    "english": "Incorrect / Bad"
+  },
+  {
+    "id": "194",
+    "koine": "ἄμελει",
+    "english": "Indeed! / Never mind"
+  },
+  {
+    "id": "195",
+    "koine": "κῦδος",
+    "english": "Kudos! / Glory!"
+  },
+  {
+    "id": "196",
+    "koine": "τάχα",
+    "english": "Maybe"
+  },
+  {
+    "id": "197",
+    "koine": "εἴην",
+    "english": "So far so good!"
+  },
+  {
+    "id": "198",
+    "koine": "ἀληθῶς",
+    "english": "Surely / Truly"
+  },
+  {
+    "id": "199",
+    "koine": "φαῦλα πράγματα",
+    "english": "Terrible circumstances!"
+  },
+  {
+    "id": "200",
+    "koine": "ταῦτά μοι οὐκ ἀρέσκει",
+    "english": "These things do not please me"
+  },
+  {
+    "id": "201",
+    "koine": "ὡς ἡδύ",
+    "english": "Very nice!"
+  },
+  {
+    "id": "202",
+    "koine": "μεῖνόν με μικρόν ἔτι",
+    "english": "Wait a minute"
+  },
+  {
+    "id": "203",
+    "koine": "ὑπομείνατε",
+    "english": "Wait!"
+  },
+  {
+    "id": "204",
+    "koine": "ὑπόμεινον",
+    "english": "Wait!"
+  },
+  {
+    "id": "205",
+    "koine": "ναί",
+    "english": "Yes"
+  },
+  {
+    "id": "206",
+    "koine": "καλῶς ἔχω",
+    "english": "I am (doing) well"
+  },
+  {
+    "id": "207",
+    "koine": "(οὐκ) ἀσθενῶ",
+    "english": "I am (not) sick"
+  },
+  {
+    "id": "208",
+    "koine": "(οὐ) μεταμέλομαι",
+    "english": "I am (not) sorry"
+  },
+  {
+    "id": "209",
+    "koine": "ἐγὼ μόνος εἰμί",
+    "english": "I am alone"
+  },
+  {
+    "id": "210",
+    "koine": "νῦν χαίρω",
+    "english": "I am happy (now)"
+  },
+  {
+    "id": "211",
+    "koine": "ἰδοὺ ἐγώ",
+    "english": "I am here"
+  },
+  {
+    "id": "212",
+    "koine": "πεινῶ",
+    "english": "I am hungry"
+  },
+  {
+    "id": "213",
+    "koine": "αὔριον πορεύομαι",
+    "english": "I am leaving / going tomorrow"
+  },
+  {
+    "id": "214",
+    "koine": "κακῶς ἔχω",
+    "english": "I am not (doing) well"
+  },
+  {
+    "id": "215",
+    "koine": "οὐκ εἰμὶ μόνος",
+    "english": "I am not alone"
+  },
+  {
+    "id": "216",
+    "koine": "οὐχ οὕτως μένω ἐνώπιόν σου",
+    "english": "I am not going to wait for you"
+  },
+  {
+    "id": "217",
+    "koine": "λυποῦμαι",
+    "english": "I am sad"
+  },
+  {
+    "id": "218",
+    "koine": "νυστάζω",
+    "english": "I am sleepy"
+  },
+  {
+    "id": "219",
+    "koine": "διψῶ",
+    "english": "I am thirsty"
+  },
+  {
+    "id": "220",
+    "koine": "κοπιῶ",
+    "english": "I am worn out / tired"
+  },
+  {
+    "id": "221",
+    "koine": "δύναμαι …",
+    "english": "I can …"
+  },
+  {
+    "id": "222",
+    "koine": "οὐ δύναμαι …",
+    "english": "I cannot …"
+  },
+  {
+    "id": "223",
+    "koine": "ἐγὼ ἐκ τῶν … εἰμί",
+    "english": "I come from …"
+  },
+  {
+    "id": "224",
+    "koine": "οὐκ οἶδα",
+    "english": "I do not know"
+  },
+  {
+    "id": "225",
+    "koine": "οὐ φιλέω …",
+    "english": "I do not like …"
+  },
+  {
+    "id": "226",
+    "koine": "οὐ γινώσκω",
+    "english": "I do not understand"
+  },
+  {
+    "id": "227",
+    "koine": "οὐκ ἐπίσταμαι τί λέγεις",
+    "english": "I do not understand what you are saying"
+  },
+  {
+    "id": "228",
+    "koine": "οὐ θέλω …",
+    "english": "I don’t want …"
+  },
+  {
+    "id": "229",
+    "koine": "εὗρον …",
+    "english": "I found …"
+  },
+  {
+    "id": "230",
+    "koine": "ἐρωτήσω σε",
+    "english": "I have a question for you"
+  },
+  {
+    "id": "231",
+    "koine": "ἤμην ἐν τῷ τόπῳ",
+    "english": "I have been / was here before"
+  },
+  {
+    "id": "232",
+    "koine": "αὕτη ἐστίν …",
+    "english": "This is … (fem.)"
+  },
+  {
+    "id": "233",
+    "koine": "οὗτός ἐστιν …",
+    "english": "This is … (masc.)"
+  },
+  {
+    "id": "234",
+    "koine": "γλυκὺς ὕπνος",
+    "english": "Good night"
+  },
+  {
+    "id": "235",
+    "koine": "ἔρρωσθε",
+    "english": "Goodbye / Farewell"
+  },
+  {
+    "id": "236",
+    "koine": "ἔρρωσο",
+    "english": "Goodbye / Farewell"
+  },
+  {
+    "id": "237",
+    "koine": "ἐλπίζω εὐθέως σε ἰδεῖν",
+    "english": "I hope to see you soon"
+  },
+  {
+    "id": "238",
+    "koine": "ἐπλήρωσάς με εὐφροσύνης μετὰ τοῦ προσώπου σου",
+    "english": "It was nice meeting you"
+  },
+  {
+    "id": "239",
+    "koine": "ἑτοίμαζέ μοι ξενίαν",
+    "english": "Prepare a room for me"
+  },
+  {
+    "id": "240",
+    "koine": "εἰσελθόντες εἰς τὸν οἶκόν μου μένετε",
+    "english": "You are welcome to stay at my home"
+  },
+  {
+    "id": "241",
+    "koine": "ἰᾶσθε",
+    "english": "Get well!"
+  },
+  {
+    "id": "242",
+    "koine": "ἴω",
+    "english": "Get well!"
+  },
+  {
+    "id": "243",
+    "koine": "χαίροισ᾽ ἔρχεο",
+    "english": "Happy travels!"
+  },
+  {
+    "id": "244",
+    "koine": "καὶ σοὶ εὐδίης τρίβον ὄλβιον εὔχομαι εἶναι",
+    "english": "I hope you have a good trip"
+  },
+  {
+    "id": "245",
+    "koine": "εὖ σοι γένηται",
+    "english": "May it go well with you"
+  },
+  {
+    "id": "246",
+    "koine": "τοῦτό μοι ἀρέσκει",
+    "english": "My pleasure"
+  },
+  {
+    "id": "247",
+    "koine": "εὐχαριστῶ",
+    "english": "Thank you"
+  },
+  {
+    "id": "248",
+    "koine": "ἀσπάζονται ὑμᾶς",
+    "english": "They send you greetings"
+  },
+  {
+    "id": "249",
+    "koine": "οὐδὲν διαφέρει",
+    "english": "You’re welcome / It’s nothing to me"
+  }
+]

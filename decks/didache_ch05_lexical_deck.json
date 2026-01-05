@@ -1,0 +1,750 @@
+[
+  {
+    "id": "DID-05-L-001",
+    "koine": "θάνατος",
+    "english": "death",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-002",
+    "koine": "ὁδός",
+    "english": "way, path",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-003",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-004",
+    "koine": "πρῶτος",
+    "english": "first",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-005",
+    "koine": "πᾶς",
+    "english": "all, every",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-006",
+    "koine": "πονηρός",
+    "english": "evil",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-007",
+    "koine": "κατάρα",
+    "english": "curse",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-008",
+    "koine": "μεστός",
+    "english": "full",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-009",
+    "koine": "φόνος",
+    "english": "murder",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-010",
+    "koine": "μοιχεία",
+    "english": "adultery",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-011",
+    "koine": "ἐπιθυμία",
+    "english": "desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-012",
+    "koine": "πορνεία",
+    "english": "sexual immorality",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-013",
+    "koine": "κλοπή",
+    "english": "theft",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-014",
+    "koine": "εἰδωλολατρεία",
+    "english": "idolatry",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-015",
+    "koine": "μαγεία",
+    "english": "magic, sorcery",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-016",
+    "koine": "φαρμακεία",
+    "english": "sorcery",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-017",
+    "koine": "ἁρπαγή",
+    "english": "plunder, robbery",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-018",
+    "koine": "ψευδομαρτυρία",
+    "english": "false testimony",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-019",
+    "koine": "ὑπόκρισις",
+    "english": "hypocrisy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-020",
+    "koine": "διπλοκαρδία",
+    "english": "double-heartedness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-021",
+    "koine": "δόλος",
+    "english": "deceit",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-022",
+    "koine": "ὑπερηφανία",
+    "english": "pride",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-023",
+    "koine": "κακία",
+    "english": "malice, wickedness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-024",
+    "koine": "αὐθάδεια",
+    "english": "self-will",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-025",
+    "koine": "πλεονεξία",
+    "english": "greed",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-026",
+    "koine": "αἰσχρολογία",
+    "english": "foul speech",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-027",
+    "koine": "ζηλοτυπία",
+    "english": "jealousy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-028",
+    "koine": "θρασύτης",
+    "english": "audacity",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-029",
+    "koine": "ὕψος",
+    "english": "loftiness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-030",
+    "koine": "ἀλαζονεία",
+    "english": "boastfulness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-031",
+    "koine": "διώκτης",
+    "english": "persecutor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-032",
+    "koine": "ἀγαθός",
+    "english": "good",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-033",
+    "koine": "μισέω",
+    "english": "hate",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-034",
+    "koine": "ἀλήθεια",
+    "english": "truth",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-035",
+    "koine": "ἀγαπάω",
+    "english": "love",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-036",
+    "koine": "ψεῦδος",
+    "english": "lie, falsehood",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-037",
+    "koine": "γινώσκω",
+    "english": "know",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-038",
+    "koine": "μισθός",
+    "english": "wage, reward",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-039",
+    "koine": "δικαιοσύνη",
+    "english": "righteousness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-040",
+    "koine": "κολλάω",
+    "english": "cling, join",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-041",
+    "koine": "κρίσις",
+    "english": "judgment",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-042",
+    "koine": "δίκαιος",
+    "english": "just, righteous",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-043",
+    "koine": "ἀγρυπνέω",
+    "english": "keep watch",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-044",
+    "koine": "πραΰτης",
+    "english": "gentleness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-045",
+    "koine": "ὑπομονή",
+    "english": "endurance",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-046",
+    "koine": "μάταιος",
+    "english": "vain",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-047",
+    "koine": "διώκω",
+    "english": "pursue, persecute",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-048",
+    "koine": "ἀνταπόδομα",
+    "english": "repayment",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-049",
+    "koine": "ἐλεέω",
+    "english": "have mercy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-050",
+    "koine": "πτωχός",
+    "english": "poor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-051",
+    "koine": "πονέω",
+    "english": "toil, labor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-052",
+    "koine": "καταπονέω",
+    "english": "oppress",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-053",
+    "koine": "ποιέω",
+    "english": "make, do",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-054",
+    "koine": "Θεός",
+    "english": "God",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-055",
+    "koine": "φονεύς",
+    "english": "murderer",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-056",
+    "koine": "τέκνον",
+    "english": "child",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-057",
+    "koine": "φθορεύς",
+    "english": "destroyer",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-058",
+    "koine": "πλάσμα",
+    "english": "creature, thing formed",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-059",
+    "koine": "ἀποστρέφω",
+    "english": "turn away",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-060",
+    "koine": "ἐνδέομαι",
+    "english": "be in need",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-061",
+    "koine": "θλίβω",
+    "english": "afflict",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-05-L-062",
+    "koine": "πλούσιος",
+    "english": "rich",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-063",
+    "koine": "παράκλητος",
+    "english": "advocate, helper",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-064",
+    "koine": "πενής",
+    "english": "poor, needy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-065",
+    "koine": "ἄνομος",
+    "english": "lawless",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-066",
+    "koine": "κριτής",
+    "english": "judge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-05-L-067",
+    "koine": "πανθαμάρτητος",
+    "english": "altogether sinful",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-05-L-068",
+    "koine": "ῥύομαι",
+    "english": "rescue, deliver",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 5,
+      "pos": "ῥῆμα"
+    }
+  }
+]

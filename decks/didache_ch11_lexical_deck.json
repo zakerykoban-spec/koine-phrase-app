@@ -1,0 +1,387 @@
+[
+  {
+    "id": "DID-11-L-001",
+    "koine": "διδάσκω",
+    "english": "teach",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-002",
+    "koine": "δέχομαι",
+    "english": "receive, welcome",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-003",
+    "koine": "καταλύω",
+    "english": "destroy, dismantle",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-004",
+    "koine": "ἀκούω",
+    "english": "hear, listen",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-005",
+    "koine": "προστίθημι",
+    "english": "add",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-006",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-007",
+    "koine": "μένω",
+    "english": "remain, stay",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-008",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-009",
+    "koine": "λαμβάνω",
+    "english": "take, receive",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-010",
+    "koine": "αὐλίζομαι",
+    "english": "lodge, spend the night",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-011",
+    "koine": "αἰτέω",
+    "english": "ask, request",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-012",
+    "koine": "πειράζω",
+    "english": "test, try",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-013",
+    "koine": "διακρίνω",
+    "english": "discern, judge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-014",
+    "koine": "ἀφίημι",
+    "english": "forgive, release",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-015",
+    "koine": "ἔχω",
+    "english": "have, hold",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-016",
+    "koine": "γινώσκω",
+    "english": "know, recognize",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-017",
+    "koine": "ἐσθίω",
+    "english": "eat",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-018",
+    "koine": "πονέω",
+    "english": "toil, work",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-019",
+    "koine": "κρίνω",
+    "english": "judge",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-020",
+    "koine": "λέγω",
+    "english": "say",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-021",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-11-L-022",
+    "koine": "διδαχή",
+    "english": "teaching",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-023",
+    "koine": "ἀπόστολος",
+    "english": "apostle, messenger",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-024",
+    "koine": "προφήτης",
+    "english": "prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-025",
+    "koine": "ψευδοπροφήτης",
+    "english": "false prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-026",
+    "koine": "δόγμα",
+    "english": "teaching, decree",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-027",
+    "koine": "εὐαγγέλιον",
+    "english": "gospel, good news",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-028",
+    "koine": "ἄρτος",
+    "english": "bread",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-029",
+    "koine": "ἀργύριον",
+    "english": "silver, money",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-030",
+    "koine": "πνεῦμα",
+    "english": "spirit",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-031",
+    "koine": "ἁμαρτία",
+    "english": "sin",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-032",
+    "koine": "τρόπος",
+    "english": "way, manner",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-033",
+    "koine": "τράπεζα",
+    "english": "table",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-034",
+    "koine": "ἀλήθεια",
+    "english": "truth",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-11-L-035",
+    "koine": "κρίσις",
+    "english": "judgment",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 11,
+      "pos": "ὄνομα"
+    }
+  }
+]

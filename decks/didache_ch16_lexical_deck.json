@@ -1,0 +1,772 @@
+[
+  {
+    "id": "DID-16-L-001",
+    "koine": "γρηγορέω",
+    "english": "be watchful, stay awake",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-002",
+    "koine": "ζωή",
+    "english": "life",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-003",
+    "koine": "λύχνος",
+    "english": "lamp",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-004",
+    "koine": "σβέννυμι",
+    "english": "extinguish, quench",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-005",
+    "koine": "ὀσφῦς",
+    "english": "waist, loins",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-006",
+    "koine": "ἐκλύω",
+    "english": "loosen, weaken",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-007",
+    "koine": "γίνομαι",
+    "english": "become, be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-008",
+    "koine": "ἕτοιμος",
+    "english": "ready, prepared",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-16-L-009",
+    "koine": "οἶδα",
+    "english": "know",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-010",
+    "koine": "ὥρα",
+    "english": "hour, time",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-011",
+    "koine": "ἔρχομαι",
+    "english": "come, go",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-012",
+    "koine": "πυκνῶς",
+    "english": "frequently, earnestly",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-16-L-013",
+    "koine": "συνάγω",
+    "english": "gather, assemble",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-014",
+    "koine": "ζητέω",
+    "english": "seek",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-015",
+    "koine": "ἀνήκω",
+    "english": "belong, be fitting",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-016",
+    "koine": "ψυχή",
+    "english": "soul, life",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-017",
+    "koine": "ὠφελέω",
+    "english": "benefit, help",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-018",
+    "koine": "χρόνος",
+    "english": "time",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-019",
+    "koine": "πίστις",
+    "english": "faith",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-020",
+    "koine": "ἔσχατος",
+    "english": "last, final",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-16-L-021",
+    "koine": "καιρός",
+    "english": "season, time",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-022",
+    "koine": "τελειόω",
+    "english": "perfect, complete",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-023",
+    "koine": "πληθύνω",
+    "english": "multiply, increase",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-024",
+    "koine": "ψευδοπροφήτης",
+    "english": "false prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-025",
+    "koine": "φθορεύς",
+    "english": "corruptor, destroyer",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-026",
+    "koine": "στρέφω",
+    "english": "turn",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-027",
+    "koine": "πρόβατον",
+    "english": "sheep",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-028",
+    "koine": "λύκος",
+    "english": "wolf",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-029",
+    "koine": "ἀγάπη",
+    "english": "love",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-030",
+    "koine": "μῖσος",
+    "english": "hatred",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-031",
+    "koine": "αὐξάνω",
+    "english": "increase, grow",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-032",
+    "koine": "ἀνομία",
+    "english": "lawlessness",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-033",
+    "koine": "μισέω",
+    "english": "hate",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-034",
+    "koine": "διώκω",
+    "english": "pursue, persecute",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-035",
+    "koine": "παραδίδωμι",
+    "english": "hand over, betray",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-036",
+    "koine": "φαίνω",
+    "english": "appear, show",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-037",
+    "koine": "κοσμοπλάνος",
+    "english": "world-deceiver",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-038",
+    "koine": "ποιέω",
+    "english": "do, make",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-039",
+    "koine": "σημεῖον",
+    "english": "sign",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-040",
+    "koine": "τέρας",
+    "english": "wonder, portent",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-041",
+    "koine": "γῆ",
+    "english": "earth, land",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-042",
+    "koine": "χείρ",
+    "english": "hand",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-043",
+    "koine": "ἀθέμιτος",
+    "english": "unlawful",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-16-L-044",
+    "koine": "οὐδέποτε",
+    "english": "never",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-16-L-045",
+    "koine": "αἰών",
+    "english": "age, eternity",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-046",
+    "koine": "ἥκω",
+    "english": "come, arrive",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-047",
+    "koine": "κτίσις",
+    "english": "creation",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-048",
+    "koine": "πύρωσις",
+    "english": "burning, refining",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-049",
+    "koine": "δοκιμασία",
+    "english": "testing, trial",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-050",
+    "koine": "σκανδαλίζω",
+    "english": "cause to stumble, offend",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-051",
+    "koine": "ἀπόλλυμι",
+    "english": "destroy, perish",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-052",
+    "koine": "ὑπομένω",
+    "english": "endure, remain",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-053",
+    "koine": "σῴζω",
+    "english": "save",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-054",
+    "koine": "κατάθεμα",
+    "english": "curse, accursed thing/one",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-055",
+    "koine": "ἀλήθεια",
+    "english": "truth",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-056",
+    "koine": "πρῶτον",
+    "english": "first",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-16-L-057",
+    "koine": "ἐκπέτασις",
+    "english": "outspreading, unfolding",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-058",
+    "koine": "οὐρανός",
+    "english": "heaven, sky",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-059",
+    "koine": "εἶτα",
+    "english": "then",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-16-L-060",
+    "koine": "φωνή",
+    "english": "voice, sound",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-061",
+    "koine": "σάλπιγξ",
+    "english": "trumpet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-062",
+    "koine": "τρίτον",
+    "english": "third",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-16-L-063",
+    "koine": "ἀνάστασις",
+    "english": "resurrection",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-064",
+    "koine": "νεκρός",
+    "english": "dead",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίθετον/ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-065",
+    "koine": "λέγω",
+    "english": "say, speak",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-066",
+    "koine": "ἅγιος",
+    "english": "holy, saint",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ἐπίθετον/ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-067",
+    "koine": "ὁράω",
+    "english": "see",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-16-L-068",
+    "koine": "κόσμος",
+    "english": "world",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-069",
+    "koine": "κύριος",
+    "english": "lord, master",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-16-L-070",
+    "koine": "νεφέλη",
+    "english": "cloud",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 16,
+      "pos": "ὄνομα"
+    }
+  }
+]

@@ -1,0 +1,409 @@
+[
+  {
+    "id": "DID-08-L-001",
+    "koine": "νηστεία",
+    "english": "fasting, fast",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-002",
+    "koine": "νηστεύω",
+    "english": "fast",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-003",
+    "koine": "ὑποκριτής",
+    "english": "hypocrite",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-004",
+    "koine": "δεύτερος",
+    "english": "second",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-08-L-005",
+    "koine": "σάββατον",
+    "english": "Sabbath, week",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-006",
+    "koine": "πέμπτος",
+    "english": "fifth",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-08-L-007",
+    "koine": "τετράς",
+    "english": "the fourth day, Wednesday",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-008",
+    "koine": "παρασκευή",
+    "english": "preparation day, Friday",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-009",
+    "koine": "προσεύχομαι",
+    "english": "pray",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-010",
+    "koine": "κελεύω",
+    "english": "command",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-011",
+    "koine": "εὐαγγέλιον",
+    "english": "gospel",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-012",
+    "koine": "πατήρ",
+    "english": "father",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-013",
+    "koine": "οὐρανός",
+    "english": "heaven",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-014",
+    "koine": "ἁγιάζω",
+    "english": "sanctify, make holy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-015",
+    "koine": "ὄνομα",
+    "english": "name",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-016",
+    "koine": "ἔρχομαι",
+    "english": "come, go",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-017",
+    "koine": "βασιλεία",
+    "english": "kingdom",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-018",
+    "koine": "γίνομαι",
+    "english": "become, happen",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-019",
+    "koine": "θέλημα",
+    "english": "will, desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-020",
+    "koine": "γῆ",
+    "english": "earth, land",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-021",
+    "koine": "ἄρτος",
+    "english": "bread",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-022",
+    "koine": "ἐπιούσιος",
+    "english": "daily, for the coming day",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-08-L-023",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-024",
+    "koine": "σήμερον",
+    "english": "today",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-08-L-025",
+    "koine": "ἀφίημι",
+    "english": "forgive, leave",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-026",
+    "koine": "ὀφειλή",
+    "english": "debt",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-027",
+    "koine": "ὀφειλέτης",
+    "english": "debtor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-028",
+    "koine": "εἰσφέρω",
+    "english": "bring in, lead into",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-029",
+    "koine": "πειρασμός",
+    "english": "test, temptation",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-030",
+    "koine": "ῥύομαι",
+    "english": "rescue, deliver",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-08-L-031",
+    "koine": "πονηρός",
+    "english": "evil",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-08-L-032",
+    "koine": "δύναμις",
+    "english": "power",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-033",
+    "koine": "δόξα",
+    "english": "glory",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-034",
+    "koine": "αἰών",
+    "english": "age",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-035",
+    "koine": "τρίς",
+    "english": "three times",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ἐπίρρημα"
+    }
+  },
+  {
+    "id": "DID-08-L-036",
+    "koine": "ἡμέρα",
+    "english": "day",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-08-L-037",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 8,
+      "pos": "ῥῆμα"
+    }
+  }
+]

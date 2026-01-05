@@ -1,0 +1,343 @@
+[
+  {
+    "id": "DID-13-L-001",
+    "koine": "προφήτης",
+    "english": "prophet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-002",
+    "koine": "ἀληθινός",
+    "english": "true, genuine",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-13-L-003",
+    "koine": "θέλω",
+    "english": "want, desire",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-004",
+    "koine": "κάθημαι",
+    "english": "sit, stay",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-005",
+    "koine": "ἄξιος",
+    "english": "worthy",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-13-L-006",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-007",
+    "koine": "τροφή",
+    "english": "food, sustenance",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-008",
+    "koine": "διδάσκαλος",
+    "english": "teacher",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-009",
+    "koine": "ἐργάτης",
+    "english": "worker, laborer",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-010",
+    "koine": "ἀπαρχή",
+    "english": "firstfruits, first portion",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-011",
+    "koine": "γέννημα",
+    "english": "produce, harvest",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-012",
+    "koine": "ληνός",
+    "english": "winepress",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-013",
+    "koine": "ἅλων",
+    "english": "threshing floor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-014",
+    "koine": "βοῦς",
+    "english": "ox, cattle",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-015",
+    "koine": "πρόβατον",
+    "english": "sheep",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-016",
+    "koine": "λαμβάνω",
+    "english": "take, receive",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-017",
+    "koine": "δίδωμι",
+    "english": "give",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-018",
+    "koine": "ἀρχιερεύς",
+    "english": "chief priest, high priest",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-019",
+    "koine": "ἔχω",
+    "english": "have",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-020",
+    "koine": "πτωχός",
+    "english": "poor",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ἐπίθετον/ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-021",
+    "koine": "σιτία",
+    "english": "food, provisions",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-022",
+    "koine": "ποιέω",
+    "english": "make, do",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-023",
+    "koine": "ἐντολή",
+    "english": "command, instruction",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-024",
+    "koine": "κεράμιον",
+    "english": "jar, pot",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-025",
+    "koine": "οἶνος",
+    "english": "wine",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-026",
+    "koine": "ἔλαιον",
+    "english": "olive oil",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-027",
+    "koine": "ἀνοίγω",
+    "english": "open",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-13-L-028",
+    "koine": "ἀργύριον",
+    "english": "silver, money",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-029",
+    "koine": "ἱματισμός",
+    "english": "clothing, garments",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-030",
+    "koine": "κτῆμα",
+    "english": "property, possession",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-13-L-031",
+    "koine": "δοκέω",
+    "english": "seem, think",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 13,
+      "pos": "ῥῆμα"
+    }
+  }
+]

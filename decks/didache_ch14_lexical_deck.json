@@ -1,0 +1,277 @@
+[
+  {
+    "id": "DID-14-L-001",
+    "koine": "κυριακός",
+    "english": "of the Lord, Lord's",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-14-L-002",
+    "koine": "συνάγω",
+    "english": "gather, assemble",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-003",
+    "koine": "κλάω",
+    "english": "break",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-004",
+    "koine": "ἄρτος",
+    "english": "bread",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-005",
+    "koine": "εὐχαριστέω",
+    "english": "give thanks",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-006",
+    "koine": "προσεξομολογέομαι",
+    "english": "confess",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-007",
+    "koine": "παράπτωμα",
+    "english": "trespass, transgression",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-008",
+    "koine": "καθαρός",
+    "english": "clean, pure",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-14-L-009",
+    "koine": "θυσία",
+    "english": "sacrifice, offering",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-010",
+    "koine": "εἰμί",
+    "english": "be",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-011",
+    "koine": "ἔχω",
+    "english": "have, hold",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-012",
+    "koine": "ἀμφιβολία",
+    "english": "dispute, doubt",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-013",
+    "koine": "ἑταῖρος",
+    "english": "companion, fellow",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-014",
+    "koine": "συνέρχομαι",
+    "english": "come together, meet",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-015",
+    "koine": "διαλλάσσω",
+    "english": "reconcile, change",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-016",
+    "koine": "κοινόω",
+    "english": "make common, profane",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-017",
+    "koine": "λέγω",
+    "english": "say, speak",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-018",
+    "koine": "τόπος",
+    "english": "place",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-019",
+    "koine": "χρόνος",
+    "english": "time",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-020",
+    "koine": "προσφέρω",
+    "english": "offer, bring",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ῥῆμα"
+    }
+  },
+  {
+    "id": "DID-14-L-021",
+    "koine": "βασιλεύς",
+    "english": "king",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-022",
+    "koine": "μέγας",
+    "english": "great",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-14-L-023",
+    "koine": "ὄνομα",
+    "english": "name",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  },
+  {
+    "id": "DID-14-L-024",
+    "koine": "θαυμαστός",
+    "english": "wonderful, marvelous",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ἐπίθετον"
+    }
+  },
+  {
+    "id": "DID-14-L-025",
+    "koine": "ἔθνος",
+    "english": "nation, gentile",
+    "meta": {
+      "type": "lexical",
+      "work": "Didache",
+      "chapter": 14,
+      "pos": "ὄνομα"
+    }
+  }
+]
