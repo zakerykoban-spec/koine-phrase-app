@@ -1,3 +1,5 @@
+# password gate enabled
+
 import json
 import random
 from pathlib import Path
