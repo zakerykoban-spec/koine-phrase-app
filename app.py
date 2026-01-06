@@ -6,11 +6,20 @@ from pathlib import Path
 
 import streamlit as st
 
-PASSWORD = st.secrets.get("APP_PASSWORD") if "APP_PASSWORD" in st.secrets else ""
+# -------------------------
+# Password gate (safe locally + secure on Streamlit Cloud)
+# -------------------------
+# Streamlit Cloud provides st.secrets; local runs often do not.
+# If APP_PASSWORD is present in secrets, require it. Otherwise, run normally.
+try:
+    PASSWORD = st.secrets.get("APP_PASSWORD")  # will work on Cloud
+except Exception:
+    PASSWORD = None  # local: no secrets configured
 
 if PASSWORD:
     entered = st.text_input("Password", type="password")
     if entered != PASSWORD:
+        st.error("Incorrect password.")
         st.stop()
 
 # -------------------------
@@ -207,7 +216,6 @@ def render_parse_meta(meta: dict) -> str:
         if v is None:
             return
         used.add(k)
-        # stringify safely
         if isinstance(v, (list, tuple)):
             v = ", ".join(map(str, v))
         else:
@@ -218,7 +226,6 @@ def render_parse_meta(meta: dict) -> str:
         if k in meta:
             add_row(k)
 
-    # Add any remaining keys (stable alphabetical)
     for k in sorted(meta.keys()):
         if k not in used:
             add_row(k)
@@ -226,13 +233,8 @@ def render_parse_meta(meta: dict) -> str:
     if not rows:
         return ""
 
-    # HTML escape minimal (Streamlit will sanitize some, but keep simple)
     def esc(s: str) -> str:
-        return (
-            s.replace("&", "&amp;")
-             .replace("<", "&lt;")
-             .replace(">", "&gt;")
-        )
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     html_rows = "\n".join(
         f"<tr><td class='key'>{esc(k)}</td><td class='val'>{esc(v)}</td></tr>"
@@ -360,8 +362,6 @@ with st.sidebar:
 
         # NEW: show parsing when revealed (usage decks)
         st.session_state.show_parsing = st.toggle("Show parsing on Reveal", value=st.session_state.show_parsing)
-
-    # NOTE: Phrase List must come AFTER we compute filtered; we’ll inject it later
 
     with st.expander("Stats", expanded=False):
         st.write(f"Favorites: **{len(st.session_state.favs)}**")
@@ -695,7 +695,6 @@ with st.container():
 
     st.markdown(f"<div class='greekBig'>{greek or '—'}</div>", unsafe_allow_html=True)
 
-    # Reveal / Hide + display
     show_answer_block = (not flashcard_mode) or st.session_state.revealed
 
     if flashcard_mode:
@@ -709,7 +708,6 @@ with st.container():
         if eng:
             st.markdown(f"<div class='engText'>{eng}</div>", unsafe_allow_html=True)
 
-        # NEW: parsing (only when revealed / or non-flashcard) + toggle enabled
         if st.session_state.show_parsing and meta:
             st.markdown(render_parse_meta(meta), unsafe_allow_html=True)
 
