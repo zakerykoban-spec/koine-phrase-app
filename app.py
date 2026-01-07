@@ -7,6 +7,8 @@ from pathlib import Path
 import os
 import streamlit as st
 
+st.sidebar.warning("RUNNING CODE VERSION: 2026-01-06 v_pw_debug_01")
+
 import platform
 import streamlit as st
 
