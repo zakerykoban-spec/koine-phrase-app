@@ -1,55 +1,87 @@
-# password gate enabled
+# app.py — Koine Flashcards (mobile-first, Streamlit Cloud-safe)
+# Schema: each deck file is a JSON list of objects with keys like:
+# { "id": "0001", "koine": "...", "english": "...", "tag": "...", "audio": "assets/a.mp3", "image":"assets/i.jpg", "meta": {...} }
 
 import json
+import os
 import random
 from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
 
-import os
+
 import streamlit as st
 
-st.sidebar.warning("RUNNING CODE VERSION: 2026-01-06 v_pw_debug_01")
-
-import platform
-import streamlit as st
-
-# ---- Password gate ----
-# Local dev on your Windows PC: no secrets -> no password prompt.
-# Streamlit Cloud (Linux): secrets missing -> show error + stop (so it can't silently bypass).
-IS_WINDOWS = platform.system().lower().startswith("win")
-
-try:
-    PASSWORD = st.secrets["APP_PASSWORD"]  # requires the secret to exist
-except Exception:
-    PASSWORD = None
-    if not IS_WINDOWS:
-        st.error("Cloud secret APP_PASSWORD is missing. Go to Streamlit Cloud → App → Settings → Secrets.")
-        st.stop()
-
-if PASSWORD:
-    entered = st.text_input("Password", type="password")
-    if entered != PASSWORD:
-        st.error("Incorrect password.")
-        st.stop()
 
 # -------------------------
-# App config / files
+# Config / Paths
 # -------------------------
 APP_DIR = Path(__file__).parent
 DECKS_DIR = APP_DIR / "decks"
 FAV_FILE = APP_DIR / "favorites.json"
+STATS_FILE = APP_DIR / "stats.json"
 
-# ---------- UI sizes ----------
-GREEK_SIZE_PX = 80
-ENGLISH_SIZE_PX = 50
-PARSE_SIZE_PX = 28
-CENTER_MAX_WIDTH_PX = 980  # wider now that list is in sidebar
-
-st.set_page_config(page_title="Διάλογοι Ἑλληνιστί", layout="wide")
-st.title("Διάλογοι Ἑλληνιστί")
 
 # -------------------------
-# Global styling (NO background)
+# Password Gate (SAFE)
 # -------------------------
+# Streamlit Cloud: set APP_PASSWORD in App -> Settings -> Secrets
+# Local: either secrets.toml OR environment variable APP_PASSWORD
+def get_app_password() -> str:
+    try:
+        pw = st.secrets.get("APP_PASSWORD", "")
+    except Exception:
+        pw = ""
+    if not pw:
+        pw = os.getenv("APP_PASSWORD", "")
+    return (pw or "").strip()
+
+
+def password_gate():
+    pw = get_app_password()
+    if not pw:
+        return  # dev / open mode
+
+    # keep gate state stable across reruns
+    if "auth_ok" not in st.session_state:
+        st.session_state.auth_ok = False
+
+    if st.session_state.auth_ok:
+        return
+
+    st.markdown("### 🔒 Password")
+    entered = st.text_input("Enter password", type="password")
+    if entered and entered == pw:
+        st.session_state.auth_ok = True
+        st.rerun()
+    st.stop()
+
+
+password_gate()
+
+
+# -------------------------
+# Page config
+# -------------------------
+st.set_page_config(
+    page_title="Διάλογοι Ἑλληνιστί",
+    layout="wide",
+    initial_sidebar_state="collapsed",  # better for iPhone
+)
+
+
+# -------------------------
+# Styling (mobile-first)
+# -------------------------
+GREEK_SIZE_PX_DESKTOP = 80
+ENGLISH_SIZE_PX_DESKTOP = 46
+PARSE_TITLE_PX_DESKTOP = 24
+
+GREEK_SIZE_PX_MOBILE = 54
+ENGLISH_SIZE_PX_MOBILE = 28
+PARSE_TITLE_PX_MOBILE = 20
+
+CENTER_MAX_WIDTH_PX = 980
+
 st.markdown(
     f"""
     <style>
@@ -61,44 +93,55 @@ st.markdown(
         background-color: rgba(245, 243, 238, 0.97);
     }}
 
+    /* Center card */
     .centerWrap {{
         max-width: {CENTER_MAX_WIDTH_PX}px;
         margin: 0 auto;
-        padding: 28px 36px;
+        padding: 18px 18px;
         background: rgba(255, 255, 255, 0.98);
         border-radius: 20px;
         box-shadow: 0 10px 28px rgba(0,0,0,0.08);
     }}
 
+    .subtle {{
+        text-align:center;
+        opacity: 0.75;
+        margin-top: 8px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }}
+
     .greekBig {{
         font-family: "Gentium Plus", "Noto Serif", serif;
-        font-size: {GREEK_SIZE_PX}px;
-        line-height: 1.22;
+        font-size: {GREEK_SIZE_PX_DESKTOP}px;
+        line-height: 1.18;
         font-weight: 650;
         text-align: center;
-        margin-top: 18px;
+        margin-top: 14px;
         color: #1f1f1f;
+        word-wrap: break-word;
     }}
 
     .engText {{
-        font-size: {ENGLISH_SIZE_PX}px;
-        line-height: 1.45;
+        font-size: {ENGLISH_SIZE_PX_DESKTOP}px;
+        line-height: 1.35;
         text-align: center;
-        margin-top: 14px;
+        margin-top: 12px;
         color: #2b2b2b;
         opacity: 0.95;
+        word-wrap: break-word;
     }}
 
     .parseWrap {{
-        margin-top: 16px;
-        padding: 14px 16px;
+        margin-top: 14px;
+        padding: 12px 14px;
         border-radius: 14px;
         background: rgba(245, 243, 238, 0.75);
         border: 1px solid rgba(0,0,0,0.06);
     }}
 
     .parseTitle {{
-        font-size: {PARSE_SIZE_PX}px;
+        font-size: {PARSE_TITLE_PX_DESKTOP}px;
         font-weight: 650;
         color: #1f1f1f;
         margin-bottom: 8px;
@@ -108,7 +151,7 @@ st.markdown(
     table.parseTable {{
         width: 100%;
         border-collapse: collapse;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.3;
     }}
 
@@ -119,7 +162,7 @@ st.markdown(
     }}
 
     table.parseTable td.key {{
-        width: 32%;
+        width: 34%;
         font-weight: 650;
         color: #333;
         white-space: nowrap;
@@ -128,35 +171,71 @@ st.markdown(
     table.parseTable td.val {{
         color: #222;
     }}
+
+    /* Mobile tweaks */
+    @media (max-width: 640px) {{
+        .centerWrap {{
+            padding: 14px 14px;
+            border-radius: 18px;
+        }}
+        .greekBig {{
+            font-size: {GREEK_SIZE_PX_MOBILE}px;
+            margin-top: 10px;
+        }}
+        .engText {{
+            font-size: {ENGLISH_SIZE_PX_MOBILE}px;
+        }}
+        .parseTitle {{
+            font-size: {PARSE_TITLE_PX_MOBILE}px;
+        }}
+        table.parseTable {{
+            font-size: 16px;
+        }}
+        /* Make Streamlit buttons bigger on mobile */
+        div.stButton>button {{
+            padding: 0.85rem 0.85rem !important;
+            font-size: 1.05rem !important;
+            border-radius: 14px !important;
+        }}
+        div[data-testid="stVerticalBlock"] > div:has(> div.stButton) {{
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }}
+    }}
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 
-st.caption("Local decks + flashcards (mastery session • favorites • audio/images-ready).")
+st.title("Διάλογοι Ἑλληνιστί")
+st.caption("Mobile-first Koine flashcards • mastery session • favorites • media-ready")
 
 
 # -------------------------
-# Utilities
+# JSON helpers
+# -------------------------
+def safe_load_json(path: Path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def safe_write_json(path: Path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    tmp.replace(path)
+
+
+# -------------------------
+# Deck loading
 # -------------------------
 def deck_label_from_filename(fn: str) -> str:
     base = fn.replace(".json", "").replace("_", " ")
     return " ".join([w.capitalize() if not w.isdigit() else w for w in base.split()])
 
 
-def safe_load_json(path: Path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def load_deck_file(path: Path):
-    """
-    Loads one deck JSON file (list of dicts).
-    Adds:
-      - namespaced id: "<deckname>:<id>"
-      - deck: <deckname>
-    Keeps any extra keys (e.g., `meta`) intact.
-    """
+def load_deck_file(path: Path) -> List[dict]:
     raw = safe_load_json(path)
     if not isinstance(raw, list):
         raise ValueError(f"{path.name} must be a JSON list of objects.")
@@ -168,10 +247,7 @@ def load_deck_file(path: Path):
             continue
         p = dict(p)
 
-        base_id = str(p.get("id") or f"{i+1:04d}").strip()
-        if not base_id:
-            base_id = f"{i+1:04d}"
-
+        base_id = str(p.get("id") or f"{i+1:04d}").strip() or f"{i+1:04d}"
         p["id"] = f"{deck_name}:{base_id}"
         p["deck"] = deck_name
 
@@ -181,9 +257,7 @@ def load_deck_file(path: Path):
         p["audio"] = (p.get("audio") or "").strip() or None
         p["image"] = (p.get("image") or "").strip() or None
 
-        # normalize meta (optional)
         if "meta" in p and p["meta"] is not None and not isinstance(p["meta"], dict):
-            # if meta is malformed, drop it silently
             p["meta"] = None
 
         if p["koine"] or p["english"]:
@@ -192,15 +266,13 @@ def load_deck_file(path: Path):
     return out
 
 
+# -------------------------
+# Parsing meta renderer
+# -------------------------
 def render_parse_meta(meta: dict) -> str:
-    """
-    Render parsing meta as an HTML table.
-    Prefer a stable order; show remaining keys afterwards.
-    """
     if not meta or not isinstance(meta, dict):
         return ""
 
-    # Preferred key order (Koine labels + a few common fields)
     preferred = [
         "lemma",
         "pos",
@@ -211,7 +283,6 @@ def render_parse_meta(meta: dict) -> str:
         "χρόνος",
         "ἔγκλισις",
         "φωνή",
-        # optional extra keys you might add later:
         "βαθμός",
         "ambiguous",
         "note",
@@ -234,7 +305,6 @@ def render_parse_meta(meta: dict) -> str:
     for k in preferred:
         if k in meta:
             add_row(k)
-
     for k in sorted(meta.keys()):
         if k not in used:
             add_row(k)
@@ -243,7 +313,12 @@ def render_parse_meta(meta: dict) -> str:
         return ""
 
     def esc(s: str) -> str:
-        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        return (
+            str(s)
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+        )
 
     html_rows = "\n".join(
         f"<tr><td class='key'>{esc(k)}</td><td class='val'>{esc(v)}</td></tr>"
@@ -263,7 +338,7 @@ def render_parse_meta(meta: dict) -> str:
 # -------------------------
 # Favorites (persistent)
 # -------------------------
-def load_favs():
+def load_favs() -> Set[str]:
     if not FAV_FILE.exists():
         return set()
     try:
@@ -273,9 +348,8 @@ def load_favs():
         return set()
 
 
-def save_favs(favs):
-    with open(FAV_FILE, "w", encoding="utf-8") as f:
-        json.dump(sorted(list(favs)), f, ensure_ascii=False, indent=2)
+def save_favs(favs: Set[str]):
+    safe_write_json(FAV_FILE, sorted(list(favs)))
 
 
 def toggle_fav(pid: str):
@@ -287,42 +361,80 @@ def toggle_fav(pid: str):
 
 
 # -------------------------
-# Session state
+# Lifetime stats (persistent)
 # -------------------------
-if "favs" not in st.session_state:
-    st.session_state.favs = load_favs()
+# stats.json shape:
+# { "by_id": { "<phrase_id>": {"correct": 12, "incorrect": 3} } }
+def load_stats() -> Dict:
+    if not STATS_FILE.exists():
+        return {"by_id": {}}
+    try:
+        data = safe_load_json(STATS_FILE)
+        if not isinstance(data, dict):
+            return {"by_id": {}}
+        data.setdefault("by_id", {})
+        return data
+    except Exception:
+        return {"by_id": {}}
 
-if "selected_id" not in st.session_state:
-    st.session_state.selected_id = None
 
-if "revealed" not in st.session_state:
-    st.session_state.revealed = False
+def save_stats(stats: Dict):
+    safe_write_json(STATS_FILE, stats)
 
-# Mastery session
-if "in_session" not in st.session_state:
-    st.session_state.in_session = False
-if "queue" not in st.session_state:
-    st.session_state.queue = []
-if "correct" not in st.session_state:
-    st.session_state.correct = set()
-if "incorrect" not in st.session_state:
-    st.session_state.incorrect = set()
-if "repeat_events" not in st.session_state:
-    st.session_state.repeat_events = 0
-if "session_total" not in st.session_state:
-    st.session_state.session_total = 0
-if "finished_summary" not in st.session_state:
-    st.session_state.finished_summary = None
 
-# Media toggles
-if "audio_on" not in st.session_state:
-    st.session_state.audio_on = True
-if "show_media" not in st.session_state:
-    st.session_state.show_media = True
+def bump_stat(pid: str, key: str):
+    stats = st.session_state.stats
+    by_id = stats.setdefault("by_id", {})
+    rec = by_id.setdefault(pid, {"correct": 0, "incorrect": 0})
+    rec[key] = int(rec.get(key, 0)) + 1
+    save_stats(stats)
 
-# Parsing toggle
-if "show_parsing" not in st.session_state:
-    st.session_state.show_parsing = True
+
+# -------------------------
+# Session state init
+# -------------------------
+def ss_init():
+    if "favs" not in st.session_state:
+        st.session_state.favs = load_favs()
+    if "stats" not in st.session_state:
+        st.session_state.stats = load_stats()
+
+    if "selected_id" not in st.session_state:
+        st.session_state.selected_id = None
+    if "revealed" not in st.session_state:
+        st.session_state.revealed = False
+
+    # mastery session
+    if "in_session" not in st.session_state:
+        st.session_state.in_session = False
+    if "queue" not in st.session_state:
+        st.session_state.queue = []
+    if "session_correct" not in st.session_state:
+        st.session_state.session_correct = set()
+    if "session_incorrect" not in st.session_state:
+        st.session_state.session_incorrect = set()
+    if "repeat_events" not in st.session_state:
+        st.session_state.repeat_events = 0
+    if "session_total" not in st.session_state:
+        st.session_state.session_total = 0
+    if "finished_summary" not in st.session_state:
+        st.session_state.finished_summary = None
+
+    # UI toggles
+    if "show_media" not in st.session_state:
+        st.session_state.show_media = True
+    if "audio_on" not in st.session_state:
+        st.session_state.audio_on = True
+    if "show_parsing" not in st.session_state:
+        st.session_state.show_parsing = True
+
+    if "flashcard_mode" not in st.session_state:
+        st.session_state.flashcard_mode = True
+    if "auto_hide_on_next" not in st.session_state:
+        st.session_state.auto_hide_on_next = True
+
+
+ss_init()
 
 
 # -------------------------
@@ -342,61 +454,58 @@ deck_labels = list(deck_options.keys())
 
 
 # -------------------------
-# Sidebar controls
+# Sidebar (nice on desktop; not required on iPhone)
 # -------------------------
 with st.sidebar:
-    st.title("Koine Tools")
+    st.header("Koine Tools")
 
-    with st.expander("Decks", expanded=True):
-        selected_deck_labels = st.multiselect(
-            "Load decks",
-            options=deck_labels,
-            default=[deck_labels[0]],
-        )
-        if not selected_deck_labels:
-            st.warning("Select at least one deck.")
-            st.stop()
-        selected_deck_paths = [deck_options[lbl] for lbl in selected_deck_labels]
-        st.caption("Tip: put decks in the `decks/` folder as JSON lists.")
+    selected_deck_labels = st.multiselect(
+        "Load decks",
+        options=deck_labels,
+        default=[deck_labels[0]],
+    )
+    if not selected_deck_labels:
+        st.warning("Select at least one deck.")
+        st.stop()
 
-    with st.expander("Settings", expanded=True):
-        q = st.text_input("Search (Greek or English)", "")
-        fav_only = st.checkbox("Favorites only", value=False)
+    st.divider()
+    st.subheader("Settings")
+    q = st.text_input("Search (Greek or English)", "")
+    fav_only = st.checkbox("Favorites only", value=False)
 
-        flashcard_mode = st.toggle("Flashcard mode", value=True)
-        auto_hide_on_next = st.toggle("Auto-hide on Next", value=True)
+    st.session_state.flashcard_mode = st.toggle("Flashcard mode", value=st.session_state.flashcard_mode)
+    st.session_state.auto_hide_on_next = st.toggle("Auto-hide on Next", value=st.session_state.auto_hide_on_next)
 
-        repeat_after = st.slider("Repeat incorrect after N cards", 0, 8, 3)
-        st.session_state.show_media = st.toggle("Show media by default", value=st.session_state.show_media)
+    repeat_after = st.slider("Repeat incorrect after N cards", 0, 8, 3)
+    st.session_state.show_media = st.toggle("Show media", value=st.session_state.show_media)
+    st.session_state.show_parsing = st.toggle("Show parsing on Reveal", value=st.session_state.show_parsing)
 
-        # NEW: show parsing when revealed (usage decks)
-        st.session_state.show_parsing = st.toggle("Show parsing on Reveal", value=st.session_state.show_parsing)
+    st.divider()
+    st.subheader("Quick stats")
+    st.write(f"Favorites: **{len(st.session_state.favs)}**")
+    st.write(f"Correct (session): **{len(st.session_state.session_correct)}**")
+    st.write(f"Incorrect (session): **{len(st.session_state.session_incorrect)}**")
+    st.write(f"Queue remaining: **{len(st.session_state.queue)}**")
 
-    with st.expander("Stats", expanded=False):
-        st.write(f"Favorites: **{len(st.session_state.favs)}**")
-        st.write(f"Correct (this session): **{len(st.session_state.correct)}**")
-        st.write(f"Incorrect (this session): **{len(st.session_state.incorrect)}**")
-        st.write(f"Queue remaining: **{len(st.session_state.queue)}**")
-        if st.session_state.in_session:
-            done = st.session_state.session_total - len(st.session_state.queue)
-            st.write(f"Progress: **{done}/{st.session_state.session_total}**")
+    if st.button("🧹 Reset session", use_container_width=True):
+        st.session_state.in_session = False
+        st.session_state.queue = []
+        st.session_state.session_correct = set()
+        st.session_state.session_incorrect = set()
+        st.session_state.repeat_events = 0
+        st.session_state.session_total = 0
+        st.session_state.revealed = False
+        st.session_state.finished_summary = None
+        st.rerun()
 
-        if st.button("🧹 Reset session tracking", use_container_width=True):
-            st.session_state.correct = set()
-            st.session_state.incorrect = set()
-            st.session_state.queue = []
-            st.session_state.in_session = False
-            st.session_state.revealed = False
-            st.session_state.repeat_events = 0
-            st.session_state.session_total = 0
-            st.session_state.finished_summary = None
-            st.rerun()
+
+selected_deck_paths = [deck_options[lbl] for lbl in selected_deck_labels]
 
 
 # -------------------------
-# Load selected decks into phrases
+# Load decks
 # -------------------------
-phrases = []
+phrases: List[dict] = []
 load_errors = []
 for path in selected_deck_paths:
     try:
@@ -414,9 +523,9 @@ if not phrases:
 
 
 # -------------------------
-# Filter logic
+# Filter
 # -------------------------
-def match(p):
+def match(p: dict) -> bool:
     if fav_only and p["id"] not in st.session_state.favs:
         return False
     if q.strip():
@@ -433,21 +542,33 @@ if not filtered:
 id_to_phrase = {p["id"]: p for p in filtered}
 filtered_ids = [p["id"] for p in filtered]
 
-if st.session_state.selected_id not in id_to_phrase:
+
+def ensure_selected_valid():
+    if st.session_state.in_session and st.session_state.queue:
+        pid = st.session_state.queue[0]
+        if pid in id_to_phrase:
+            st.session_state.selected_id = pid
+            return
+
+    if st.session_state.selected_id in id_to_phrase:
+        return
+
     st.session_state.selected_id = filtered_ids[0]
 
+
+ensure_selected_valid()
 selected = id_to_phrase[st.session_state.selected_id]
 
 
 # -------------------------
-# Mastery session helpers
+# Mastery session
 # -------------------------
 def end_session(store_summary=True):
     if store_summary:
         st.session_state.finished_summary = {
             "total": st.session_state.session_total,
-            "correct": len(st.session_state.correct),
-            "incorrect": len(st.session_state.incorrect),
+            "correct": len(st.session_state.session_correct),
+            "incorrect": len(st.session_state.session_incorrect),
             "repeat_events": st.session_state.repeat_events,
         }
     st.session_state.in_session = False
@@ -455,194 +576,112 @@ def end_session(store_summary=True):
     st.session_state.revealed = False
 
 
-def start_mastery_session(ids):
+def start_mastery_session(ids: List[str]):
     st.session_state.queue = list(ids)
     random.shuffle(st.session_state.queue)
-    st.session_state.correct = set()
-    st.session_state.incorrect = set()
+
+    st.session_state.session_correct = set()
+    st.session_state.session_incorrect = set()
     st.session_state.repeat_events = 0
     st.session_state.session_total = len(st.session_state.queue)
     st.session_state.finished_summary = None
 
     st.session_state.in_session = True
     st.session_state.revealed = False
+
     if st.session_state.queue:
         st.session_state.selected_id = st.session_state.queue[0]
 
 
-def reshuffle_session_keep_stats():
-    if not st.session_state.in_session or not st.session_state.queue:
-        return
-    random.shuffle(st.session_state.queue)
-    st.session_state.selected_id = st.session_state.queue[0]
-    st.session_state.revealed = False
+def reshuffle_session():
+    if st.session_state.in_session and st.session_state.queue:
+        random.shuffle(st.session_state.queue)
+        st.session_state.selected_id = st.session_state.queue[0]
+        st.session_state.revealed = False
+
+
+def browse_next():
+    i = filtered_ids.index(st.session_state.selected_id)
+    st.session_state.selected_id = filtered_ids[(i + 1) % len(filtered_ids)]
+    if st.session_state.auto_hide_on_next:
+        st.session_state.revealed = False
+
+
+def browse_prev():
+    i = filtered_ids.index(st.session_state.selected_id)
+    st.session_state.selected_id = filtered_ids[(i - 1) % len(filtered_ids)]
+    if st.session_state.auto_hide_on_next:
+        st.session_state.revealed = False
 
 
 def mark_correct(pid: str):
-    st.session_state.correct.add(pid)
-    st.session_state.incorrect.discard(pid)
+    st.session_state.session_correct.add(pid)
+    st.session_state.session_incorrect.discard(pid)
+    bump_stat(pid, "correct")
 
     if st.session_state.in_session:
         st.session_state.queue = [x for x in st.session_state.queue if x != pid]
         st.session_state.revealed = False
-
         if st.session_state.queue:
             st.session_state.selected_id = st.session_state.queue[0]
         else:
             end_session(store_summary=True)
     else:
-        browse_next_no_rerun()
+        browse_next()
 
 
 def mark_incorrect(pid: str, repeat_after: int):
-    st.session_state.incorrect.add(pid)
-    st.session_state.correct.discard(pid)
+    st.session_state.session_incorrect.add(pid)
+    st.session_state.session_correct.discard(pid)
+    bump_stat(pid, "incorrect")
 
     if st.session_state.in_session:
         st.session_state.repeat_events += 1
-
         qlist = [x for x in st.session_state.queue if x != pid]
         insert_at = min(repeat_after, len(qlist))
         qlist.insert(insert_at, pid)
         st.session_state.queue = qlist
-
         st.session_state.revealed = False
         if st.session_state.queue:
             st.session_state.selected_id = st.session_state.queue[0]
     else:
-        browse_next_no_rerun()
-
-
-def browse_next_no_rerun():
-    i = filtered_ids.index(st.session_state.selected_id)
-    st.session_state.selected_id = filtered_ids[(i + 1) % len(filtered_ids)]
-    if auto_hide_on_next:
-        st.session_state.revealed = False
-
-
-def browse_prev_no_rerun():
-    i = filtered_ids.index(st.session_state.selected_id)
-    st.session_state.selected_id = filtered_ids[(i - 1) % len(filtered_ids)]
-    if auto_hide_on_next:
-        st.session_state.revealed = False
+        browse_next()
 
 
 # -------------------------
-# Sidebar Phrase List (NOW that filtered exists)
+# MOBILE-FRIENDLY top controls (always visible)
 # -------------------------
-with st.sidebar:
-    with st.expander("Phrase List", expanded=False):
-        st.write(f"Showing **{len(filtered)}** results")
-
-        def short(s, n=60):
-            s = s or ""
-            return s if len(s) <= n else s[:n] + "…"
-
-        label_map = {
-            f'{p["id"]} — [{p.get("deck","")}] {short(p.get("koine",""))}': p["id"]
-            for p in filtered
-        }
-        labels = list(label_map.keys())
-
-        current_label = next(
-            (lab for lab, pid in label_map.items() if pid == st.session_state.selected_id),
-            labels[0]
-        )
-
-        choice = st.selectbox("Jump to phrase", labels, index=labels.index(current_label))
-        st.session_state.selected_id = label_map[choice]
-        selected = id_to_phrase[st.session_state.selected_id]
-
-    with st.expander("⭐ Favorites (quick jump)", expanded=False):
-        favs_in_filtered = [pid for pid in filtered_ids if pid in st.session_state.favs]
-        if not favs_in_filtered:
-            st.caption("No favorites in this filtered set.")
-        else:
-            fav_choice = st.selectbox("Jump to favorite", favs_in_filtered)
-            if st.button("Go"):
-                st.session_state.selected_id = fav_choice
-                st.session_state.revealed = False
-                st.rerun()
-
-
-# -------------------------
-# Main area (full width)
-# -------------------------
-# ---- Session controls ----
-top1, top2, top3, top4 = st.columns(4)
-with top1:
-    if st.button("▶ Start Session", use_container_width=True):
-        start_mastery_session(filtered_ids)
-        st.rerun()
-with top2:
-    if st.button("🔀 Reshuffle", use_container_width=True):
-        reshuffle_session_keep_stats()
-        st.rerun()
-with top3:
-    if st.button("⏹ End", use_container_width=True):
-        end_session(store_summary=True)
-        st.rerun()
-with top4:
-    is_fav = st.session_state.selected_id in st.session_state.favs
-    if st.button("★" if is_fav else "☆", use_container_width=True):
-        toggle_fav(st.session_state.selected_id)
-        st.rerun()
-
-# If in session, current card = queue head
-if st.session_state.in_session and st.session_state.queue:
-    st.session_state.selected_id = st.session_state.queue[0]
-    selected = id_to_phrase.get(st.session_state.selected_id, selected)
-
-# ---- Nav / grading row ----
-nav1, nav2, nav3, nav4, nav5 = st.columns([0.18, 0.18, 0.18, 0.23, 0.23])
-
-with nav1:
-    if st.button("⬅", use_container_width=True):
-        if st.session_state.in_session:
-            st.session_state.revealed = not st.session_state.revealed
+top = st.container()
+with top:
+    c1, c2, c3, c4 = st.columns([0.25, 0.25, 0.25, 0.25])
+    with c1:
+        if st.button("▶ Session", use_container_width=True):
+            start_mastery_session(filtered_ids)
             st.rerun()
-        else:
-            browse_prev_no_rerun()
+    with c2:
+        if st.button("🔀 Shuffle", use_container_width=True):
+            reshuffle_session()
+            st.rerun()
+    with c3:
+        if st.button("⏹ End", use_container_width=True):
+            end_session(store_summary=True)
+            st.rerun()
+    with c4:
+        is_fav = st.session_state.selected_id in st.session_state.favs
+        if st.button("★" if is_fav else "☆", use_container_width=True):
+            toggle_fav(st.session_state.selected_id)
             st.rerun()
 
-with nav2:
-    if st.button("➡", use_container_width=True):
-        if st.session_state.in_session:
-            pid = st.session_state.selected_id
-            st.session_state.queue = [x for x in st.session_state.queue if x != pid] + [pid]
-            if auto_hide_on_next:
-                st.session_state.revealed = False
-            st.rerun()
-        else:
-            browse_next_no_rerun()
-            st.rerun()
 
-with nav3:
-    if st.button("🎲", use_container_width=True):
-        st.session_state.selected_id = random.choice(filtered_ids)
-        if auto_hide_on_next:
-            st.session_state.revealed = False
-        st.rerun()
-
-with nav4:
-    if st.button("✅ Correct", use_container_width=True):
-        mark_correct(st.session_state.selected_id)
-        st.rerun()
-
-with nav5:
-    if st.button("❌ Incorrect", use_container_width=True):
-        mark_incorrect(st.session_state.selected_id, repeat_after=repeat_after)
-        st.rerun()
-
-# ---- Session progress + conclusion ----
+# Session progress / summary
 if st.session_state.in_session:
     total = max(1, st.session_state.session_total)
     done = total - len(st.session_state.queue)
     st.progress(done / total)
     st.caption(
         f"Remaining **{len(st.session_state.queue)}** • "
-        f"Correct **{len(st.session_state.correct)}** • "
-        f"Incorrect **{len(st.session_state.incorrect)}** • "
+        f"Correct **{len(st.session_state.session_correct)}** • "
+        f"Incorrect **{len(st.session_state.session_incorrect)}** • "
         f"Repeats **{st.session_state.repeat_events}**"
     )
 
@@ -652,28 +691,33 @@ if (not st.session_state.in_session) and st.session_state.finished_summary:
     accuracy = round(100 * (s["correct"] / total), 1)
 
     st.success("✅ Τέλος τοῦ δέλτου!  (Deck/session complete)")
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total", s["total"])
-    c2.metric("Correct", s["correct"])
-    c3.metric("Incorrect", s["incorrect"])
-    c4.metric("Repeats", s["repeat_events"])
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Total", s["total"])
+    m2.metric("Correct", s["correct"])
+    m3.metric("Incorrect", s["incorrect"])
+    m4.metric("Repeats", s["repeat_events"])
     st.caption(f"Accuracy: **{accuracy}%**")
 
-    colA, colB = st.columns(2)
-    with colA:
+    a, b = st.columns(2)
+    with a:
         if st.button("🔁 Study missed only", use_container_width=True):
-            missed = list(st.session_state.incorrect)
+            missed = list(st.session_state.session_incorrect)
             if missed:
                 start_mastery_session(missed)
                 st.rerun()
             else:
                 st.info("No incorrect items to review.")
-    with colB:
+    with b:
         if st.button("▶ Restart full session", use_container_width=True):
             start_mastery_session(filtered_ids)
             st.rerun()
 
-# ---- Center viewer ----
+
+# -------------------------
+# Viewer card (mobile-first)
+# -------------------------
+selected = id_to_phrase[st.session_state.selected_id]
+
 greek = (selected.get("koine") or "").strip()
 eng = (selected.get("english") or "").strip()
 meta = selected.get("meta") if isinstance(selected.get("meta"), dict) else None
@@ -684,44 +728,107 @@ image_rel = (selected.get("image") or "").strip()
 audio_path = (APP_DIR / audio_rel) if audio_rel else None
 image_path = (APP_DIR / image_rel) if image_rel else None
 
-with st.container():
-    st.markdown("<div class='centerWrap'>", unsafe_allow_html=True)
+st.markdown("<div class='centerWrap'>", unsafe_allow_html=True)
 
-    if st.session_state.show_media and image_path and image_path.exists():
+# media
+if st.session_state.show_media:
+    if image_path and image_path.exists():
         st.image(str(image_path), use_container_width=True)
-    else:
-        st.info("No image yet (later: add `image: images/XXXX.jpg`).")
+    elif image_rel:
+        st.markdown("<p class='subtle'>Image path not found.</p>", unsafe_allow_html=True)
 
-    if st.session_state.show_media and audio_path and audio_path.exists():
+    if audio_path and audio_path.exists():
         a1, a2 = st.columns([0.35, 0.65])
         with a1:
             st.session_state.audio_on = st.toggle("Audio", value=st.session_state.audio_on)
         with a2:
             if st.session_state.audio_on:
                 st.audio(str(audio_path))
-    else:
-        st.toggle("Audio", value=False, disabled=True)
+    elif audio_rel:
+        st.markdown("<p class='subtle'>Audio path not found.</p>", unsafe_allow_html=True)
 
-    st.markdown(f"<div class='greekBig'>{greek or '—'}</div>", unsafe_allow_html=True)
+# greek always
+st.markdown(f"<div class='greekBig'>{greek or '—'}</div>", unsafe_allow_html=True)
 
-    show_answer_block = (not flashcard_mode) or st.session_state.revealed
+show_answer_block = (not st.session_state.flashcard_mode) or st.session_state.revealed
+if show_answer_block:
+    if eng:
+        st.markdown(f"<div class='engText'>{eng}</div>", unsafe_allow_html=True)
+    if st.session_state.show_parsing and meta:
+        st.markdown(render_parse_meta(meta), unsafe_allow_html=True)
 
-    if flashcard_mode:
-        r1, r2, r3 = st.columns([0.33, 0.34, 0.33])
-        with r2:
-            if st.button("👁 Reveal / Hide", use_container_width=True):
-                st.session_state.revealed = not st.session_state.revealed
-                st.rerun()
+st.markdown("</div>", unsafe_allow_html=True)
 
-    if show_answer_block:
-        if eng:
-            st.markdown(f"<div class='engText'>{eng}</div>", unsafe_allow_html=True)
 
-        if st.session_state.show_parsing and meta:
-            st.markdown(render_parse_meta(meta), unsafe_allow_html=True)
+# -------------------------
+# Mobile-friendly action row
+# -------------------------
+# On iPhone these are the main controls.
+b1, b2, b3 = st.columns([0.34, 0.32, 0.34])
+with b1:
+    if st.button("⬅ Prev", use_container_width=True):
+        if st.session_state.in_session:
+            # In session, Prev toggles reveal to avoid confusing queue moves
+            st.session_state.revealed = not st.session_state.revealed
+        else:
+            browse_prev()
+        st.rerun()
+with b2:
+    if st.button("👁 Reveal / Hide", use_container_width=True):
+        st.session_state.revealed = not st.session_state.revealed
+        st.rerun()
+with b3:
+    if st.button("Next ➡", use_container_width=True):
+        if st.session_state.in_session and st.session_state.queue:
+            pid = st.session_state.selected_id
+            # rotate card to end of queue
+            st.session_state.queue = [x for x in st.session_state.queue if x != pid] + [pid]
+            if st.session_state.auto_hide_on_next:
+                st.session_state.revealed = False
+        else:
+            browse_next()
+        st.rerun()
 
-    st.markdown("</div>", unsafe_allow_html=True)
+g1, g2 = st.columns(2)
+with g1:
+    if st.button("✅ Correct", use_container_width=True):
+        mark_correct(st.session_state.selected_id)
+        st.rerun()
+with g2:
+    if st.button("❌ Incorrect", use_container_width=True):
+        mark_incorrect(st.session_state.selected_id, repeat_after=repeat_after)
+        st.rerun()
 
+
+# -------------------------
+# Optional: quick jump (mobile-friendly, no sidebar required)
+# -------------------------
+with st.expander("Jump / Filtered list", expanded=False):
+    st.write(f"Showing **{len(filtered)}** results")
+
+    def short(s: str, n=60) -> str:
+        s = s or ""
+        return s if len(s) <= n else s[:n] + "…"
+
+    labels = [
+        f'{p["id"]} — [{p.get("deck","")}] {short(p.get("koine",""))}'
+        for p in filtered
+    ]
+    label_to_id = {labels[i]: filtered[i]["id"] for i in range(len(filtered))}
+
+    current_label = next((lab for lab in labels if label_to_id[lab] == st.session_state.selected_id), labels[0])
+    idx = labels.index(current_label)
+
+    choice = st.selectbox("Jump to phrase", labels, index=idx)
+    chosen_id = label_to_id[choice]
+    if chosen_id != st.session_state.selected_id:
+        st.session_state.selected_id = chosen_id
+        if st.session_state.auto_hide_on_next:
+            st.session_state.revealed = False
+        st.rerun()
+
+
+# Footer
 st.caption(
     f"Deck: {selected.get('deck','—')} • "
     f"ID: {selected.get('id','')} • "
