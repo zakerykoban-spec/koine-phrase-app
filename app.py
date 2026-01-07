@@ -7,17 +7,15 @@ from pathlib import Path
 import os
 import streamlit as st
 
-# ---- Password gate: enforced on Streamlit Cloud, ignored locally ----
-IS_CLOUD = bool(os.environ.get("STREAMLIT_SERVER_HEADLESS"))  # True on Streamlit Cloud, False locally
+# ---- Password gate: require only when APP_PASSWORD secret exists ----
+try:
+    PASSWORD = st.secrets.get("APP_PASSWORD")
+except Exception:
+    PASSWORD = None  # local run (no secrets configured)
 
-if IS_CLOUD:
-    # On Cloud, require the secret to exist and require the correct password.
-    if "APP_PASSWORD" not in st.secrets:
-        st.error("APP_PASSWORD secret is missing in Streamlit Cloud settings.")
-        st.stop()
-
+if PASSWORD:
     entered = st.text_input("Password", type="password")
-    if entered != st.secrets["APP_PASSWORD"]:
+    if entered != PASSWORD:
         st.error("Incorrect password.")
         st.stop()
 
