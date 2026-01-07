@@ -7,11 +7,21 @@ from pathlib import Path
 import os
 import streamlit as st
 
-# ---- Password gate: require only when APP_PASSWORD secret exists ----
+import platform
+import streamlit as st
+
+# ---- Password gate ----
+# Local dev on your Windows PC: no secrets -> no password prompt.
+# Streamlit Cloud (Linux): secrets missing -> show error + stop (so it can't silently bypass).
+IS_WINDOWS = platform.system().lower().startswith("win")
+
 try:
-    PASSWORD = st.secrets.get("APP_PASSWORD")
+    PASSWORD = st.secrets["APP_PASSWORD"]  # requires the secret to exist
 except Exception:
-    PASSWORD = None  # local run (no secrets configured)
+    PASSWORD = None
+    if not IS_WINDOWS:
+        st.error("Cloud secret APP_PASSWORD is missing. Go to Streamlit Cloud → App → Settings → Secrets.")
+        st.stop()
 
 if PASSWORD:
     entered = st.text_input("Password", type="password")
