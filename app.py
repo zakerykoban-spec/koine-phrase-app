@@ -4,21 +4,20 @@ import json
 import random
 from pathlib import Path
 
+import os
 import streamlit as st
 
-# -------------------------
-# Password gate (safe locally + secure on Streamlit Cloud)
-# -------------------------
-# Streamlit Cloud provides st.secrets; local runs often do not.
-# If APP_PASSWORD is present in secrets, require it. Otherwise, run normally.
-try:
-    PASSWORD = st.secrets.get("APP_PASSWORD")  # will work on Cloud
-except Exception:
-    PASSWORD = None  # local: no secrets configured
+# ---- Password gate: enforced on Streamlit Cloud, ignored locally ----
+IS_CLOUD = bool(os.environ.get("STREAMLIT_SERVER_HEADLESS"))  # True on Streamlit Cloud, False locally
 
-if PASSWORD:
+if IS_CLOUD:
+    # On Cloud, require the secret to exist and require the correct password.
+    if "APP_PASSWORD" not in st.secrets:
+        st.error("APP_PASSWORD secret is missing in Streamlit Cloud settings.")
+        st.stop()
+
     entered = st.text_input("Password", type="password")
-    if entered != PASSWORD:
+    if entered != st.secrets["APP_PASSWORD"]:
         st.error("Incorrect password.")
         st.stop()
 
