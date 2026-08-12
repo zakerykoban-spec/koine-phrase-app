@@ -375,9 +375,9 @@ function App() {
 
           {selectedDeckIds.length === 0 ? (
             <section className="empty-state">
-              <p className="card-eyebrow">Ready when you are</p>
-              <h3>No automatic deck loading.</h3>
-              <p>Choose one or more decks from the library. Your selection will be remembered on this device and restored the next time you open the app.</p>
+              <p className="card-eyebrow">Time to study</p>
+              <h3 lang="grc">Ἀρχώμεθα.</h3>
+              <p>Choose a deck from the library to begin.</p>
               <button type="button" onClick={() => setLibraryOpen(true)}>Open library</button>
             </section>
           ) : visibleCards.length === 0 ? (
