@@ -1,0 +1,13 @@
+.card-actions:has(.quiet-action:not(:disabled)) {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-actions:has(.quiet-action:not(:disabled)) .again-action {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .card-actions:has(.quiet-action:not(:disabled)) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
