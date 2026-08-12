@@ -43,6 +43,7 @@ function App() {
   const [query, setQuery] = useState('')
   const [revealed, setRevealed] = useState(false)
   const [libraryOpen, setLibraryOpen] = useState(false)
+  const [homeOpen, setHomeOpen] = useState(false)
   const [session, setSession] = useState<StudySession | null>(null)
   const [summary, setSummary] = useState<SessionSummary | null>(null)
 
@@ -102,12 +103,22 @@ function App() {
     saveLastCard(activeCard?.id ?? null)
   }, [activeCard?.id])
 
+  function goHome() {
+    setHomeOpen(true)
+    setLibraryOpen(false)
+    setQuery('')
+    setSession(null)
+    setSummary(null)
+    setRevealed(false)
+  }
+
   function toggleDeck(deckId: string) {
     setSelectedDeckIds((current) =>
       current.includes(deckId)
         ? current.filter((id) => id !== deckId)
         : [...current, deckId],
     )
+    setHomeOpen(false)
     setSession(null)
     setSummary(null)
     setRevealed(false)
@@ -115,6 +126,7 @@ function App() {
 
   function clearDecks() {
     setSelectedDeckIds([])
+    setHomeOpen(true)
     setSession(null)
     setSummary(null)
     setCurrentId(null)
@@ -148,6 +160,7 @@ function App() {
     const sourceIds = [...new Set(ids)].filter((id) => cardById.has(id))
     if (sourceIds.length === 0) return
     const queue = shuffle(sourceIds)
+    setHomeOpen(false)
     setSession({
       queue,
       total: sourceIds.length,
@@ -247,7 +260,16 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="brand">
-          <div className="brand-mark" aria-hidden="true"><span>Κ</span></div>
+          <button
+            className="brand-mark"
+            type="button"
+            onClick={goHome}
+            aria-label="Return home"
+            title="Home"
+            style={{ background: 'transparent', padding: 0, cursor: 'pointer' }}
+          >
+            <span>Κ</span>
+          </button>
           <div>
             <p className="brand-kicker">Koine study</p>
             <h1>Διάλογοι Ἑλληνιστί</h1>
@@ -359,7 +381,7 @@ function App() {
           <div className="workspace-toolbar">
             <div>
               <p className="section-label">Active study set</p>
-              <h2>{selectedDeckIds.length ? 'Phrase study' : 'Select a deck to begin'}</h2>
+              <h2>{homeOpen ? 'Koine phrase study' : selectedDeckIds.length ? 'Phrase study' : 'Select a deck to begin'}</h2>
             </div>
             <label className="search-field">
               <span className="visually-hidden">Search Greek or English</span>
@@ -367,13 +389,29 @@ function App() {
                 type="search"
                 placeholder="Search Greek or English…"
                 value={query}
-                disabled={selectedDeckIds.length === 0 || Boolean(session)}
+                disabled={homeOpen || selectedDeckIds.length === 0 || Boolean(session)}
                 onChange={(event) => setQuery(event.target.value)}
               />
             </label>
           </div>
 
-          {selectedDeckIds.length === 0 ? (
+          {homeOpen ? (
+            <section className="empty-state">
+              <p className="card-eyebrow">Time to study</p>
+              <h3 lang="grc">Ἀρχώμεθα.</h3>
+              <p>
+                {selectedDeckIds.length
+                  ? `${selectedDeckIds.length} ${selectedDeckIds.length === 1 ? 'deck is' : 'decks are'} ready when you are.`
+                  : 'Choose a deck from the library to begin.'}
+              </p>
+              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
+                {selectedDeckIds.length > 0 && (
+                  <button type="button" onClick={() => setHomeOpen(false)}>Continue study</button>
+                )}
+                <button type="button" onClick={() => setLibraryOpen(true)}>Open library</button>
+              </div>
+            </section>
+          ) : selectedDeckIds.length === 0 ? (
             <section className="empty-state">
               <p className="card-eyebrow">Time to study</p>
               <h3 lang="grc">Ἀρχώμεθα.</h3>
