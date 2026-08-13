@@ -1,0 +1,21 @@
+/* iPhone / standalone PWA safe-area tuning.
+   Keep the status bar visually separate from the app header while allowing
+   the desktop header to retain its original proportions. */
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .topbar {
+    min-height: 66px;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 12px);
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 14px);
+  }
+}
