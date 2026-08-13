@@ -10,7 +10,6 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: [
         'apple-touch-icon.png',
-        'apple-touch-icon-precomposed.png',
         'koine-icon-192-v2.png',
         'koine-icon-512-v2.png',
         'koine-icon-maskable-512-v2.png',
