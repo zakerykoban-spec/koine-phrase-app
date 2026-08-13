@@ -9,11 +9,10 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: [
-        'icon.svg',
-        'apple-touch-icon.png',
-        'icon-192.png',
-        'icon-512.png',
-        'icon-maskable-512.png',
+        'apple-touch-icon-v2.png',
+        'koine-icon-192-v2.png',
+        'koine-icon-512-v2.png',
+        'koine-icon-maskable-512-v2.png',
       ],
       manifest: {
         name: 'Διάλογοι Ἑλληνιστί',
@@ -27,17 +26,17 @@ export default defineConfig({
         scope: '/koine-phrase-app/',
         icons: [
           {
-            src: 'icon-192.png',
+            src: 'koine-icon-192-v2.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'icon-512.png',
+            src: 'koine-icon-512-v2.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: 'icon-maskable-512.png',
+            src: 'koine-icon-maskable-512-v2.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
