@@ -1,0 +1,1 @@
+canonical iOS icon uses the same generated artwork as apple-touch-icon-v2.png
