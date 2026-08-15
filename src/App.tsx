@@ -1,17 +1,20 @@
-import { useEffect, useMemo, useState } from 'react'
-import { allCards, decks } from './data/decks'
+import { useEffect, useMemo, useState, type ChangeEvent } from 'react'
+import { decks as builtInDecks } from './data/decks'
 import { normalizeMetaEntries } from './lib/greek'
+import { importPhraseDeck } from './lib/importDeck'
 import {
   loadFavorites,
+  loadImportedDecks,
   loadLastCard,
   loadSelectedDecks,
   loadSettings,
   saveFavorites,
+  saveImportedDecks,
   saveLastCard,
   saveSelectedDecks,
   saveSettings,
 } from './lib/storage'
-import type { SessionSummary, StudySession, StudySettings } from './types'
+import type { PhraseDeck, SessionSummary, StudySession, StudySettings } from './types'
 
 function uniqueAdd(items: string[], value: string) {
   return items.includes(value) ? items : [...items, value]
@@ -30,27 +33,38 @@ function shuffle<T>(items: T[]): T[] {
   return next
 }
 
-function App() {
-  const validDeckIds = useMemo(() => new Set(decks.map((deck) => deck.id)), [])
-  const cardById = useMemo(() => new Map(allCards.map((card) => [card.id, card])), [])
+type ImportStatus = { kind: 'success' | 'error'; message: string } | null
 
-  const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() =>
-    loadSelectedDecks().filter((id) => validDeckIds.has(id)),
-  )
+function App() {
+  const [importedDecks, setImportedDecks] = useState<PhraseDeck[]>(() => loadImportedDecks())
+  const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() => loadSelectedDecks())
   const [favorites, setFavorites] = useState<Set<string>>(() => new Set(loadFavorites()))
   const [settings, setSettings] = useState<StudySettings>(() => loadSettings())
   const [currentId, setCurrentId] = useState<string | null>(() => loadLastCard())
   const [query, setQuery] = useState('')
   const [revealed, setRevealed] = useState(false)
   const [libraryOpen, setLibraryOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [homeOpen, setHomeOpen] = useState(false)
   const [session, setSession] = useState<StudySession | null>(null)
   const [summary, setSummary] = useState<SessionSummary | null>(null)
+  const [importStatus, setImportStatus] = useState<ImportStatus>(null)
+
+  const availableDecks = useMemo(
+    () => [...builtInDecks, ...importedDecks].sort((a, b) => a.label.localeCompare(b.label, 'en')),
+    [importedDecks],
+  )
+  const importedDeckIds = useMemo(() => new Set(importedDecks.map((deck) => deck.id)), [importedDecks])
+  const validDeckIds = useMemo(() => new Set(availableDecks.map((deck) => deck.id)), [availableDecks])
+  const cardById = useMemo(
+    () => new Map(availableDecks.flatMap((deck) => deck.cards).map((card) => [card.id, card])),
+    [availableDecks],
+  )
 
   const selectedCards = useMemo(() => {
     const selected = new Set(selectedDeckIds)
-    return decks.filter((deck) => selected.has(deck.id)).flatMap((deck) => deck.cards)
-  }, [selectedDeckIds])
+    return availableDecks.filter((deck) => selected.has(deck.id)).flatMap((deck) => deck.cards)
+  }, [availableDecks, selectedDeckIds])
 
   const visibleCards = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase()
@@ -71,15 +85,34 @@ function App() {
     return visibleCards[0] ?? null
   }, [cardById, currentId, session, visibleCards, visibleIds])
 
-  const activeMeta = useMemo(
-    () => normalizeMetaEntries(activeCard?.meta),
-    [activeCard],
-  )
+  const activeMeta = useMemo(() => normalizeMetaEntries(activeCard?.meta), [activeCard])
 
   const favoriteCardsInView = useMemo(
     () => visibleCards.filter((card) => favorites.has(card.id)),
     [favorites, visibleCards],
   )
+
+  const activeStudySetTitle = useMemo(() => {
+    if (homeOpen) return 'Koine phrase study'
+    if (activeCard) return activeCard.deckLabel
+    if (selectedDeckIds.length === 1) {
+      return availableDecks.find((deck) => deck.id === selectedDeckIds[0])?.label ?? 'Selected deck'
+    }
+    if (selectedDeckIds.length > 1) return `${selectedDeckIds.length} decks selected`
+    return 'Select a deck to begin'
+  }, [activeCard, availableDecks, homeOpen, selectedDeckIds])
+
+  useEffect(() => {
+    setSelectedDeckIds((current) => {
+      const next = current.filter((id) => validDeckIds.has(id))
+      const unchanged = next.length === current.length && next.every((id, index) => id === current[index])
+      return unchanged ? current : next
+    })
+  }, [validDeckIds])
+
+  useEffect(() => {
+    saveImportedDecks(importedDecks)
+  }, [importedDecks])
 
   useEffect(() => {
     saveSelectedDecks(selectedDeckIds)
@@ -103,9 +136,19 @@ function App() {
     saveLastCard(activeCard?.id ?? null)
   }, [activeCard?.id])
 
+  function closeDrawers() {
+    setLibraryOpen(false)
+    setMenuOpen(false)
+  }
+
+  function openLibrary() {
+    setMenuOpen(false)
+    setLibraryOpen(true)
+  }
+
   function goHome() {
     setHomeOpen(true)
-    setLibraryOpen(false)
+    closeDrawers()
     setQuery('')
     setSession(null)
     setSummary(null)
@@ -135,6 +178,48 @@ function App() {
 
   function updateSetting<K extends keyof StudySettings>(key: K, value: StudySettings[K]) {
     setSettings((current) => ({ ...current, [key]: value }))
+  }
+
+  async function handleDeckImport(event: ChangeEvent<HTMLInputElement>) {
+    const input = event.currentTarget
+    const file = input.files?.[0]
+    if (!file) return
+
+    setImportStatus(null)
+    try {
+      const deck = await importPhraseDeck(file)
+      setImportedDecks((current) => [...current, deck])
+      setSelectedDeckIds((current) => uniqueAdd(current, deck.id))
+      setCurrentId(deck.cards[0]?.id ?? null)
+      setHomeOpen(false)
+      setSession(null)
+      setSummary(null)
+      setQuery('')
+      setRevealed(false)
+      setImportStatus({
+        kind: 'success',
+        message: `${deck.label} imported with ${deck.cards.length} ${deck.cards.length === 1 ? 'card' : 'cards'}.`,
+      })
+    } catch (error) {
+      setImportStatus({
+        kind: 'error',
+        message: error instanceof Error ? error.message : 'This deck could not be imported.',
+      })
+    } finally {
+      input.value = ''
+    }
+  }
+
+  function removeImportedDeck(deck: PhraseDeck) {
+    const removedCardIds = new Set(deck.cards.map((card) => card.id))
+    setImportedDecks((current) => current.filter((item) => item.id !== deck.id))
+    setSelectedDeckIds((current) => current.filter((id) => id !== deck.id))
+    setFavorites((current) => new Set([...current].filter((id) => !removedCardIds.has(id))))
+    if (currentId && removedCardIds.has(currentId)) setCurrentId(null)
+    setSession(null)
+    setSummary(null)
+    setRevealed(false)
+    setImportStatus({ kind: 'success', message: `${deck.label} removed from this device.` })
   }
 
   function browse(delta: number) {
@@ -259,31 +344,29 @@ function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <div className="brand">
-          <button
-            className="brand-mark"
-            type="button"
-            onClick={goHome}
-            aria-label="Return home"
-            title="Home"
-            style={{ background: 'transparent', padding: 0, cursor: 'pointer' }}
-          >
-            <span>Κ</span>
-          </button>
-          <div>
-            <p className="brand-kicker">Koine study</p>
-            <h1>Διάλογοι Ἑλληνιστί</h1>
-          </div>
+        <button className="home-button" type="button" onClick={goHome} aria-label="Return home" title="Home">
+          <span lang="grc">Οἶκος</span>
+        </button>
+
+        <div className="brand brand-centered">
+          <p className="brand-kicker">Koine study</p>
+          <h1 lang="grc">Διάλογοι Ἑλληνιστί</h1>
         </div>
-        <div className="topbar-actions">
-          <div className="topbar-status">
-            <span className="status-light" />
-            <span>{selectedDeckIds.length} {selectedDeckIds.length === 1 ? 'deck' : 'decks'} · {visibleCards.length} cards</span>
-          </div>
-          <button className="library-button" type="button" onClick={() => setLibraryOpen(true)}>
-            Library
-          </button>
-        </div>
+
+        <button
+          className={`menu-button ${menuOpen ? 'active' : ''}`}
+          type="button"
+          onClick={() => {
+            setLibraryOpen(false)
+            setMenuOpen((value) => !value)
+          }}
+          aria-label="Open menu"
+          aria-expanded={menuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </header>
 
       <div className="app-body">
@@ -298,33 +381,80 @@ function App() {
 
           <div className="deck-summary">
             <span>{selectedDeckIds.length ? `${selectedDeckIds.length} selected` : 'Nothing selected'}</span>
-            {selectedDeckIds.length > 0 && (
-              <button type="button" onClick={clearDecks}>Clear</button>
-            )}
+            {selectedDeckIds.length > 0 && <button type="button" onClick={clearDecks}>Clear</button>}
+          </div>
+
+          <div className="import-panel">
+            <label className="import-deck-button">
+              <input
+                type="file"
+                accept=".json,.csv,.tsv,.txt,application/json,text/csv,text/tab-separated-values,text/plain"
+                onChange={(event) => void handleDeckImport(event)}
+              />
+              <span>Import deck</span>
+            </label>
+            <p>JSON, CSV, TSV, or TXT. Use Greek/Koine and English/Translation columns; headerless two-column files also work.</p>
+            {importStatus && <p className={`import-status ${importStatus.kind}`}>{importStatus.message}</p>}
           </div>
 
           <div className="deck-list">
-            {decks.map((deck) => {
+            {availableDecks.map((deck) => {
               const selected = selectedDeckIds.includes(deck.id)
+              const imported = importedDeckIds.has(deck.id)
               return (
-                <button
-                  className={`deck-row ${selected ? 'selected' : ''}`}
-                  type="button"
-                  key={deck.id}
-                  onClick={() => toggleDeck(deck.id)}
-                  aria-pressed={selected}
-                >
-                  <span className="deck-check" aria-hidden="true">{selected ? '✓' : ''}</span>
-                  <span className="deck-copy">
-                    <strong>{deck.label}</strong>
-                    <small>{deck.cards.length} cards</small>
-                  </span>
-                </button>
+                <div className={`deck-row-shell ${imported ? 'imported' : ''}`} key={deck.id}>
+                  <button
+                    className={`deck-row ${selected ? 'selected' : ''}`}
+                    type="button"
+                    onClick={() => toggleDeck(deck.id)}
+                    aria-pressed={selected}
+                  >
+                    <span className="deck-check" aria-hidden="true">{selected ? '✓' : ''}</span>
+                    <span className="deck-copy">
+                      <strong>{deck.label}</strong>
+                      <small>{deck.cards.length} cards{imported ? ' · imported' : ''}</small>
+                    </span>
+                  </button>
+                  {imported && (
+                    <button
+                      className="remove-deck-button"
+                      type="button"
+                      onClick={() => removeImportedDeck(deck)}
+                      aria-label={`Remove ${deck.label}`}
+                      title="Remove imported deck"
+                    >
+                      ×
+                    </button>
+                  )}
+                </div>
               )
             })}
           </div>
+        </aside>
 
-          <div className="settings-panel">
+        <aside className={`settings-drawer ${menuOpen ? 'open' : ''}`} aria-hidden={!menuOpen}>
+          <div className="sidebar-header">
+            <div>
+              <p className="section-label">Menu</p>
+              <h2>Study controls</h2>
+            </div>
+            <button className="close-sidebar menu-close" type="button" onClick={() => setMenuOpen(false)} aria-label="Close menu">×</button>
+          </div>
+
+          <button className="menu-library-action" type="button" onClick={openLibrary}>
+            <span>
+              <strong>Library</strong>
+              <small>Choose or import decks</small>
+            </span>
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <div className="menu-deck-status">
+            <span>{selectedDeckIds.length} {selectedDeckIds.length === 1 ? 'deck' : 'decks'}</span>
+            <span>{selectedCards.length} cards</span>
+          </div>
+
+          <div className="settings-panel menu-settings">
             <p className="section-label">Study settings</p>
             <label className="setting-row">
               <span>
@@ -375,13 +505,15 @@ function App() {
           </div>
         </aside>
 
-        {libraryOpen && <button className="sidebar-scrim" type="button" aria-label="Close library" onClick={() => setLibraryOpen(false)} />}
+        {(libraryOpen || menuOpen) && (
+          <button className="drawer-scrim" type="button" aria-label="Close menu" onClick={closeDrawers} />
+        )}
 
         <main className="workspace">
           <div className="workspace-toolbar">
             <div>
               <p className="section-label">Active study set</p>
-              <h2>{homeOpen ? 'Koine phrase study' : selectedDeckIds.length ? 'Phrase study' : 'Select a deck to begin'}</h2>
+              <h2>{activeStudySetTitle}</h2>
             </div>
             <label className="search-field">
               <span className="visually-hidden">Search Greek or English</span>
@@ -405,10 +537,8 @@ function App() {
                   : 'Choose a deck from the library to begin.'}
               </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-                {selectedDeckIds.length > 0 && (
-                  <button type="button" onClick={() => setHomeOpen(false)}>Continue study</button>
-                )}
-                <button type="button" onClick={() => setLibraryOpen(true)}>Open library</button>
+                {selectedDeckIds.length > 0 && <button type="button" onClick={() => setHomeOpen(false)}>Continue study</button>}
+                <button type="button" onClick={openLibrary}>Open library</button>
               </div>
             </section>
           ) : selectedDeckIds.length === 0 ? (
@@ -416,7 +546,7 @@ function App() {
               <p className="card-eyebrow">Time to study</p>
               <h3 lang="grc">Ἀρχώμεθα.</h3>
               <p>Choose a deck from the library to begin.</p>
-              <button type="button" onClick={() => setLibraryOpen(true)}>Open library</button>
+              <button type="button" onClick={openLibrary}>Open library</button>
             </section>
           ) : visibleCards.length === 0 ? (
             <section className="empty-state">

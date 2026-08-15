@@ -1,10 +1,11 @@
-import type { StudySettings } from '../types'
+import type { PhraseDeck, StudySettings } from '../types'
 
 const KEYS = {
   selectedDecks: 'koine.v2.selectedDecks',
   favorites: 'koine.v2.favorites',
   settings: 'koine.v2.settings',
   lastCard: 'koine.v2.lastCard',
+  importedDecks: 'koine.v2.importedDecks',
 } as const
 
 export const DEFAULT_SETTINGS: StudySettings = {
@@ -31,6 +32,15 @@ function writeJson(key: string, value: unknown) {
   } catch {
     // Storage can be unavailable in private browsing or restricted webviews.
   }
+}
+
+function isPhraseDeck(value: unknown): value is PhraseDeck {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return false
+  const source = value as Partial<PhraseDeck>
+  return typeof source.id === 'string'
+    && typeof source.filename === 'string'
+    && typeof source.label === 'string'
+    && Array.isArray(source.cards)
 }
 
 export function loadSelectedDecks(): string[] {
@@ -62,6 +72,15 @@ export function loadSettings(): StudySettings {
 
 export function saveSettings(settings: StudySettings) {
   writeJson(KEYS.settings, settings)
+}
+
+export function loadImportedDecks(): PhraseDeck[] {
+  const value = readJson<unknown>(KEYS.importedDecks, [])
+  return Array.isArray(value) ? value.filter(isPhraseDeck) : []
+}
+
+export function saveImportedDecks(decks: PhraseDeck[]) {
+  writeJson(KEYS.importedDecks, decks)
 }
 
 export function loadLastCard(): string | null {
