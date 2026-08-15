@@ -211,6 +211,8 @@ function App() {
   }
 
   function removeImportedDeck(deck: PhraseDeck) {
+    if (typeof window !== 'undefined' && !window.confirm(`Remove “${deck.label}” from this device?`)) return
+
     const removedCardIds = new Set(deck.cards.map((card) => card.id))
     setImportedDecks((current) => current.filter((item) => item.id !== deck.id))
     setSelectedDeckIds((current) => current.filter((id) => id !== deck.id))
@@ -502,6 +504,27 @@ function App() {
                 onChange={(event) => updateSetting('repeatAfter', Number(event.target.value))}
               />
             </label>
+          </div>
+
+          <div className="deck-management-panel">
+            <p className="section-label">Deck management</p>
+            {importedDecks.length === 0 ? (
+              <p className="deck-management-empty">Imported decks will appear here. Built-in decks stay with the app.</p>
+            ) : (
+              <div className="managed-deck-list">
+                {importedDecks.map((deck) => (
+                  <div className="managed-deck-row" key={deck.id}>
+                    <span>
+                      <strong>{deck.label}</strong>
+                      <small>{deck.cards.length} {deck.cards.length === 1 ? 'card' : 'cards'} · imported</small>
+                    </span>
+                    <button type="button" onClick={() => removeImportedDeck(deck)}>
+                      Remove
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </aside>
 
