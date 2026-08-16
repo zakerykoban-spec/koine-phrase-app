@@ -2,8 +2,45 @@
    The existing English button text stays in the DOM for accessibility;
    visible labels are rendered as Greek with a small English gloss. */
 
+.favorite-star {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  color: #8f897d;
+  background: transparent;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1;
+  transition: color 140ms ease, transform 140ms ease;
+}
+
+.favorite-star:hover,
+.favorite-star:focus-visible {
+  color: var(--gold-soft);
+}
+
+.favorite-star:active {
+  transform: scale(0.94);
+}
+
+.favorite-star.active {
+  color: var(--gold);
+}
+
+.card-topline {
+  padding-right: 42px;
+}
+
 .card-actions {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card-actions button {
@@ -43,22 +80,13 @@
 .quiet-action::before { content: "Ὀπίσω"; }
 .quiet-action::after { content: "Previous"; }
 
-.favorite-action::before { content: "Ἀγαπητόν"; }
-.favorite-action::after { content: "Favorite"; }
-.favorite-action.active::after { content: "Favorited"; }
-
-/* Free browsing: Previous · Favorite · Next. The duplicate Next is hidden. */
+/* Free browsing: Previous · Next. */
 .card-actions:not(:has(.quiet-action:disabled)) .again-action::before { content: "Ἔμπροσθεν"; }
 .card-actions:not(:has(.quiet-action:disabled)) .again-action::after { content: "Next"; }
 .card-actions:not(:has(.quiet-action:disabled)) .known-action { display: none; }
 
-/* Study session: only Again and Known. */
-.card-actions:has(.quiet-action:disabled) {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.card-actions:has(.quiet-action:disabled) .quiet-action,
-.card-actions:has(.quiet-action:disabled) .favorite-action {
+/* Study: only Again and Known. */
+.card-actions:has(.quiet-action:disabled) .quiet-action {
   display: none;
 }
 
@@ -71,11 +99,13 @@
 .known-action::after { color: #9ea879; }
 
 @media (max-width: 900px) {
-  .card-actions,
-  .card-actions:not(:has(.quiet-action:disabled)) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .favorite-star {
+    top: 10px;
+    right: 7px;
   }
 
+  .card-actions,
+  .card-actions:not(:has(.quiet-action:disabled)),
   .card-actions:has(.quiet-action:disabled) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
