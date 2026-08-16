@@ -77,9 +77,9 @@ function App() {
 
   const activeMeta = useMemo(() => normalizeMetaEntries(activeCard?.meta), [activeCard])
 
-  const favoriteCardsInView = useMemo(
-    () => visibleCards.filter((card) => favorites.has(card.id)),
-    [favorites, visibleCards],
+  const favoriteCards = useMemo(
+    () => availableDecks.flatMap((deck) => deck.cards).filter((card) => favorites.has(card.id)),
+    [availableDecks, favorites],
   )
 
   useEffect(() => {
@@ -229,6 +229,20 @@ function App() {
     })
   }
 
+  function removeFavorite(cardId: string) {
+    setFavorites((current) => {
+      const next = new Set(current)
+      next.delete(cardId)
+      return next
+    })
+  }
+
+  function clearFavorites() {
+    if (favorites.size === 0) return
+    if (typeof window !== 'undefined' && !window.confirm(`Clear all ${favorites.size} favorites?`)) return
+    setFavorites(new Set())
+  }
+
   function startSession(ids: string[]) {
     const sourceIds = [...new Set(ids)].filter((id) => cardById.has(id))
     if (sourceIds.length === 0) return
@@ -246,6 +260,11 @@ function App() {
     setSummary(null)
     setCurrentId(queue[0])
     setRevealed(false)
+  }
+
+  function startFavoritesSession() {
+    setMenuOpen(false)
+    startSession(favoriteCards.map((card) => card.id))
   }
 
   function endSession() {
@@ -407,17 +426,6 @@ function App() {
                       <small>{deck.cards.length} cards{imported ? ' · imported' : ''}</small>
                     </span>
                   </button>
-                  {imported && (
-                    <button
-                      className="remove-deck-button"
-                      type="button"
-                      onClick={() => removeImportedDeck(deck)}
-                      aria-label={`Remove ${deck.label}`}
-                      title="Remove imported deck"
-                    >
-                      ×
-                    </button>
-                  )}
                 </div>
               )
             })}
@@ -496,6 +504,34 @@ function App() {
             </label>
           </div>
 
+          <div className="favorites-management-panel">
+            <div className="management-heading">
+              <p className="section-label">Favorites</p>
+              <span>{favoriteCards.length}</span>
+            </div>
+            {favoriteCards.length === 0 ? (
+              <p className="deck-management-empty">Star a card to save it here for later review.</p>
+            ) : (
+              <>
+                <div className="favorites-management-actions">
+                  <button type="button" onClick={startFavoritesSession} disabled={Boolean(session)}>Study favorites</button>
+                  <button type="button" className="danger" onClick={clearFavorites}>Clear favorites</button>
+                </div>
+                <div className="managed-favorite-list">
+                  {favoriteCards.map((card) => (
+                    <div className="managed-favorite-row" key={card.id}>
+                      <span>
+                        <strong lang="grc">{card.koine || '—'}</strong>
+                        <small>{card.deckLabel}</small>
+                      </span>
+                      <button type="button" onClick={() => removeFavorite(card.id)}>Remove</button>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
           <div className="deck-management-panel">
             <p className="section-label">Deck management</p>
             {importedDecks.length === 0 ? (
@@ -553,19 +589,17 @@ function App() {
             </section>
           ) : (
             <>
-              <section className="study-controls" aria-label="Study session controls">
-                <div className="control-group">
-                  <button type="button" onClick={() => startSession(visibleCards.map((card) => card.id))} disabled={Boolean(session)}>
-                    Study selected decks
-                  </button>
-                  <button type="button" onClick={() => startSession(favoriteCardsInView.map((card) => card.id))} disabled={Boolean(session) || favoriteCardsInView.length === 0}>
-                    Study favorites
-                  </button>
-                </div>
-                {session && (
+              <section className="study-controls" aria-label="Study controls">
+                {!session ? (
+                  <div className="control-group" style={{ gridTemplateColumns: '1fr' }}>
+                    <button type="button" onClick={() => startSession(visibleCards.map((card) => card.id))}>
+                      Start study
+                    </button>
+                  </div>
+                ) : (
                   <div className="control-group secondary">
                     <button type="button" onClick={reshuffleSession}>Reshuffle</button>
-                    <button type="button" onClick={endSession}>End session</button>
+                    <button type="button" onClick={endSession}>End study</button>
                   </div>
                 )}
               </section>
@@ -603,6 +637,17 @@ function App() {
 
               {activeCard && (
                 <article className="study-card">
+                  <button
+                    type="button"
+                    className={`favorite-star ${favorites.has(activeCard.id) ? 'active' : ''}`}
+                    onClick={toggleFavorite}
+                    aria-pressed={favorites.has(activeCard.id)}
+                    aria-label={favorites.has(activeCard.id) ? 'Remove from favorites' : 'Add to favorites'}
+                    title={favorites.has(activeCard.id) ? 'Remove from favorites' : 'Add to favorites'}
+                  >
+                    <span aria-hidden="true">{favorites.has(activeCard.id) ? '★' : '☆'}</span>
+                  </button>
+
                   <div className="card-topline">
                     <span>{activeCard.deckLabel}</span>
                     <span>{session ? `Mastery · ${session.queue.length} remaining` : `${currentPosition} / ${visibleCards.length}`}</span>
@@ -640,9 +685,6 @@ function App() {
 
                   <div className="card-actions">
                     <button type="button" className="quiet-action" onClick={() => browse(-1)} disabled={Boolean(session)}>Previous</button>
-                    <button type="button" className={`favorite-action ${favorites.has(activeCard.id) ? 'active' : ''}`} onClick={toggleFavorite}>
-                      {favorites.has(activeCard.id) ? 'Favorited' : 'Favorite'}
-                    </button>
                     <button type="button" className="again-action" onClick={markIncorrect}>{session ? 'Again' : 'Next'}</button>
                     <button type="button" className="known-action" onClick={markCorrect}>{session ? 'Known' : 'Next'}</button>
                   </div>
