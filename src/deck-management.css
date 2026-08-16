@@ -1,9 +1,22 @@
-/* Imported deck removal controls in the settings drawer. */
+/* Settings-drawer management controls. */
 
+.favorites-management-panel,
 .deck-management-panel {
   margin-top: 30px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
+}
+
+.management-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.management-heading > span {
+  color: var(--gold-soft);
+  font-size: 10px;
 }
 
 .deck-management-empty {
@@ -13,12 +26,47 @@
   line-height: 1.55;
 }
 
+.favorites-management-actions {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.favorites-management-actions button {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  color: #bcb4a6;
+  background: rgba(10, 11, 9, 0.24);
+  cursor: pointer;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+
+.favorites-management-actions button:hover:not(:disabled) {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.favorites-management-actions button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.favorites-management-actions .danger {
+  border-color: rgba(157, 104, 87, 0.2);
+  color: #b98f82;
+}
+
+.managed-favorite-list,
 .managed-deck-list {
   margin-top: 12px;
   display: grid;
   gap: 7px;
 }
 
+.managed-favorite-row,
 .managed-deck-row {
   min-height: 58px;
   display: grid;
@@ -30,12 +78,14 @@
   background: rgba(10, 11, 9, 0.2);
 }
 
+.managed-favorite-row > span,
 .managed-deck-row > span {
   min-width: 0;
   display: grid;
   gap: 3px;
 }
 
+.managed-favorite-row strong,
 .managed-deck-row strong {
   overflow: hidden;
   color: #c9bfad;
@@ -46,11 +96,18 @@
   white-space: nowrap;
 }
 
+.managed-favorite-row strong {
+  font-family: "Palatino Linotype", Palatino, "Noto Serif", "Gentium Plus", Georgia, serif;
+  font-weight: 500;
+}
+
+.managed-favorite-row small,
 .managed-deck-row small {
   color: var(--dim);
   font-size: 9px;
 }
 
+.managed-favorite-row button,
 .managed-deck-row button {
   min-height: 32px;
   padding: 0 10px;
@@ -63,6 +120,7 @@
   text-transform: uppercase;
 }
 
+.managed-favorite-row button:hover,
 .managed-deck-row button:hover {
   border-color: rgba(157, 104, 87, 0.5);
   color: #d4aa9d;
