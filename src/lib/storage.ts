@@ -67,6 +67,9 @@ export function loadSettings(): StudySettings {
   return {
     ...DEFAULT_SETTINGS,
     ...value,
+    // English aid is retired from the UI. Keep this compatibility field on
+    // so older saved preferences cannot suppress the restored English labels.
+    showEnglishAid: true,
     repeatAfter: Math.max(0, Math.min(8, Number(value.repeatAfter ?? DEFAULT_SETTINGS.repeatAfter))),
   }
 }
