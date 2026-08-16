@@ -7,6 +7,7 @@ import './safe-area.css'
 import './refinement.css'
 import './deck-management.css'
 import './card-actions.css'
+import './greek-ui.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

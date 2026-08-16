@@ -20,6 +20,7 @@ export interface PhraseDeck {
 }
 
 export interface StudySettings {
+  showEnglishAid: boolean
   flashcardMode: boolean
   autoHide: boolean
   showParsing: boolean
