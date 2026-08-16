@@ -41,7 +41,6 @@ function App() {
   const [favorites, setFavorites] = useState<Set<string>>(() => new Set(loadFavorites()))
   const [settings, setSettings] = useState<StudySettings>(() => loadSettings())
   const [currentId, setCurrentId] = useState<string | null>(() => loadLastCard())
-  const [query, setQuery] = useState('')
   const [revealed, setRevealed] = useState(false)
   const [libraryOpen, setLibraryOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -66,16 +65,7 @@ function App() {
     return availableDecks.filter((deck) => selected.has(deck.id)).flatMap((deck) => deck.cards)
   }, [availableDecks, selectedDeckIds])
 
-  const visibleCards = useMemo(() => {
-    const needle = query.trim().toLocaleLowerCase()
-    if (!needle) return selectedCards
-    return selectedCards.filter((card) =>
-      card.koine.toLocaleLowerCase().includes(needle)
-      || card.english.toLocaleLowerCase().includes(needle)
-      || card.tag?.toLocaleLowerCase().includes(needle),
-    )
-  }, [query, selectedCards])
-
+  const visibleCards = selectedCards
   const visibleIds = useMemo(() => new Set(visibleCards.map((card) => card.id)), [visibleCards])
 
   const activeCard = useMemo(() => {
@@ -91,16 +81,6 @@ function App() {
     () => visibleCards.filter((card) => favorites.has(card.id)),
     [favorites, visibleCards],
   )
-
-  const activeStudySetTitle = useMemo(() => {
-    if (homeOpen) return 'Koine phrase study'
-    if (activeCard) return activeCard.deckLabel
-    if (selectedDeckIds.length === 1) {
-      return availableDecks.find((deck) => deck.id === selectedDeckIds[0])?.label ?? 'Selected deck'
-    }
-    if (selectedDeckIds.length > 1) return `${selectedDeckIds.length} decks selected`
-    return 'Select a deck to begin'
-  }, [activeCard, availableDecks, homeOpen, selectedDeckIds])
 
   useEffect(() => {
     setSelectedDeckIds((current) => {
@@ -149,7 +129,6 @@ function App() {
   function goHome() {
     setHomeOpen(true)
     closeDrawers()
-    setQuery('')
     setSession(null)
     setSummary(null)
     setRevealed(false)
@@ -176,6 +155,14 @@ function App() {
     setRevealed(false)
   }
 
+  function selectAllDecks() {
+    setSelectedDeckIds(availableDecks.map((deck) => deck.id))
+    setHomeOpen(false)
+    setSession(null)
+    setSummary(null)
+    setRevealed(false)
+  }
+
   function updateSetting<K extends keyof StudySettings>(key: K, value: StudySettings[K]) {
     setSettings((current) => ({ ...current, [key]: value }))
   }
@@ -194,7 +181,6 @@ function App() {
       setHomeOpen(false)
       setSession(null)
       setSummary(null)
-      setQuery('')
       setRevealed(false)
       setImportStatus({
         kind: 'success',
@@ -342,6 +328,7 @@ function App() {
   const summaryAccuracy = summary
     ? Math.round((summary.firstPassCorrect / Math.max(1, summary.total)) * 100)
     : 0
+  const allDecksSelected = availableDecks.length > 0 && selectedDeckIds.length === availableDecks.length
 
   return (
     <div className="app-shell">
@@ -383,7 +370,10 @@ function App() {
 
           <div className="deck-summary">
             <span>{selectedDeckIds.length ? `${selectedDeckIds.length} selected` : 'Nothing selected'}</span>
-            {selectedDeckIds.length > 0 && <button type="button" onClick={clearDecks}>Clear</button>}
+            <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <button type="button" onClick={selectAllDecks} disabled={allDecksSelected}>Select all</button>
+              {selectedDeckIds.length > 0 && <button type="button" onClick={clearDecks}>Clear</button>}
+            </span>
           </div>
 
           <div className="import-panel">
@@ -533,23 +523,6 @@ function App() {
         )}
 
         <main className="workspace">
-          <div className="workspace-toolbar">
-            <div>
-              <p className="section-label">Active study set</p>
-              <h2>{activeStudySetTitle}</h2>
-            </div>
-            <label className="search-field">
-              <span className="visually-hidden">Search Greek or English</span>
-              <input
-                type="search"
-                placeholder="Search Greek or English…"
-                value={query}
-                disabled={homeOpen || selectedDeckIds.length === 0 || Boolean(session)}
-                onChange={(event) => setQuery(event.target.value)}
-              />
-            </label>
-          </div>
-
           {homeOpen ? (
             <section className="empty-state">
               <p className="card-eyebrow">Time to study</p>
@@ -573,17 +546,17 @@ function App() {
             </section>
           ) : visibleCards.length === 0 ? (
             <section className="empty-state">
-              <p className="card-eyebrow">No matches</p>
-              <h3>Nothing matches this search.</h3>
-              <p>Clear the search field to return to the selected decks.</p>
-              <button type="button" onClick={() => setQuery('')}>Clear search</button>
+              <p className="card-eyebrow">No cards</p>
+              <h3>The selected decks are empty.</h3>
+              <p>Choose another deck from the library.</p>
+              <button type="button" onClick={openLibrary}>Open library</button>
             </section>
           ) : (
             <>
               <section className="study-controls" aria-label="Study session controls">
                 <div className="control-group">
                   <button type="button" onClick={() => startSession(visibleCards.map((card) => card.id))} disabled={Boolean(session)}>
-                    Study current view
+                    Study selected decks
                   </button>
                   <button type="button" onClick={() => startSession(favoriteCardsInView.map((card) => card.id))} disabled={Boolean(session) || favoriteCardsInView.length === 0}>
                     Study favorites
