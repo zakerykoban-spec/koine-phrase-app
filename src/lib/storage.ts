@@ -9,6 +9,7 @@ const KEYS = {
 } as const
 
 export const DEFAULT_SETTINGS: StudySettings = {
+  showEnglishAid: true,
   flashcardMode: true,
   autoHide: true,
   showParsing: true,
