@@ -6,6 +6,7 @@ import './interaction.css'
 import './safe-area.css'
 import './refinement.css'
 import './deck-management.css'
+import './card-actions.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
