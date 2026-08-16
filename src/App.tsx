@@ -35,6 +35,22 @@ function shuffle<T>(items: T[]): T[] {
 
 type ImportStatus = { kind: 'success' | 'error'; message: string } | null
 
+type UiLabelProps = {
+  greek: string
+  english: string
+  showAid: boolean
+  inline?: boolean
+}
+
+function UiLabel({ greek, english, showAid, inline = false }: UiLabelProps) {
+  return (
+    <span className={`ui-label ${inline ? 'inline' : ''}`}>
+      <span className="ui-greek" lang="grc">{greek}</span>
+      {showAid && <span className="ui-english">{english}</span>}
+    </span>
+  )
+}
+
 function App() {
   const [importedDecks, setImportedDecks] = useState<PhraseDeck[]>(() => loadImportedDecks())
   const [selectedDeckIds, setSelectedDeckIds] = useState<string[]>(() => loadSelectedDecks())
@@ -116,6 +132,10 @@ function App() {
     saveLastCard(activeCard?.id ?? null)
   }, [activeCard?.id])
 
+  function ui(greek: string, english: string, inline = false) {
+    return <UiLabel greek={greek} english={english} showAid={settings.showEnglishAid} inline={inline} />
+  }
+
   function closeDrawers() {
     setLibraryOpen(false)
     setMenuOpen(false)
@@ -182,9 +202,11 @@ function App() {
       setSession(null)
       setSummary(null)
       setRevealed(false)
+      const greek = `Ἡ συλλογὴ ${deck.label} εἰσήχθη· ${deck.cards.length} φράσεις.`
+      const english = `${deck.label} imported with ${deck.cards.length} ${deck.cards.length === 1 ? 'card' : 'cards'}.`
       setImportStatus({
         kind: 'success',
-        message: `${deck.label} imported with ${deck.cards.length} ${deck.cards.length === 1 ? 'card' : 'cards'}.`,
+        message: settings.showEnglishAid ? `${greek} — ${english}` : greek,
       })
     } catch (error) {
       setImportStatus({
@@ -197,7 +219,10 @@ function App() {
   }
 
   function removeImportedDeck(deck: PhraseDeck) {
-    if (typeof window !== 'undefined' && !window.confirm(`Remove “${deck.label}” from this device?`)) return
+    const greekPrompt = `Ἀφελεῖν τὴν συλλογὴν “${deck.label}” ἐκ τῆς συσκευῆς;`
+    const englishPrompt = `Remove “${deck.label}” from this device?`
+    const prompt = settings.showEnglishAid ? `${greekPrompt}\n${englishPrompt}` : greekPrompt
+    if (typeof window !== 'undefined' && !window.confirm(prompt)) return
 
     const removedCardIds = new Set(deck.cards.map((card) => card.id))
     setImportedDecks((current) => current.filter((item) => item.id !== deck.id))
@@ -207,7 +232,9 @@ function App() {
     setSession(null)
     setSummary(null)
     setRevealed(false)
-    setImportStatus({ kind: 'success', message: `${deck.label} removed from this device.` })
+    const greek = `Ἡ συλλογὴ ${deck.label} ἀφῃρέθη.`
+    const english = `${deck.label} removed from this device.`
+    setImportStatus({ kind: 'success', message: settings.showEnglishAid ? `${greek} — ${english}` : greek })
   }
 
   function browse(delta: number) {
@@ -239,7 +266,10 @@ function App() {
 
   function clearFavorites() {
     if (favorites.size === 0) return
-    if (typeof window !== 'undefined' && !window.confirm(`Clear all ${favorites.size} favorites?`)) return
+    const greekPrompt = `Ἆρον πάντα τὰ ἀγαπητά (${favorites.size});`
+    const englishPrompt = `Clear all ${favorites.size} favorites?`
+    const prompt = settings.showEnglishAid ? `${greekPrompt}\n${englishPrompt}` : greekPrompt
+    if (typeof window !== 'undefined' && !window.confirm(prompt)) return
     setFavorites(new Set())
   }
 
@@ -350,14 +380,14 @@ function App() {
   const allDecksSelected = availableDecks.length > 0 && selectedDeckIds.length === availableDecks.length
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${settings.showEnglishAid ? 'english-aid' : 'greek-only'}`}>
       <header className="topbar">
         <button className="home-button" type="button" onClick={goHome} aria-label="Return home" title="Home">
           <span lang="grc">Οἶκος</span>
         </button>
 
         <div className="brand brand-centered">
-          <p className="brand-kicker">Koine study</p>
+          <p className="brand-kicker">{ui('Μελέτη Ἑλληνιστί', 'Koine study')}</p>
           <h1 lang="grc">Διάλογοι Ἑλληνιστί</h1>
         </div>
 
@@ -381,17 +411,25 @@ function App() {
         <aside className={`sidebar ${libraryOpen ? 'open' : ''}`}>
           <div className="sidebar-header">
             <div>
-              <p className="section-label">Library</p>
-              <h2>Choose decks</h2>
+              <p className="section-label">{ui('Βιβλιοθήκη', 'Library')}</p>
+              <h2>{ui('Ἐπίλεξον συλλογάς', 'Choose decks')}</h2>
             </div>
             <button className="close-sidebar" type="button" onClick={() => setLibraryOpen(false)} aria-label="Close library">×</button>
           </div>
 
           <div className="deck-summary">
-            <span>{selectedDeckIds.length ? `${selectedDeckIds.length} selected` : 'Nothing selected'}</span>
+            <span>
+              {selectedDeckIds.length
+                ? ui(`Ἐκλεκταί: ${selectedDeckIds.length}`, `${selectedDeckIds.length} selected`, true)
+                : ui('Οὐδεμία ἐκλεκτή', 'Nothing selected', true)}
+            </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              <button type="button" onClick={selectAllDecks} disabled={allDecksSelected}>Select all</button>
-              {selectedDeckIds.length > 0 && <button type="button" onClick={clearDecks}>Clear</button>}
+              <button type="button" onClick={selectAllDecks} disabled={allDecksSelected}>
+                {ui('Ἐπίλεξον πάσας', 'Select all')}
+              </button>
+              {selectedDeckIds.length > 0 && (
+                <button type="button" onClick={clearDecks}>{ui('Ἀπόλυσον πάσας', 'Clear')}</button>
+              )}
             </span>
           </div>
 
@@ -402,9 +440,14 @@ function App() {
                 accept=".json,.csv,.tsv,.txt,application/json,text/csv,text/tab-separated-values,text/plain"
                 onChange={(event) => void handleDeckImport(event)}
               />
-              <span>Import deck</span>
+              {ui('Εἰσάγαγε συλλογήν', 'Import deck')}
             </label>
-            <p>JSON, CSV, TSV, or TXT. Use Greek/Koine and English/Translation columns; headerless two-column files also work.</p>
+            <p>
+              {ui(
+                'Δέχεται JSON, CSV, TSV, ἢ TXT· στήλαι Ἑλληνικῶν καὶ Ἀγγλικῶν.',
+                'JSON, CSV, TSV, or TXT. Use Greek/Koine and English/Translation columns; headerless two-column files also work.',
+              )}
+            </p>
             {importStatus && <p className={`import-status ${importStatus.kind}`}>{importStatus.message}</p>}
           </div>
 
@@ -423,7 +466,13 @@ function App() {
                     <span className="deck-check" aria-hidden="true">{selected ? '✓' : ''}</span>
                     <span className="deck-copy">
                       <strong>{deck.label}</strong>
-                      <small>{deck.cards.length} cards{imported ? ' · imported' : ''}</small>
+                      <small>
+                        {ui(
+                          `${deck.cards.length} φράσεις${imported ? ' · εἰσηγμένη' : ''}`,
+                          `${deck.cards.length} cards${imported ? ' · imported' : ''}`,
+                          true,
+                        )}
+                      </small>
                     </span>
                   </button>
                 </div>
@@ -435,31 +484,48 @@ function App() {
         <aside className={`settings-drawer ${menuOpen ? 'open' : ''}`} aria-hidden={!menuOpen}>
           <div className="sidebar-header">
             <div>
-              <p className="section-label">Menu</p>
-              <h2>Study controls</h2>
+              <p className="section-label">{ui('Ἐπιλογαί', 'Menu')}</p>
+              <h2>{ui('Μελέτη', 'Study controls')}</h2>
             </div>
             <button className="close-sidebar menu-close" type="button" onClick={() => setMenuOpen(false)} aria-label="Close menu">×</button>
           </div>
 
           <button className="menu-library-action" type="button" onClick={openLibrary}>
             <span>
-              <strong>Library</strong>
-              <small>Choose or import decks</small>
+              <strong>{ui('Βιβλιοθήκη', 'Library')}</strong>
+              <small>{ui('Ἐπίλεξον ἢ εἰσάγαγε συλλογάς', 'Choose or import decks')}</small>
             </span>
             <span aria-hidden="true">→</span>
           </button>
 
           <div className="menu-deck-status">
-            <span>{selectedDeckIds.length} {selectedDeckIds.length === 1 ? 'deck' : 'decks'}</span>
-            <span>{selectedCards.length} cards</span>
+            <span>{ui(`${selectedDeckIds.length} συλλογαί`, `${selectedDeckIds.length} ${selectedDeckIds.length === 1 ? 'deck' : 'decks'}`, true)}</span>
+            <span>{ui(`${selectedCards.length} φράσεις`, `${selectedCards.length} cards`, true)}</span>
           </div>
 
           <div className="settings-panel menu-settings">
-            <p className="section-label">Study settings</p>
+            <p className="section-label">{ui('Τρόπος μελέτης', 'Study settings')}</p>
+
+            <label className="setting-row english-aid-setting">
+              <span>
+                <strong>
+                  <UiLabel greek="Βοήθεια Ἀγγλιστί" english="English aid" showAid />
+                </strong>
+                <small>
+                  <UiLabel greek="Δείκνυσι μικρὰ Ἀγγλικὰ βοηθήματα." english="Show small English UI hints" showAid />
+                </small>
+              </span>
+              <input
+                type="checkbox"
+                checked={settings.showEnglishAid}
+                onChange={(event) => updateSetting('showEnglishAid', event.target.checked)}
+              />
+            </label>
+
             <label className="setting-row">
               <span>
-                <strong>Flashcard mode</strong>
-                <small>Hide English until reveal</small>
+                <strong>{ui('Κρύπτε τὴν μετάφρασιν', 'Flashcard mode')}</strong>
+                <small>{ui('Κρύπτε τὰ Ἀγγλικὰ ἕως ἂν φανερώσῃς.', 'Hide English until reveal')}</small>
               </span>
               <input
                 type="checkbox"
@@ -469,8 +535,8 @@ function App() {
             </label>
             <label className="setting-row">
               <span>
-                <strong>Auto-hide</strong>
-                <small>Hide answer on the next card</small>
+                <strong>{ui('Πάλιν κρύπτε', 'Auto-hide')}</strong>
+                <small>{ui('Κρύπτε τὴν μετάφρασιν ἐν τῇ ἑξῆς φράσει.', 'Hide answer on the next card')}</small>
               </span>
               <input
                 type="checkbox"
@@ -480,8 +546,8 @@ function App() {
             </label>
             <label className="setting-row">
               <span>
-                <strong>Parsing</strong>
-                <small>Show analysis after reveal</small>
+                <strong>{ui('Ἡ ἀνάλυσις', 'Parsing')}</strong>
+                <small>{ui('Δεῖξον τὴν ἀνάλυσιν μετὰ τὴν ἀπόκρισιν.', 'Show analysis after reveal')}</small>
               </span>
               <input
                 type="checkbox"
@@ -491,8 +557,8 @@ function App() {
             </label>
             <label className="repeat-setting">
               <span>
-                <strong>Repeat missed after</strong>
-                <small>{settings.repeatAfter} cards</small>
+                <strong>{ui('Πάλιν μετὰ', 'Repeat missed after')}</strong>
+                <small>{ui(`${settings.repeatAfter} φράσεις`, `${settings.repeatAfter} cards`, true)}</small>
               </span>
               <input
                 type="range"
@@ -506,16 +572,22 @@ function App() {
 
           <div className="favorites-management-panel">
             <div className="management-heading">
-              <p className="section-label">Favorites</p>
+              <p className="section-label">{ui('Ἀγαπητά', 'Favorites')}</p>
               <span>{favoriteCards.length}</span>
             </div>
             {favoriteCards.length === 0 ? (
-              <p className="deck-management-empty">Star a card to save it here for later review.</p>
+              <p className="deck-management-empty">
+                {ui('Σήμανον ἀστέρι φράσεως, ἵνα ἐνθάδε μένῃ.', 'Star a card to save it here for later review.')}
+              </p>
             ) : (
               <>
                 <div className="favorites-management-actions">
-                  <button type="button" onClick={startFavoritesSession} disabled={Boolean(session)}>Study favorites</button>
-                  <button type="button" className="danger" onClick={clearFavorites}>Clear favorites</button>
+                  <button type="button" onClick={startFavoritesSession} disabled={Boolean(session)}>
+                    {ui('Μελέτα τὰ ἀγαπητά', 'Study favorites')}
+                  </button>
+                  <button type="button" className="danger" onClick={clearFavorites}>
+                    {ui('Ἆρον πάντα', 'Clear favorites')}
+                  </button>
                 </div>
                 <div className="managed-favorite-list">
                   {favoriteCards.map((card) => (
@@ -524,7 +596,7 @@ function App() {
                         <strong lang="grc">{card.koine || '—'}</strong>
                         <small>{card.deckLabel}</small>
                       </span>
-                      <button type="button" onClick={() => removeFavorite(card.id)}>Remove</button>
+                      <button type="button" onClick={() => removeFavorite(card.id)}>{ui('Ἀφαίρει', 'Remove')}</button>
                     </div>
                   ))}
                 </div>
@@ -533,19 +605,21 @@ function App() {
           </div>
 
           <div className="deck-management-panel">
-            <p className="section-label">Deck management</p>
+            <p className="section-label">{ui('Διοίκησις συλλογῶν', 'Deck management')}</p>
             {importedDecks.length === 0 ? (
-              <p className="deck-management-empty">Imported decks will appear here. Built-in decks stay with the app.</p>
+              <p className="deck-management-empty">
+                {ui('Οὐδεμία εἰσηγμένη συλλογή. Αἱ ἔνδον συλλογαὶ μένουσιν.', 'Imported decks will appear here. Built-in decks stay with the app.')}
+              </p>
             ) : (
               <div className="managed-deck-list">
                 {importedDecks.map((deck) => (
                   <div className="managed-deck-row" key={deck.id}>
                     <span>
                       <strong>{deck.label}</strong>
-                      <small>{deck.cards.length} {deck.cards.length === 1 ? 'card' : 'cards'} · imported</small>
+                      <small>{ui(`${deck.cards.length} φράσεις · εἰσηγμένη`, `${deck.cards.length} ${deck.cards.length === 1 ? 'card' : 'cards'} · imported`, true)}</small>
                     </span>
                     <button type="button" onClick={() => removeImportedDeck(deck)}>
-                      Remove
+                      {ui('Ἀφαίρει', 'Remove')}
                     </button>
                   </div>
                 ))}
@@ -561,31 +635,33 @@ function App() {
         <main className="workspace">
           {homeOpen ? (
             <section className="empty-state">
-              <p className="card-eyebrow">Time to study</p>
+              <p className="card-eyebrow">{ui('Καιρὸς μελέτης', 'Time to study')}</p>
               <h3 lang="grc">Ἀρχώμεθα.</h3>
               <p>
                 {selectedDeckIds.length
-                  ? `${selectedDeckIds.length} ${selectedDeckIds.length === 1 ? 'deck is' : 'decks are'} ready when you are.`
-                  : 'Choose a deck from the library to begin.'}
+                  ? ui(`${selectedDeckIds.length} συλλογαὶ ἕτοιμαι.`, `${selectedDeckIds.length} ${selectedDeckIds.length === 1 ? 'deck is' : 'decks are'} ready when you are.`)
+                  : ui('Ἐπίλεξον συλλογὴν ἐκ τῆς βιβλιοθήκης.', 'Choose a deck from the library to begin.')}
               </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-                {selectedDeckIds.length > 0 && <button type="button" onClick={() => setHomeOpen(false)}>Continue study</button>}
-                <button type="button" onClick={openLibrary}>Open library</button>
+                {selectedDeckIds.length > 0 && (
+                  <button type="button" onClick={() => setHomeOpen(false)}>{ui('Ἐπίμενε', 'Continue study')}</button>
+                )}
+                <button type="button" onClick={openLibrary}>{ui('Ἄνοιξον βιβλιοθήκην', 'Open library')}</button>
               </div>
             </section>
           ) : selectedDeckIds.length === 0 ? (
             <section className="empty-state">
-              <p className="card-eyebrow">Time to study</p>
+              <p className="card-eyebrow">{ui('Καιρὸς μελέτης', 'Time to study')}</p>
               <h3 lang="grc">Ἀρχώμεθα.</h3>
-              <p>Choose a deck from the library to begin.</p>
-              <button type="button" onClick={openLibrary}>Open library</button>
+              <p>{ui('Ἐπίλεξον συλλογὴν ἐκ τῆς βιβλιοθήκης.', 'Choose a deck from the library to begin.')}</p>
+              <button type="button" onClick={openLibrary}>{ui('Ἄνοιξον βιβλιοθήκην', 'Open library')}</button>
             </section>
           ) : visibleCards.length === 0 ? (
             <section className="empty-state">
-              <p className="card-eyebrow">No cards</p>
-              <h3>The selected decks are empty.</h3>
-              <p>Choose another deck from the library.</p>
-              <button type="button" onClick={openLibrary}>Open library</button>
+              <p className="card-eyebrow">{ui('Οὐδεμία φράσις', 'No cards')}</p>
+              <h3>{ui('Αἱ ἐκλεκταὶ συλλογαὶ κεναί εἰσιν.', 'The selected decks are empty.')}</h3>
+              <p>{ui('Ἐπίλεξον ἄλλην συλλογήν.', 'Choose another deck from the library.')}</p>
+              <button type="button" onClick={openLibrary}>{ui('Ἄνοιξον βιβλιοθήκην', 'Open library')}</button>
             </section>
           ) : (
             <>
@@ -593,13 +669,13 @@ function App() {
                 {!session ? (
                   <div className="control-group" style={{ gridTemplateColumns: '1fr' }}>
                     <button type="button" onClick={() => startSession(visibleCards.map((card) => card.id))}>
-                      Start study
+                      {ui('Ἀρχώμεθα', 'Start study')}
                     </button>
                   </div>
                 ) : (
                   <div className="control-group secondary">
-                    <button type="button" onClick={reshuffleSession}>Reshuffle</button>
-                    <button type="button" onClick={endSession}>End study</button>
+                    <button type="button" onClick={reshuffleSession}>{ui('Ἀνάμιξον', 'Reshuffle')}</button>
+                    <button type="button" onClick={endSession}>{ui('Παῦσαι', 'End study')}</button>
                   </div>
                 )}
               </section>
@@ -608,10 +684,10 @@ function App() {
                 <section className="session-strip" aria-label="Session progress">
                   <div className="progress-track"><span style={{ width: `${sessionProgress * 100}%` }} /></div>
                   <div className="session-stats">
-                    <span>Remaining <strong>{session.queue.length}</strong></span>
-                    <span>Correct <strong>{session.correct.length}</strong></span>
-                    <span>Missed <strong>{session.missedOnce.length}</strong></span>
-                    <span>Repeats <strong>{session.repeatEvents}</strong></span>
+                    <span>{ui('Λοιπά', 'Remaining', true)} <strong>{session.queue.length}</strong></span>
+                    <span>{ui('Ὀρθά', 'Correct', true)} <strong>{session.correct.length}</strong></span>
+                    <span>{ui('Ἁμαρτήματα', 'Missed', true)} <strong>{session.missedOnce.length}</strong></span>
+                    <span>{ui('Ἐπαναλήψεις', 'Repeats', true)} <strong>{session.repeatEvents}</strong></span>
                   </div>
                 </section>
               )}
@@ -619,18 +695,20 @@ function App() {
               {summary && !session && (
                 <section className="summary-card">
                   <div>
-                    <p className="card-eyebrow">Session complete</p>
-                    <h3>{summaryAccuracy}% first-pass accuracy</h3>
-                    <p>{summary.firstPassCorrect} of {summary.total} cards were correct before needing a repeat.</p>
+                    <p className="card-eyebrow">{ui('Τέλος μελέτης', 'Session complete')}</p>
+                    <h3>{ui(`${summaryAccuracy}% πρῶτον ὀρθῶς`, `${summaryAccuracy}% first-pass accuracy`)}</h3>
+                    <p>{ui(`${summary.firstPassCorrect} ἐκ ${summary.total} πρῶτον ὀρθῶς.`, `${summary.firstPassCorrect} of ${summary.total} cards were correct before needing a repeat.`)}</p>
                   </div>
                   <dl>
-                    <div><dt>Total</dt><dd>{summary.total}</dd></div>
-                    <div><dt>Missed once</dt><dd>{summary.missed}</dd></div>
-                    <div><dt>Repeat events</dt><dd>{summary.repeatEvents}</dd></div>
+                    <div><dt>{ui('Πᾶσαι', 'Total')}</dt><dd>{summary.total}</dd></div>
+                    <div><dt>{ui('Ἅπαξ ἡμαρτημένα', 'Missed once')}</dt><dd>{summary.missed}</dd></div>
+                    <div><dt>{ui('Ἐπαναλήψεις', 'Repeat events')}</dt><dd>{summary.repeatEvents}</dd></div>
                   </dl>
                   <div className="summary-actions">
-                    <button type="button" disabled={summary.missedIds.length === 0} onClick={() => startSession(summary.missedIds)}>Study missed</button>
-                    <button type="button" onClick={() => startSession(summary.sourceIds)}>Restart session</button>
+                    <button type="button" disabled={summary.missedIds.length === 0} onClick={() => startSession(summary.missedIds)}>
+                      {ui('Μελέτα τὰ ἡμαρτημένα', 'Study missed')}
+                    </button>
+                    <button type="button" onClick={() => startSession(summary.sourceIds)}>{ui('Πάλιν ἄρχου', 'Restart session')}</button>
                   </div>
                 </section>
               )}
@@ -650,7 +728,11 @@ function App() {
 
                   <div className="card-topline">
                     <span>{activeCard.deckLabel}</span>
-                    <span>{session ? `Mastery · ${session.queue.length} remaining` : `${currentPosition} / ${visibleCards.length}`}</span>
+                    <span>
+                      {session
+                        ? ui(`Μελέτη · ${session.queue.length} λοιπά`, `Mastery · ${session.queue.length} remaining`, true)
+                        : `${currentPosition} / ${visibleCards.length}`}
+                    </span>
                   </div>
 
                   {activeCard.tag && <p className="card-tag">{activeCard.tag}</p>}
@@ -658,7 +740,9 @@ function App() {
 
                   {settings.flashcardMode && (
                     <button className="reveal-button" type="button" onClick={() => setRevealed((value) => !value)}>
-                      {revealed ? 'Hide answer' : 'Reveal answer'}
+                      {revealed
+                        ? ui('Κρύψον τὴν μετάφρασιν', 'Hide answer')
+                        : ui('Δεῖξον τὴν μετάφρασιν', 'Reveal answer')}
                     </button>
                   )}
 
@@ -668,7 +752,7 @@ function App() {
                         <div className="english-text">{activeCard.english || '—'}</div>
                         {settings.showParsing && activeMeta.length > 0 && (
                           <section className="parse-panel">
-                            <p className="parse-title">Ἡ ἀνάλυσις</p>
+                            <p className="parse-title">{ui('Ἡ ἀνάλυσις', 'Analysis')}</p>
                             <dl>
                               {activeMeta.map(([key, value]) => (
                                 <div key={key}>
